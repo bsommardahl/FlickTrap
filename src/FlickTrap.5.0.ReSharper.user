@@ -1,0 +1,34 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="6A6B1CC0-ACE6-4DB2-B4A4-DD96BB7A9D11/f:FlickServiceSpecs.cs" caret="428" fromTop="20" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="6A6B1CC0-ACE6-4DB2-B4A4-DD96BB7A9D11/f:FlickServiceSpecs.cs" caret="404" fromTop="16" />
+      <File id="6A6B1CC0-ACE6-4DB2-B4A4-DD96BB7A9D11/f:FlickServiceSpecs.cs" caret="232" fromTop="9" />
+      <File id="6A6B1CC0-ACE6-4DB2-B4A4-DD96BB7A9D11/f:FlickServiceSpecs.cs" caret="428" fromTop="24" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir>C:\Program Files (x86)\NUnit 2.5.3\bin\net-2.0\</NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="namespace" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>
