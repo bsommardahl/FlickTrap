@@ -15,5 +15,11 @@ namespace FlickTrap.Domain
         {
             return _flickRepository.Get(id);
         }
+
+        public bool TrapFlick(Flick flick)
+        {
+            _flickRepository.Add(flick);
+            return true;
+        }
     }
 }
