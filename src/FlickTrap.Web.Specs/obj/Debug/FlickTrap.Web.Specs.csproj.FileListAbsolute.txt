@@ -1,0 +1,12 @@
+C:\Projects\FlickTrap\src\FlickTrap.Web.Specs\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\FlickTrap\src\FlickTrap.Web.Specs\bin\Debug\FlickTrap.Web.Specs.dll
+C:\Projects\FlickTrap\src\FlickTrap.Web.Specs\bin\Debug\FlickTrap.Web.Specs.pdb
+C:\Projects\FlickTrap\src\FlickTrap.Web.Specs\bin\Debug\FlickTrap.Domain.dll
+C:\Projects\FlickTrap\src\FlickTrap.Web.Specs\bin\Debug\FlickTrap.Web.dll
+C:\Projects\FlickTrap\src\FlickTrap.Web.Specs\bin\Debug\Machine.Specifications.dll
+C:\Projects\FlickTrap\src\FlickTrap.Web.Specs\bin\Debug\Moq.dll
+C:\Projects\FlickTrap\src\FlickTrap.Web.Specs\bin\Debug\FlickTrap.Domain.pdb
+C:\Projects\FlickTrap\src\FlickTrap.Web.Specs\bin\Debug\FlickTrap.Web.pdb
+C:\Projects\FlickTrap\src\FlickTrap.Web.Specs\obj\Debug\FlickTrap.Web.Specs.dll
+C:\Projects\FlickTrap\src\FlickTrap.Web.Specs\obj\Debug\FlickTrap.Web.Specs.pdb
+C:\Projects\FlickTrap\src\FlickTrap.Web.Specs\bin\Debug\StructureMap.dll

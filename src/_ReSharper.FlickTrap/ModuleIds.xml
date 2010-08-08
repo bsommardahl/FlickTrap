@@ -1,4 +1,6 @@
 <Modules>
   <Module PersistentId="6A6B1CC0-ACE6-4DB2-B4A4-DD96BB7A9D11" ModuleId="FlickTrap.Domain.Specs" />
   <Module PersistentId="4D494354-BCD4-48DF-80C0-FE89581052F1" ModuleId="FlickTrap.Domain" />
+  <Module PersistentId="440F72D8-B10E-4F08-A2E0-F0555ECEA3A2" ModuleId="FlickTrap.Web.Specs" />
+  <Module PersistentId="77765FFF-0191-498C-9868-A3CBBE760A6F" ModuleId="FlickTrap.Web" />
 </Modules>

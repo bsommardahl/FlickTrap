@@ -40,13 +40,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DefaultFlickInfoService.cs" />
     <Compile Include="Flick.cs" />
     <Compile Include="FlickService.cs" />
+    <Compile Include="IFlickInfoService.cs" />
     <Compile Include="IFlickRepository.cs" />
     <Compile Include="IUserProfileRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserProfile.cs" />
     <Compile Include="UserProfileService.cs" />
+    <Compile Include="UserProfileStatus.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -2,6 +2,9 @@
 {
     public interface IUserProfileRepository 
     {
-        UserProfile Get(int id);
+        UserProfile Read(int id);
+        UserProfile Create(UserProfile userProfile);
+        UserProfile Update(UserProfile userProfile);
+        void Delete(UserProfile userProfile);
     }
 }
