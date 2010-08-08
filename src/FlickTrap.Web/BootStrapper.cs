@@ -1,33 +1,30 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
 using System.Web.Mvc;
 using FlickTrap.Web;
 using StructureMap;
 
 namespace FlickTrap.Web
 {
-    public class BootStrapper
+    public static class BootStrapper
     {
-        readonly IContainer _container;
-
-        public BootStrapper(IContainer container)
+        static BootStrapper()
         {
-            _container = container;
+            ConfigureContainer();
         }
 
-        public void Run()
+        static void ConfigureContainer()
         {
-            ConfigureDependencies();
-            ConfigureControllerFactory();
+            ObjectFactory.Configure(x => x.AddRegistry(new DependencyRegistry()));
         }
 
-        void ConfigureControllerFactory()
+        public static void Run()
         {
-            ControllerBuilder.Current.SetControllerFactory( _container.GetInstance<IControllerFactory>() );
-        }
-
-        void ConfigureDependencies()
-        {
-            _container.Configure( x => x.AddRegistry<DependencyRegistry>() );
+            var tasks = ObjectFactory.GetAllInstances<IBootstrapperTask>();
+            foreach(var task in tasks)
+                task.Execute();
         }
     }
 }

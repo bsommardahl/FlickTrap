@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace FlickTrap.Domain
 {
-    public class DefaultFlickInfoService : IFlickInfoService
+    public class FlickInfoService : IFlickInfoService
     {
         public IEnumerable<Flick> GetRecentlyReleasedFlicks()
         {
@@ -33,6 +33,16 @@ namespace FlickTrap.Domain
                             new Flick { Name = "Hitch II", Rating = "PG-13", TheaterReleaseDate = new DateTime(2013, 1, 1) },
                             new Flick { Name = "Hannibal II", Rating = "PG-13", TheaterReleaseDate = new DateTime(2013, 1, 1) },
                             new Flick { Name = "Epic Movie", Rating = "PG-13", TheaterReleaseDate = new DateTime(2013, 1, 1) },
+                       };
+        }
+
+        public Flick GetFlick(string imdbId)
+        {
+            return new Flick
+                       {
+                           Name = "Hitch",
+                           Rating = "PG-13",
+                           TheaterReleaseDate = new DateTime(2010, 1, 1)
                        };
         }
     }

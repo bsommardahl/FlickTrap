@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BootstrapperSpecs.cs" />
+    <Compile Include="Controllers\FlickControllerSpecs.cs" />
     <Compile Include="Controllers\HomeControllerSpecs.cs" />
     <Compile Include="MvcFakes\FakeControllerContext.cs" />
     <Compile Include="MvcFakes\FakeHttpContext.cs" />

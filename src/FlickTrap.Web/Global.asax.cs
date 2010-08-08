@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+using StructureMap;
 
 namespace FlickTrap.Web
 {
@@ -31,9 +32,13 @@ namespace FlickTrap.Web
 
         protected void Application_Start()
         {
+            BootStrapper.Run();
+
             AreaRegistration.RegisterAllAreas();
 
             RegisterRoutes( RouteTable.Routes );
+
+            
         }
     }
 }

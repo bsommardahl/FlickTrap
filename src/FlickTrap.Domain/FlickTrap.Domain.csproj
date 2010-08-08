@@ -40,7 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DefaultFlickInfoService.cs" />
+    <Compile Include="FlickInfoService.cs" />
     <Compile Include="Flick.cs" />
     <Compile Include="FlickService.cs" />
     <Compile Include="IFlickInfoService.cs" />

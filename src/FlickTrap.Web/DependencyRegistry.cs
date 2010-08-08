@@ -1,4 +1,7 @@
-﻿using System.Web.Mvc;
+﻿using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
+using System.Web.Mvc;
 using FlickTrap.Domain;
 using StructureMap.Configuration.DSL;
 
@@ -8,14 +11,21 @@ namespace FlickTrap.Web
     {
         public DependencyRegistry()
         {
-            RegisterTypes();
-        }
+            Scan( x =>
+            {
+                x.TheCallingAssembly();
+                x.AddAllTypesOf<IBootstrapperTask>();
+                x.WithDefaultConventions();
+            } );
 
-        void RegisterTypes()
-        {
+            Scan(x =>
+                {
+                    x.IncludeNamespace("FlickTrap.Domain");
+                    x.WithDefaultConventions();
+                });
+
             For<IControllerFactory>().Use<StructureMapControllerFactory>();
-            For<IFlickInfoService>().Use<DefaultFlickInfoService>();
-            
+            For<IFlickInfoService>().Use<FlickInfoService>();
         }
     }
 }

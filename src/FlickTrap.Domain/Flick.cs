@@ -11,5 +11,8 @@ namespace FlickTrap.Domain
         public DateTime TheaterReleaseDate { get; set; }
         public DateTime RentalReleaseDate { get; set; }
         public string ThumbnailUrl { get; set; }
+        public decimal Revenue { get; set; }
+        public decimal Budget { get; set; }
+        public string ImdbId { get; set; }
     }
 }

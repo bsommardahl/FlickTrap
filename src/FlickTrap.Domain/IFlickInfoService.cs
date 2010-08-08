@@ -6,5 +6,6 @@ namespace FlickTrap.Domain
     {
         IEnumerable<Flick> GetRecentlyReleasedFlicks();
         IEnumerable<Flick> GetUnreleasedFlicks();
+        Flick GetFlick(string imdbId);
     }
 }

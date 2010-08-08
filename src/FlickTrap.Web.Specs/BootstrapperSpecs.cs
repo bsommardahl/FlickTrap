@@ -1,4 +1,7 @@
-﻿using FlickTrap.Web.Controllers;
+﻿using System.Linq;
+using System.Web.Mvc;
+using FlickTrap.Domain;
+using FlickTrap.Web.Controllers;
 using Machine.Specifications;
 using StructureMap;
 
@@ -9,18 +12,18 @@ namespace FlickTrap.Web.Specs
         [Subject(typeof (BootStrapper))]
         public class when_bootstrapper_is_run
         {
-            static BootStrapper _bootStrapper;
-            static Container _container;
+            Because of = BootStrapper.Run;
 
-            Establish context = () =>
-                {
-                    _container = new Container();
-                    _bootStrapper = new BootStrapper(_container);
-                };
+            It should_map_controllers = () =>
+                                        ObjectFactory.GetAllInstances<IController>()
+                                            .Where(x => x.GetType().Equals(typeof (HomeController)))
+                                            .ShouldNotBeNull();
 
-            Because of = () => _bootStrapper.Run();
+            It should_map_the_proper_controller_factory = () =>
+                                                          ObjectFactory.GetInstance<IControllerFactory>().ShouldBeOfType( typeof( StructureMapControllerFactory ) );
 
-            It should_map_home_controller = () => _container.GetInstance(typeof (HomeController)).ShouldNotBeNull();
+            It should_map_a_domain_service_properly = () =>
+                                                      ObjectFactory.GetInstance<IFlickInfoService>().GetType().ShouldEqual(typeof (FlickInfoService));
         }
     }
 }

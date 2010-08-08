@@ -19,6 +19,7 @@ namespace FlickTrap.Web.Controllers
         {
             return new FlickListingViewModel
                        {
+                           ImdbId = flick.ImdbId,
                            Name = flick.Name,
                            Rating = flick.Rating,
                            UserRating = flick.UserRating,
