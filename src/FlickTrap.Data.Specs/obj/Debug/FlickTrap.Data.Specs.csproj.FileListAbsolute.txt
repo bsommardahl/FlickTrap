@@ -1,0 +1,12 @@
+C:\Projects\FlickTrap\src\FlickTrap.Data.Specs\bin\Debug\FlickTrap.Data.Specs.dll
+C:\Projects\FlickTrap\src\FlickTrap.Data.Specs\bin\Debug\FlickTrap.Data.Specs.pdb
+C:\Projects\FlickTrap\src\FlickTrap.Data.Specs\bin\Debug\FlickTrap.Data.dll
+C:\Projects\FlickTrap\src\FlickTrap.Data.Specs\bin\Debug\FlickTrap.Domain.dll
+C:\Projects\FlickTrap\src\FlickTrap.Data.Specs\bin\Debug\Machine.Specifications.dll
+C:\Projects\FlickTrap\src\FlickTrap.Data.Specs\bin\Debug\Moq.dll
+C:\Projects\FlickTrap\src\FlickTrap.Data.Specs\bin\Debug\TheMovieDBLib.dll
+C:\Projects\FlickTrap\src\FlickTrap.Data.Specs\bin\Debug\FlickTrap.Data.pdb
+C:\Projects\FlickTrap\src\FlickTrap.Data.Specs\bin\Debug\FlickTrap.Domain.pdb
+C:\Projects\FlickTrap\src\FlickTrap.Data.Specs\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\FlickTrap\src\FlickTrap.Data.Specs\obj\Debug\FlickTrap.Data.Specs.dll
+C:\Projects\FlickTrap\src\FlickTrap.Data.Specs\obj\Debug\FlickTrap.Data.Specs.pdb

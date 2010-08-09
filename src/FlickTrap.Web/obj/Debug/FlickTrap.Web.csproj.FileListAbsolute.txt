@@ -6,3 +6,7 @@ C:\Projects\FlickTrap\src\FlickTrap.Web\obj\Debug\ResolveAssemblyReference.cache
 C:\Projects\FlickTrap\src\FlickTrap.Web\obj\Debug\FlickTrap.Web.dll
 C:\Projects\FlickTrap\src\FlickTrap.Web\obj\Debug\FlickTrap.Web.pdb
 C:\Projects\FlickTrap\src\FlickTrap.Web\bin\StructureMap.dll
+C:\Projects\FlickTrap\src\FlickTrap.Web\bin\FlickTrap.Data.dll
+C:\Projects\FlickTrap\src\FlickTrap.Web\bin\FlickTrap.Data.pdb
+C:\Projects\FlickTrap\src\FlickTrap.Web\bin\AutoMapper.dll
+C:\Projects\FlickTrap\src\FlickTrap.Web\bin\TheMovieDBLib.dll

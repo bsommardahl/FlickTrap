@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Web.Mvc;
 using FlickTrap.Domain;
+using FlickTrap.Domain.Abstract;
 using FlickTrap.Web.Models;
 
 namespace FlickTrap.Web.Controllers
@@ -16,7 +17,9 @@ namespace FlickTrap.Web.Controllers
 
         public ActionResult Index(string imdbId)
         {
-            var flick = _flickInfoService.GetFlick(imdbId);
+            var username = User.Identity.Name;
+ 
+            var flick = _flickInfoService.GetFlick(username, imdbId);
 
             if( flick == null )
                 return View("NotFound");
@@ -30,7 +33,8 @@ namespace FlickTrap.Web.Controllers
                                     RentalReleaseDate = flick.RentalReleaseDate,
                                     Revenue = flick.Revenue,
                                     TheaterReleaseDate = flick.TheaterReleaseDate,
-                                    UserRating = flick.UserRating
+                                    UserRating = flick.UserRating,
+                                    IsTrapped = flick.IsTrapped
                                 };
             
             return View(viewModel);
@@ -38,7 +42,16 @@ namespace FlickTrap.Web.Controllers
 
         public ActionResult Trap(string imdbId)
         {
-            return null;
+            var username = User.Identity.Name;
+            _flickInfoService.Trap(username, imdbId);
+            return Index(imdbId);
+        }
+
+        public ActionResult Untrap(string imdbId)
+        {
+            var username = User.Identity.Name;
+            _flickInfoService.Untrap( username, imdbId );
+            return Index( imdbId );
         }
     }
 }

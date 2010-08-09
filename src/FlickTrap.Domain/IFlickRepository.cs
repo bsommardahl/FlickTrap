@@ -1,8 +1,10 @@
-﻿namespace FlickTrap.Domain
+﻿using System.Collections.Generic;
+
+namespace FlickTrap.Domain
 {
     public interface IFlickRepository
     {
-        Flick Get(int id);
-        void Add(Flick flick);
+        IEnumerable<Flick> GetRecentlyReleased();
+        IEnumerable<Flick> GetUnreleasedFlicks();
     }
 }

@@ -2,7 +2,9 @@
 using System.Linq;
 using System.Reflection;
 using System.Web.Mvc;
+using FlickTrap.Data;
 using FlickTrap.Domain;
+using FlickTrap.Domain.Abstract;
 using StructureMap.Configuration.DSL;
 
 namespace FlickTrap.Web
@@ -26,6 +28,10 @@ namespace FlickTrap.Web
 
             For<IControllerFactory>().Use<StructureMapControllerFactory>();
             For<IFlickInfoService>().Use<FlickInfoService>();
+            For<IFlickInfoWebServiceFacade>().Use<FlickInfoWebServiceFacade>();
+            For<IFlickRepository>().Use<FlickRepository>();
+
+            For<IUserProfileRepository>().Use<FakeUserProfileRepository>();
         }
     }
 }

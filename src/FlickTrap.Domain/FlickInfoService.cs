@@ -1,49 +1,98 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Threading;
+using FlickTrap.Domain.Abstract;
+using FlickTrap.Domain.Exceptions;
 
 namespace FlickTrap.Domain
 {
     public class FlickInfoService : IFlickInfoService
     {
+        readonly IFlickInfoWebServiceFacade _flickInfoWebServiceFacade;
+        readonly IUserProfileRepository _userProfileRepository;
+        readonly IFlickRepository _flickRepository;
+
+        public FlickInfoService(IFlickInfoWebServiceFacade flickInfoWebServiceFacade, 
+                                IUserProfileRepository userProfileRepository, 
+                                IFlickRepository flickRepository)
+        {
+            _flickInfoWebServiceFacade = flickInfoWebServiceFacade;
+            _userProfileRepository = userProfileRepository;
+            _flickRepository = flickRepository;
+        }
+
         public IEnumerable<Flick> GetRecentlyReleasedFlicks()
         {
-            return new List<Flick>
-                       {
-                            new Flick { Name = "Hitch", Rating = "PG-13", TheaterReleaseDate = new DateTime(2010, 1, 1) },
-                            new Flick { Name = "Immortal", Rating = "PG-13", TheaterReleaseDate = new DateTime(2010, 1, 1) },
-                            new Flick { Name = "Airbender", Rating = "PG", TheaterReleaseDate = new DateTime(2010, 1, 1) },
-                            new Flick { Name = "Avatar", Rating = "PG-13", TheaterReleaseDate = new DateTime(2010, 1, 1) },
-                            new Flick { Name = "Handy", Rating = "PG", TheaterReleaseDate = new DateTime(2010, 1, 1) },
-                            new Flick { Name = "The Horse", Rating = "G", TheaterReleaseDate = new DateTime(2010, 1, 1) },
-                            new Flick { Name = "Revenge of the Nerds VIII", Rating = "PG-13", TheaterReleaseDate = new DateTime(2010, 1, 1) },
-                            new Flick { Name = "Alien vs Predator", Rating = "R", TheaterReleaseDate = new DateTime(2010, 1, 1) },
-                            new Flick { Name = "Love Hurts", Rating = "PG", TheaterReleaseDate = new DateTime(2010, 1, 1) },
-                       };
+            return _flickRepository.GetRecentlyReleased();
         }
 
         public IEnumerable<Flick> GetUnreleasedFlicks()
         {
-            return new List<Flick>
-                       {
-                            new Flick { Name = "Avatar II", Rating = "PG-13", TheaterReleaseDate = new DateTime(2013, 1, 1) },
-                            new Flick { Name = "My Movie II", Rating = "PG-13", TheaterReleaseDate = new DateTime(2013, 1, 1) },
-                            new Flick { Name = "Love Hurts II", Rating = "PG-13", TheaterReleaseDate = new DateTime(2013, 1, 1) },
-                            new Flick { Name = "Karate Kid VII", Rating = "PG-13", TheaterReleaseDate = new DateTime(2013, 1, 1) },
-                            new Flick { Name = "Star Wars X", Rating = "PG-13", TheaterReleaseDate = new DateTime(2013, 1, 1) },
-                            new Flick { Name = "Hitch II", Rating = "PG-13", TheaterReleaseDate = new DateTime(2013, 1, 1) },
-                            new Flick { Name = "Hannibal II", Rating = "PG-13", TheaterReleaseDate = new DateTime(2013, 1, 1) },
-                            new Flick { Name = "Epic Movie", Rating = "PG-13", TheaterReleaseDate = new DateTime(2013, 1, 1) },
-                       };
+            return _flickRepository.GetUnreleasedFlicks();
         }
 
-        public Flick GetFlick(string imdbId)
+        public Flick GetFlick(string username, string imdbId)
         {
-            return new Flick
-                       {
-                           Name = "Hitch",
-                           Rating = "PG-13",
-                           TheaterReleaseDate = new DateTime(2010, 1, 1)
-                       };
+            //try to get flick from trapped flicks
+            if( !string.IsNullOrEmpty( username ) )
+            {
+                var userProfile = _userProfileRepository.GetUserProfile(username);
+                if(userProfile==null)
+                    throw new UserProfileNotFoundException();
+
+                if (userProfile.Trapped != null)
+                    return userProfile.Trapped.SingleOrDefault(x => x.ImdbId == imdbId);
+            }
+
+            //try to get flick from web service
+            var downloadedFlick = _flickInfoWebServiceFacade.DownloadFlickInfo(imdbId);
+            return downloadedFlick;            
+        }
+
+        public void Trap(string username, string imdbId)
+        {
+            //get user profile
+            var userProfile = _userProfileRepository.GetUserProfile(username);
+            if( userProfile == null )
+                throw new UserProfileNotFoundException();
+
+            //don't add if already present
+            if( userProfile.Trapped != null && userProfile.Trapped.Any( x => x.ImdbId == imdbId ) )
+                return;
+
+            //get flick from web service
+            var flickToTrap = _flickInfoWebServiceFacade.DownloadFlickInfo(imdbId);
+            if( flickToTrap == null )
+                throw new FlickNotFoundException();
+
+            userProfile.AddTrappedFlick(flickToTrap);
+
+            _userProfileRepository.Save(userProfile);
+        }
+
+        public void Untrap(string username, string imdbId)
+        {
+            var userProfile = _userProfileRepository.GetUserProfile( username );
+            if(userProfile==null)
+                throw new UserProfileNotFoundException();
+
+            var flickToRemove = userProfile.Trapped.SingleOrDefault(x => x.ImdbId == imdbId);
+            if(flickToRemove==null)
+                throw new FlickNotFoundException();
+
+            userProfile.RemoveTrappedFlick(flickToRemove);
+
+            _userProfileRepository.Save(userProfile);
+        }
+
+        public IEnumerable<Flick> Search(string searchText)
+        {
+            if( string.IsNullOrEmpty( searchText.Trim() ) )
+                return null;
+
+            var flicks = _flickInfoWebServiceFacade.Search(searchText);
+            return flicks;
         }
     }
 }

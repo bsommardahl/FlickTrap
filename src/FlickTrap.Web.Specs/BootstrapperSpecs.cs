@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using System.Web.Mvc;
 using FlickTrap.Domain;
+using FlickTrap.Domain.Abstract;
 using FlickTrap.Web.Controllers;
 using Machine.Specifications;
 using StructureMap;

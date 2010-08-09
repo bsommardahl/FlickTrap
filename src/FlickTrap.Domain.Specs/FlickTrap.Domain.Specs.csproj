@@ -46,9 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FlickServiceSpecs.cs" />
+    <Compile Include="FlickInfoServiceSpecs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserServiceSpecs.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FlickTrap.Domain\FlickTrap.Domain.csproj">
