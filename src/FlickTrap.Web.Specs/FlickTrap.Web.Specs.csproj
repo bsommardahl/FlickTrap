@@ -66,6 +66,7 @@
     <Compile Include="MvcFakes\FakeIdentity.cs" />
     <Compile Include="MvcFakes\FakePrincipal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Controllers\SearchControllerSpecs.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FlickTrap.Domain\FlickTrap.Domain.csproj">

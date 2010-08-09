@@ -29,7 +29,7 @@ namespace FlickTrap.Web
             For<IControllerFactory>().Use<StructureMapControllerFactory>();
             For<IFlickInfoService>().Use<FlickInfoService>();
             For<IFlickInfoWebServiceFacade>().Use<FlickInfoWebServiceFacade>();
-            For<IFlickRepository>().Use<FlickRepository>();
+            For<IFlickRepository>().Use<FakeFlickRepository>();
 
             For<IUserProfileRepository>().Use<FakeUserProfileRepository>();
         }

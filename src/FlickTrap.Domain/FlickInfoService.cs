@@ -89,10 +89,10 @@ namespace FlickTrap.Domain
         public IEnumerable<Flick> Search(string searchText)
         {
             if( string.IsNullOrEmpty( searchText.Trim() ) )
-                return null;
+                return new List<Flick>();
 
             var flicks = _flickInfoWebServiceFacade.Search(searchText);
-            return flicks;
+            return flicks ?? new List<Flick>();
         }
     }
 }

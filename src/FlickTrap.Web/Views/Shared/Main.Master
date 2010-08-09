@@ -11,6 +11,13 @@
 <body>
     
     <div>
+
+        <h3>FlickTrap</h3>
+        <ul>
+            <li><a href='<%=ResolveUrl("~/") %>'>Home</a></li>
+            <li><a href='<%=ResolveUrl("~/Search") %>'>Search</a></li>
+        </ul>
+
         <asp:ContentPlaceHolder ID="MainContent" runat="server">
         
         </asp:ContentPlaceHolder>

@@ -9,5 +9,6 @@ namespace FlickTrap.Domain.Abstract
         Flick GetFlick(string username, string imdbId);
         void Trap(string username, string imdbId);
         void Untrap(string username, string imdbId);
+        IEnumerable<Flick> Search(string searchText);
     }
 }

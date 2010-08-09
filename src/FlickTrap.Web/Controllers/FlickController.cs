@@ -15,7 +15,7 @@ namespace FlickTrap.Web.Controllers
             _flickInfoService = flickInfoService;
         }
 
-        public ActionResult Index(string imdbId)
+        public ActionResult Details(string imdbId)
         {
             var username = User.Identity.Name;
  
@@ -36,22 +36,22 @@ namespace FlickTrap.Web.Controllers
                                     UserRating = flick.UserRating,
                                     IsTrapped = flick.IsTrapped
                                 };
-            
-            return View(viewModel);
+
+            return View( viewModel );
         }
 
         public ActionResult Trap(string imdbId)
         {
             var username = User.Identity.Name;
             _flickInfoService.Trap(username, imdbId);
-            return Index(imdbId);
+            return Details(imdbId);
         }
 
         public ActionResult Untrap(string imdbId)
         {
             var username = User.Identity.Name;
             _flickInfoService.Untrap( username, imdbId );
-            return Index( imdbId );
+            return Details( imdbId );
         }
     }
 }

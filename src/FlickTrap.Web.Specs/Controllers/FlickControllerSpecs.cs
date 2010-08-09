@@ -51,7 +51,7 @@ namespace FlickTrap.Web.Specs.Controllers
 
             Because of = () =>
                 {
-                    _result = _controller.Index("123");
+                    _result = _controller.Details("123");
                     _viewModel = ((FlickDetailsViewModel) ((ViewResult) _result).ViewData.Model);
                 };
 
@@ -80,7 +80,7 @@ namespace FlickTrap.Web.Specs.Controllers
                     _controller.ControllerContext = new FakeControllerContext(_controller, "username");
                 };
 
-            Because of = () => _result = _controller.Index("123-1");
+            Because of = () => _result = _controller.Details( "123-1" );
 
             It should_return_a_not_found_view = () => ((ViewResult) _result).ViewName.ShouldEqual("NotFound");
             It should_return_a_view = () => _result.ShouldBeOfType(typeof (ViewResult));

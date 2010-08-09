@@ -289,7 +289,7 @@ namespace FlickTrap.Domain.Specs
 
                 Because of = () => _result = _flickInfoService.Search("a movie");
 
-                It should_return_null = () => _result.ShouldBeNull();
+                It should_return_an_empty_list = () => _result.Count().ShouldEqual(0);
             }
 
             [Subject(typeof (FlickInfoService))]
