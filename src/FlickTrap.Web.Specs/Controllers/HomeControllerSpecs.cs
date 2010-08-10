@@ -104,7 +104,7 @@ namespace FlickTrap.Web.Specs.Controllers
                     
                     firstUnreleasedFlick.Name.ShouldEqual("Hitch");
                     firstUnreleasedFlick.Rating.ShouldEqual( "PG-13" );
-                    firstUnreleasedFlick.UserRating.ShouldEqual( 9.5M );
+                    firstUnreleasedFlick.Stars.ShouldEqual("five");
                     firstUnreleasedFlick.ThumbnailUrl.ShouldEqual("http://hitch.com/poster.jpg");
                     firstUnreleasedFlick.ImdbId.ShouldEqual("123");                    
                 };
@@ -115,7 +115,7 @@ namespace FlickTrap.Web.Specs.Controllers
                     
                     firstRecentFlick.Name.ShouldEqual( "Avatar" );
                     firstRecentFlick.Rating.ShouldEqual( "PG-13" );
-                    firstRecentFlick.UserRating.ShouldEqual( 9.8M );
+                    firstRecentFlick.Stars.ShouldEqual("five");
                     firstRecentFlick.ThumbnailUrl.ShouldEqual( "http://avatar.com/poster.jpg" );
                     firstRecentFlick.ImdbId.ShouldEqual("223");
                 };

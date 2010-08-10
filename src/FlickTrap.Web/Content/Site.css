@@ -1,28 +1,33 @@
-/* Styles for validation helpers
------------------------------------------------------------*/
-.field-validation-error
-{
-    color: #ff0000;
-}
+body { background-color: #EEEEEE; }
 
-.field-validation-valid
-{
-    display: none;
-}
+.thumbnail img { padding: 3px; background-color: White; border: #BBBBBB solid 1px; }
 
-.input-validation-error
-{
-    border: 1px solid #ff0000;
-    background-color: #ffeeee;
-}
+.flickListing { margin-bottom: 10px; height: 130px; }
+.flickListing .name { font-size: medium; }
 
-.validation-summary-errors
-{
-    font-weight: bold;
-    color: #ff0000;
-}
+.header { background-color: Gray; margin-bottom: 15px; padding: 15px 0px 15px 0px; border-bottom: #555555 solid 1px; }
+.header .title { text-align: right; position: relative; }
+.header .title h1 { margin: 0px; }
+.header .title h2 { position: absolute; top: -5px; right: 5px; font-size: small; }
+.header .title h3 { color: #555555; font-size: small; margin: 0px; }
 
-.validation-summary-valid
-{
-    display: none;
-}
+.header ul { margin-top: 20px; list-style: none; padding: 0px;}
+.header ul li { float: left; width: 120px;  }
+.header ul li h1 { margin: 0px; }
+.header ul li h1 a { font-size: large; text-decoration: none; font-weight: bold; color: White; }
+.header ul li h1 a:hover { color: Black; }
+
+.footer { background-color: Gray; color: #333333; font-size: small; margin-top: 15px; padding: 15px 0px 15px 0px; border-top: #555555 solid 1px; }
+
+.searchArea { margin-bottom: 20px; margin-top: 20px; }
+.searchBox { background-color: AliceBlue; border: #CCCCCC solid 1px; padding: 20px; text-align: center; }
+.searchBox h3 { display: inline; }
+.searchBox .textBox { width: 600px; font-size: xx-large; padding: 5px; margin-top: 3px; }
+.searchBox .searchButton { font-size: large; padding: 10px;  }
+             
+ .flickDetails .name { font-size: xx-large; }         
+ .flickDetails .release { }
+ .flickDetails .description { }   
+ .flickDetails .trapButton { margin-top: 10px; }      
+ 
+ .subBox { padding: 10px; background-color: White; border: #CCCCCC solid 1px; }    

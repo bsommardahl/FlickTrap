@@ -19,19 +19,26 @@ namespace FlickTrap.Web.Controllers
 
         public ActionResult Index()
         {
-            var recentlyReleased = _flickInfoService.GetRecentlyReleasedFlicks();
-            var recentlyReleasedViewModel = recentlyReleased.Take( 10 ).Select( x => Mapper.Map<Flick, FlickListingViewModel>( x ) );
+            return RedirectToAction("Index", "Search", new
+                                                           {
+                                                               searchText = "Star Wars"
+                                                           });
 
-            var unreleased = _flickInfoService.GetUnreleasedFlicks();
-            var unreleasedViewModel = unreleased.Take(5).Select(x => Mapper.Map<Flick, FlickListingViewModel>(x));
+            //var recentlyReleased = _flickInfoService.GetRecentlyReleasedFlicks();
+            //var recentlyReleasedViewModel = recentlyReleased.Take(10).Select(x => FlickListingViewModel.Map(x, null));
+
+            //var unreleased = _flickInfoService.GetUnreleasedFlicks();
+            //var unreleasedViewModel = unreleased.Take( 5 ).Select( x => FlickListingViewModel.Map( x, null ) );
                                                                  
             var viewModel = new HomeViewModel
                                 {
-                                    RecentlyReleasedFlicks = recentlyReleasedViewModel,
-                                    UnreleasedFlicks = unreleasedViewModel
+                                    //RecentlyReleasedFlicks = recentlyReleasedViewModel,
+                                    //UnreleasedFlicks = unreleasedViewModel
                                 };
 
             return View(viewModel);
         }
+
+        
     }
 }

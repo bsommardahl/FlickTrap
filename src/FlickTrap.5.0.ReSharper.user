@@ -8,63 +8,68 @@
   </SettingsComponent>
   <RecentFiles>
     <RecentFiles>
-      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/d:Models/f:FlickListingViewModel.cs" caret="90" fromTop="4" />
-      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/d:Models/f:HomeViewModel.cs" caret="226" fromTop="7" />
-      <File id="440F72D8-B10E-4F08-A2E0-F0555ECEA3A2/d:Controllers/f:FlickControllerSpecs.cs" caret="348" fromTop="4" />
-      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:RegisterAutoMaps.cs" caret="384" fromTop="13" />
-      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:RegisterControllerFactory.cs" caret="0" fromTop="0" />
-      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/d:Controllers/f:HomeController.cs" caret="796" fromTop="4" />
       <File id="4D494354-BCD4-48DF-80C0-FE89581052F1/f:UserProfile.cs" caret="221" fromTop="5" />
       <File id="D802930C-C522-4350-880E-0F61517D1B30/f:FakeUserProfileRepository.cs" caret="1854" fromTop="3" />
-      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:BootStrapper.cs" caret="447" fromTop="12" />
-      <File id="4D494354-BCD4-48DF-80C0-FE89581052F1/d:Abstract/f:IFlickInfoService.cs" caret="61" fromTop="1" />
       <File id="4D494354-BCD4-48DF-80C0-FE89581052F1/d:Abstract/f:IUserProfileRepository.cs" caret="19" fromTop="0" />
       <File id="4D494354-BCD4-48DF-80C0-FE89581052F1/d:Exceptions/f:FlickNotFoundException.cs" caret="39" fromTop="1" />
       <File id="4D494354-BCD4-48DF-80C0-FE89581052F1/d:Exceptions/f:UserProfileNotFoundException.cs" caret="37" fromTop="1" />
       <File id="4D494354-BCD4-48DF-80C0-FE89581052F1/f:Flick.cs" caret="346" fromTop="10" />
-      <File id="D802930C-C522-4350-880E-0F61517D1B30/f:FlickInfoWebServiceFacade.cs" caret="234" fromTop="0" />
       <File id="4D494354-BCD4-48DF-80C0-FE89581052F1/d:Abstract/f:IFlickInfoWebServiceFacade.cs" caret="180" fromTop="5" />
       <File id="4D494354-BCD4-48DF-80C0-FE89581052F1/f:IFlickRepository.cs" caret="191" fromTop="6" />
-      <File id="4D494354-BCD4-48DF-80C0-FE89581052F1/f:FlickInfoService.cs" caret="1957" fromTop="20" />
       <File id="440F72D8-B10E-4F08-A2E0-F0555ECEA3A2/d:Controllers/f:HomeControllerSpecs.cs" caret="991" fromTop="12" />
-      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/d:Controllers/f:FlickController.cs" caret="727" fromTop="6" />
       <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/d:Models/f:FlickDetailsViewModel.cs" caret="407" fromTop="11" />
-      <File id="D802930C-C522-4350-880E-0F61517D1B30/f:FlickRepository.cs" caret="197" fromTop="7" />
-      <File id="6A6B1CC0-ACE6-4DB2-B4A4-DD96BB7A9D11/f:FlickInfoServiceSpecs.cs" caret="4971" fromTop="6" />
       <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:DependencyRegistry.cs" caret="223" fromTop="6" />
-      <File id="BA6EA879-69E5-452D-9793-6AB0037580FB/f:FlickInfoWebServiceFacadeSpecs.cs" caret="786" fromTop="18" />
+      <File id="BA6EA879-69E5-452D-9793-6AB0037580FB/f:FlickInfoWebServiceFacadeSpecs.cs" caret="2656" fromTop="19" />
+      <File id="4D494354-BCD4-48DF-80C0-FE89581052F1/d:Abstract/f:IFlickInfoService.cs" caret="446" fromTop="10" />
+      <File id="440F72D8-B10E-4F08-A2E0-F0555ECEA3A2/d:Controllers/f:SearchControllerSpecs.cs" caret="3732" fromTop="10" />
+      <File id="4D494354-BCD4-48DF-80C0-FE89581052F1/f:FlickInfoService.cs" caret="3552" fromTop="18" />
+      <File id="6A6B1CC0-ACE6-4DB2-B4A4-DD96BB7A9D11/f:FlickInfoServiceSpecs.cs" caret="5588" fromTop="22" />
+      <File id="D802930C-C522-4350-880E-0F61517D1B30/f:FakeFlickRepository.cs" caret="171" fromTop="2" />
+      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/d:Models/f:SearchViewModel.cs" caret="185" fromTop="8" />
+      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/d:Controllers/f:SearchController.cs" caret="1046" fromTop="22" />
+      <File id="440F72D8-B10E-4F08-A2E0-F0555ECEA3A2/d:Controllers/f:FlickControllerSpecs.cs" caret="3650" fromTop="3" />
+      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/d:Views/d:Search/f:Index.aspx" caret="779" fromTop="15" />
+      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/d:Views/d:Home/f:Index.aspx" caret="655" fromTop="14" />
+      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/d:Views/d:Shared/f:Main.Master" caret="531" fromTop="13" />
+      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/d:Views/d:Shared/f:FlickListingView.ascx" caret="207" fromTop="2" />
+      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:RegisterControllerFactory.cs" caret="474" fromTop="15" />
+      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:BootStrapper.cs" caret="323" fromTop="8" />
+      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:RegisterRoutes.cs" caret="649" fromTop="8" />
+      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:Global.asax.cs" caret="538" fromTop="9" />
+      <File id="D802930C-C522-4350-880E-0F61517D1B30/f:FlickInfoWebServiceFacade.cs" caret="509" fromTop="4" />
+      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/d:Controllers/f:FlickController.cs" caret="548" fromTop="13" />
     </RecentFiles>
     <RecentEdits>
-      <File id="D802930C-C522-4350-880E-0F61517D1B30/f:FlickInfoWebServiceFacade.cs" caret="416" fromTop="13" />
-      <File id="4D494354-BCD4-48DF-80C0-FE89581052F1/f:Flick.cs" caret="346" fromTop="10" />
-      <File id="D802930C-C522-4350-880E-0F61517D1B30/f:FlickInfoWebServiceFacade.cs" caret="1127" fromTop="20" />
-      <File id="D802930C-C522-4350-880E-0F61517D1B30/f:FlickInfoWebServiceFacade.cs" caret="1450" fromTop="22" />
-      <File id="D802930C-C522-4350-880E-0F61517D1B30/f:FlickInfoWebServiceFacade.cs" caret="669" fromTop="6" />
-      <File id="D802930C-C522-4350-880E-0F61517D1B30/f:FlickInfoWebServiceFacade.cs" caret="723" fromTop="13" />
-      <File id="D802930C-C522-4350-880E-0F61517D1B30/f:FlickInfoWebServiceFacade.cs" caret="1489" fromTop="14" />
-      <File id="4D494354-BCD4-48DF-80C0-FE89581052F1/d:Abstract/f:IFlickInfoWebServiceFacade.cs" caret="180" fromTop="5" />
-      <File id="6A6B1CC0-ACE6-4DB2-B4A4-DD96BB7A9D11/f:FlickInfoServiceSpecs.cs" caret="16429" fromTop="24" />
-      <File id="6A6B1CC0-ACE6-4DB2-B4A4-DD96BB7A9D11/f:FlickInfoServiceSpecs.cs" caret="16429" fromTop="3" />
-      <File id="6A6B1CC0-ACE6-4DB2-B4A4-DD96BB7A9D11/f:FlickInfoServiceSpecs.cs" caret="16429" fromTop="279" />
-      <File id="6A6B1CC0-ACE6-4DB2-B4A4-DD96BB7A9D11/f:FlickInfoServiceSpecs.cs" caret="1330" fromTop="13" />
-      <File id="4D494354-BCD4-48DF-80C0-FE89581052F1/f:FlickInfoService.cs" caret="684" fromTop="15" />
-      <File id="4D494354-BCD4-48DF-80C0-FE89581052F1/f:FlickInfoService.cs" caret="1001" fromTop="23" />
-      <File id="4D494354-BCD4-48DF-80C0-FE89581052F1/f:FlickInfoService.cs" caret="1142" fromTop="23" />
-      <File id="4D494354-BCD4-48DF-80C0-FE89581052F1/f:IFlickRepository.cs" caret="209" fromTop="6" />
-      <File id="6A6B1CC0-ACE6-4DB2-B4A4-DD96BB7A9D11/f:FlickInfoServiceSpecs.cs" caret="859" fromTop="7" />
-      <File id="6A6B1CC0-ACE6-4DB2-B4A4-DD96BB7A9D11/f:FlickInfoServiceSpecs.cs" caret="642" fromTop="11" />
-      <File id="6A6B1CC0-ACE6-4DB2-B4A4-DD96BB7A9D11/f:FlickInfoServiceSpecs.cs" caret="3193" fromTop="2" />
-      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/d:Models/f:FlickDetailsViewModel.cs" caret="407" fromTop="11" />
-      <File id="6A6B1CC0-ACE6-4DB2-B4A4-DD96BB7A9D11/f:FlickInfoServiceSpecs.cs" caret="5670" fromTop="12" />
-      <File id="6A6B1CC0-ACE6-4DB2-B4A4-DD96BB7A9D11/f:FlickInfoServiceSpecs.cs" caret="4334" fromTop="2" />
-      <File id="D802930C-C522-4350-880E-0F61517D1B30/f:FlickRepository.cs" caret="197" fromTop="7" />
-      <File id="6A6B1CC0-ACE6-4DB2-B4A4-DD96BB7A9D11/f:FlickInfoServiceSpecs.cs" caret="4971" fromTop="6" />
-      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:DependencyRegistry.cs" caret="1015" fromTop="16" />
-      <File id="BA6EA879-69E5-452D-9793-6AB0037580FB/f:FlickInfoWebServiceFacadeSpecs.cs" caret="805" fromTop="14" />
-      <File id="BA6EA879-69E5-452D-9793-6AB0037580FB/f:FlickInfoWebServiceFacadeSpecs.cs" caret="805" fromTop="16" />
-      <File id="BA6EA879-69E5-452D-9793-6AB0037580FB/f:FlickInfoWebServiceFacadeSpecs.cs" caret="805" fromTop="10" />
-      <File id="BA6EA879-69E5-452D-9793-6AB0037580FB/f:FlickInfoWebServiceFacadeSpecs.cs" caret="805" fromTop="20" />
-      <File id="BA6EA879-69E5-452D-9793-6AB0037580FB/f:FlickInfoWebServiceFacadeSpecs.cs" caret="784" fromTop="18" />
+      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/d:Models/f:SearchViewModel.cs" caret="142" fromTop="6" />
+      <File id="4D494354-BCD4-48DF-80C0-FE89581052F1/f:FlickInfoService.cs" caret="3552" fromTop="18" />
+      <File id="6A6B1CC0-ACE6-4DB2-B4A4-DD96BB7A9D11/f:FlickInfoServiceSpecs.cs" caret="16855" fromTop="12" />
+      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/d:Views/d:Search/f:Index.aspx" caret="424" fromTop="3" />
+      <File id="D802930C-C522-4350-880E-0F61517D1B30/f:FakeFlickRepository.cs" caret="1590" fromTop="14" />
+      <File id="D802930C-C522-4350-880E-0F61517D1B30/f:FakeFlickRepository.cs" caret="2673" fromTop="24" />
+      <File id="D802930C-C522-4350-880E-0F61517D1B30/f:FakeFlickRepository.cs" caret="296" fromTop="6" />
+      <File id="D802930C-C522-4350-880E-0F61517D1B30/f:FakeFlickRepository.cs" caret="1486" fromTop="17" />
+      <File id="D802930C-C522-4350-880E-0F61517D1B30/f:FakeFlickRepository.cs" caret="171" fromTop="2" />
+      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/d:Views/d:Search/f:Index.aspx" caret="548" fromTop="6" />
+      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/d:Controllers/f:FlickController.cs" caret="457" fromTop="6" />
+      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/d:Controllers/f:FlickController.cs" caret="1662" fromTop="12" />
+      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/d:Controllers/f:FlickController.cs" caret="1881" fromTop="19" />
+      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/d:Controllers/f:FlickController.cs" caret="1444" fromTop="5" />
+      <File id="440F72D8-B10E-4F08-A2E0-F0555ECEA3A2/d:Controllers/f:FlickControllerSpecs.cs" caret="2274" fromTop="12" />
+      <File id="440F72D8-B10E-4F08-A2E0-F0555ECEA3A2/d:Controllers/f:FlickControllerSpecs.cs" caret="4190" fromTop="14" />
+      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/d:Views/d:Search/f:Index.aspx" caret="658" fromTop="11" />
+      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/d:Views/d:Search/f:Index.aspx" caret="761" fromTop="13" />
+      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/d:Views/d:Home/f:Index.aspx" caret="411" fromTop="3" />
+      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/d:Views/d:Home/f:Index.aspx" caret="573" fromTop="10" />
+      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/d:Views/d:Home/f:Index.aspx" caret="655" fromTop="14" />
+      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/d:Views/d:Shared/f:Main.Master" caret="716" fromTop="18" />
+      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/d:Views/d:Shared/f:FlickListingView.ascx" caret="207" fromTop="2" />
+      <File id="D802930C-C522-4350-880E-0F61517D1B30/f:FlickInfoWebServiceFacade.cs" caret="509" fromTop="4" />
+      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:Global.asax.cs" caret="403" fromTop="2" />
+      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:RegisterRoutes.cs" caret="220" fromTop="6" />
+      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:Global.asax.cs" caret="538" fromTop="9" />
+      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:RegisterRoutes.cs" caret="1048" fromTop="11" />
+      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:RegisterRoutes.cs" caret="1048" fromTop="15" />
+      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:RegisterRoutes.cs" caret="649" fromTop="8" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -83,42 +88,42 @@
       <Item value="_userProfileService" priority="4" />
       <Item value="int" priority="2" />
       <Item value="_userProfile" priority="7" />
-      <Item value="if" priority="17" />
+      <Item value="if" priority="18" />
       <Item value="userProfile" priority="23" />
-      <Item value="var" priority="16" />
+      <Item value="var" priority="20" />
       <Item value="_userProfileRepository" priority="6" />
       <Item value="_mockUserProfileRepository" priority="11" />
-      <Item value="public" priority="8" />
+      <Item value="public" priority="9" />
       <Item value="class" priority="5" />
       <Item value="given_a_user_profile_service_context`0" priority="2" />
-      <Item value="Establish`0" priority="3" />
+      <Item value="Establish`0" priority="4" />
       <Item value="Because`0" priority="2" />
-      <Item value="It`0" priority="26" />
+      <Item value="It`0" priority="32" />
       <Item value="else" priority="0" />
       <Item value="Id" priority="2" />
       <Item value="UserProfile`0" priority="13" />
-      <Item value="_result" priority="17" />
+      <Item value="_result" priority="26" />
       <Item value="UserProfile" priority="5" />
-      <Item value="new" priority="34" />
+      <Item value="new" priority="43" />
       <Item value="bool" priority="0" />
-      <Item value="return" priority="19" />
+      <Item value="return" priority="23" />
       <Item value="false" priority="1" />
       <Item value="Moq" priority="3" />
       <Item value="Times`0" priority="1" />
-      <Item value="spec" priority="16" />
-      <Item value="_controller" priority="3" />
-      <Item value="null" priority="15" />
-      <Item value="typeof" priority="10" />
-      <Item value="ViewResult`0" priority="1" />
-      <Item value="_viewModel" priority="1" />
-      <Item value="ShouldEqual`1" priority="2" />
-      <Item value="IEnumerable" priority="1" />
+      <Item value="spec" priority="22" />
+      <Item value="_controller" priority="5" />
+      <Item value="null" priority="17" />
+      <Item value="typeof" priority="12" />
+      <Item value="ViewResult`0" priority="4" />
+      <Item value="_viewModel" priority="3" />
+      <Item value="ShouldEqual`1" priority="4" />
+      <Item value="IEnumerable" priority="2" />
       <Item value="string" priority="2" />
-      <Item value="_mockFlickInfoService" priority="1" />
+      <Item value="_mockFlickInfoService" priority="3" />
       <Item value="AuthorizationContext`0" priority="0" />
       <Item value="User" priority="0" />
       <Item value="Mock`0" priority="2" />
-      <Item value="_flickInfoService" priority="12" />
+      <Item value="_flickInfoService" priority="13" />
       <Item value="username" priority="3" />
       <Item value="imdbId" priority="10" />
       <Item value="Index`0" priority="0" />
@@ -130,10 +135,10 @@
       <Item value="IUserProfileRepository`0" priority="1" />
       <Item value="FlickInfoService`0" priority="14" />
       <Item value="_mockFlickInfoWebServiceFacade" priority="4" />
-      <Item value="abstract" priority="0" />
+      <Item value="abstract" priority="1" />
       <Item value="given_a_flick_info_service_context`0" priority="13" />
       <Item value="Trapped" priority="9" />
-      <Item value="Flick`0" priority="8" />
+      <Item value="Flick`0" priority="10" />
       <Item value="Flick" priority="4" />
       <Item value="ImdbId" priority="4" />
       <Item value="Name" priority="4" />
@@ -142,14 +147,14 @@
       <Item value="IFlickInfoWebServiceFacade`0" priority="1" />
       <Item value="downloadedFlick" priority="0" />
       <Item value="HomeViewModel`0" priority="0" />
-      <Item value="FlickListingViewModel`0" priority="0" />
-      <Item value="IBootstrapperTask`0" priority="0" />
-      <Item value="AutoMapper" priority="1" />
+      <Item value="FlickListingViewModel`0" priority="4" />
+      <Item value="IBootstrapperTask`0" priority="1" />
+      <Item value="AutoMapper" priority="2" />
       <Item value="AutoMapperConfigurationException`0" priority="0" />
       <Item value="Configuration`0" priority="0" />
       <Item value="Mapper`0" priority="1" />
       <Item value="FlickDetailsViewModel`0" priority="0" />
-      <Item value="RegisterAutoMaps`0" priority="0" />
+      <Item value="RegisterAutoMaps`0" priority="1" />
       <Item value="when_requesting_a_flick" priority="0" />
       <Item value="unreleasedFlicks" priority="0" />
       <Item value="_AppDomain`0" priority="2" />
@@ -162,7 +167,7 @@
       <Item value="Catch`0" priority="3" />
       <Item value="_exception" priority="9" />
       <Item value="UserProfileNotFoundException`0" priority="2" />
-      <Item value="List" priority="6" />
+      <Item value="List" priority="9" />
       <Item value="FlickNotFoundException`0" priority="1" />
       <Item value="flickToRemove" priority="2" />
       <Item value="UserProfileNotFoundException" priority="1" />
@@ -176,18 +181,18 @@
       <Item value="static" priority="2" />
       <Item value="CurrentUserProfiles" priority="3" />
       <Item value="List&lt;UserProfile&gt;" priority="1" />
-      <Item value="private" priority="1" />
+      <Item value="private" priority="3" />
       <Item value="_currentUserProfiles" priority="4" />
       <Item value="FakeUserProfileRepositoryContext`0" priority="2" />
       <Item value="profiles" priority="2" />
       <Item value="removeThis" priority="0" />
       <Item value="Username" priority="1" />
-      <Item value="FlickInfoWebServiceFacade`0" priority="1" />
+      <Item value="FlickInfoWebServiceFacade`0" priority="4" />
       <Item value="TheMovieDB" priority="0" />
       <Item value="TmdbAPI`0" priority="0" />
-      <Item value="_api" priority="2" />
+      <Item value="_api" priority="3" />
       <Item value="TmdbAPI" priority="0" />
-      <Item value="movie" priority="10" />
+      <Item value="movie" priority="11" />
       <Item value="Budget" priority="0" />
       <Item value="Description" priority="0" />
       <Item value="Rating" priority="0" />
@@ -199,11 +204,32 @@
       <Item value="poster" priority="0" />
       <Item value="FirstOrDefault`1" priority="0" />
       <Item value="TmdbMovie`0" priority="0" />
-      <Item value="MapFromMovie`0" priority="0" />
+      <Item value="MapFromMovie`0" priority="1" />
       <Item value="_mockFlickRepository" priority="2" />
       <Item value="_flickRepository" priority="2" />
       <Item value="IFlickRepository`0" priority="0" />
       <Item value="FlickRepository`0" priority="0" />
+      <Item value="Count`1" priority="0" />
+      <Item value="searchText" priority="1" />
+      <Item value="movies" priority="0" />
+      <Item value="Select`2" priority="0" />
+      <Item value="SearchController`0" priority="3" />
+      <Item value="ActionResult`0" priority="1" />
+      <Item value="_a_list_of_flicks" priority="0" />
+      <Item value="Flicks" priority="1" />
+      <Item value="flicks" priority="1" />
+      <Item value="View`0" priority="1" />
+      <Item value="viewModel" priority="1" />
+      <Item value="Model" priority="3" />
+      <Item value="HttpPost" priority="0" />
+      <Item value="given_a_search_controller_context`0" priority="4" />
+      <Item value="SearchViewModel`0" priority="1" />
+      <Item value="Action`0" priority="0" />
+      <Item value="ResolveUrl`0" priority="2" />
+      <Item value="SearchExpression`0" priority="0" />
+      <Item value="Html" priority="0" />
+      <Item value="routes" priority="0" />
+      <Item value="object" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:FlickTrap.Domain.UserProfile">
       <Item value="Id" priority="4" />
@@ -213,9 +239,9 @@
       <Item value="Username" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Moq.Mock`1">
-      <Item value="Setup`1" priority="8" />
+      <Item value="Setup`1" priority="9" />
       <Item value="Verify`1" priority="6" />
-      <Item value="Object" priority="2" />
+      <Item value="Object" priority="3" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:FlickTrap.Domain.IUserProfileRepository">
       <Item value="Create`0" priority="0" />
@@ -247,18 +273,21 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Object">
       <Item value="ShouldBeOfType`1" priority="0" />
+      <Item value="ShouldNotBeNull`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Web.Mvc.ViewResult">
-      <Item value="ViewData" priority="1" />
+      <Item value="ViewData" priority="3" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Web.Mvc.ViewDataDictionary">
-      <Item value="Model" priority="1" />
+      <Item value="Model" priority="3" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Int32">
-      <Item value="ShouldEqual`1" priority="0" />
+      <Item value="ShouldEqual`1" priority="4" />
+      <Item value="ShouldBeGreaterThan`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Web.Mvc.ActionResult">
-      <Item value="ShouldBeOfType`1" priority="0" />
+      <Item value="ShouldBeOfType`1" priority="2" />
+      <Item value="ShouldNotBeNull`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.String">
       <Item value="Empty" priority="0" />
@@ -278,7 +307,7 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:FlickTrap.Domain.Flick">
       <Item value="IsTrapped" priority="0" />
-      <Item value="ShouldBeNull`0" priority="1" />
+      <Item value="ShouldBeNull`0" priority="2" />
       <Item value="Name" priority="3" />
       <Item value="ImdbId" priority="1" />
       <Item value="ShouldNotBeNull`0" priority="0" />
@@ -308,11 +337,13 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
       <Item value="ShouldBeOfType`1" priority="0" />
-      <Item value="ShouldNotBeNull`0" priority="0" />
+      <Item value="ShouldNotBeNull`0" priority="2" />
       <Item value="First`1" priority="0" />
       <Item value="Where`1" priority="0" />
       <Item value="Any`1" priority="0" />
       <Item value="ToList`1" priority="0" />
+      <Item value="Equals`0" priority="0" />
+      <Item value="Count`1" priority="3" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
       <Item value="Add`0" priority="1" />
@@ -331,7 +362,7 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:TheMovieDB.TmdbAPI">
       <Item value="MovieSearchByImdb`0" priority="0" />
-      <Item value="MovieSearch`0" priority="0" />
+      <Item value="MovieSearch`0" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:TheMovieDB.TmdbMovie">
       <Item value="Name" priority="0" />
@@ -341,6 +372,7 @@
       <Item value="Released" priority="1" />
       <Item value="Revenue" priority="0" />
       <Item value="Images" priority="0" />
+      <Item value="ImdbId" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Nullable`1">
       <Item value="HasValue" priority="0" />
@@ -359,6 +391,30 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:FlickTrap.Data.FlickInfoWebServiceFacade">
       <Item value="DownloadFlickInfo`0" priority="0" />
+      <Item value="Search`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FlickTrap.Web.Models.SearchViewModel">
+      <Item value="Flicks" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FlickTrap.Web.Models.FlickListingViewModel">
+      <Item value="ImdbId" priority="3" />
+      <Item value="Name" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FlickTrap.Web.RegisterAutoMaps">
+      <Item value="Execute`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FlickTrap.Web.Controllers.SearchController">
+      <Item value="Index`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.HtmlHelper`1">
+      <Item value="RenderPartial`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FlickTrap.Web.Models.HomeViewModel">
+      <Item value="RecentlyReleasedFlicks" priority="0" />
+      <Item value="UnreleasedFlicks" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Routing.RouteCollection">
+      <Item value="MapRoute`0" priority="0" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>

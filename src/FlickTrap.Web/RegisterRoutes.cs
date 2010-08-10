@@ -24,6 +24,9 @@ namespace FlickTrap.Web
                         action = "Details"
                     }
                 );
+            
+            //routes.MapRoute("Image", "Image/{width}/{path}", new { controller = "Image", action = "Index" });
+
             routes.MapRoute(
                 "Default", // Route name
                 "{controller}/{action}/{id}", // URL with parameters

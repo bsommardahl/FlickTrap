@@ -72,7 +72,7 @@ namespace FlickTrap.Web.Specs.Controllers
         {
             static ActionResult _result;
             
-            Because of = () => _result = _controller.Index();
+            Because of = () => _result = _controller.Index("");
 
             It should_not_return_a_null_list = () => ( ( SearchViewModel ) ( ( ViewResult ) _result ).ViewData.Model ).Flicks.ShouldNotBeNull();
             It should_return_a_view = () => _result.ShouldBeOfType(typeof (ViewResult));

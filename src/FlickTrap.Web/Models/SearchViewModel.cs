@@ -11,5 +11,6 @@ namespace FlickTrap.Web.Models
         }
 
         public IEnumerable<FlickListingViewModel> Flicks { get; set; }
+        public string SearchText { get; set; }
     }
 }

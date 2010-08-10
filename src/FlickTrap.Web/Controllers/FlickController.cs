@@ -24,18 +24,7 @@ namespace FlickTrap.Web.Controllers
             if( flick == null )
                 return View("NotFound");
 
-            var viewModel = new FlickDetailsViewModel
-                                {
-                                    Name = flick.Name,
-                                    Description = flick.Description,
-                                    Budget = flick.Budget,
-                                    Rating = flick.Rating,
-                                    RentalReleaseDate = flick.RentalReleaseDate,
-                                    Revenue = flick.Revenue,
-                                    TheaterReleaseDate = flick.TheaterReleaseDate,
-                                    UserRating = flick.UserRating,
-                                    IsTrapped = flick.IsTrapped
-                                };
+            var viewModel = FlickDetailsViewModel.Map(flick, null);
 
             return View( viewModel );
         }

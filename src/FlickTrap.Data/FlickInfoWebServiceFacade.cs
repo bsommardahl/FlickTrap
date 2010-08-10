@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using FlickTrap.Domain;
 using FlickTrap.Domain.Abstract;
+using FlickTrap.Domain.Exceptions;
 using TheMovieDB;
 
 namespace FlickTrap.Data
@@ -18,6 +19,9 @@ namespace FlickTrap.Data
 
         public Flick DownloadFlickInfo(string imdbId)
         {
+            if( imdbId == null )
+                return null;
+
             var movie = _api.MovieSearchByImdb(imdbId);
             if( movie == null || movie.Count() == 0 )
                 return null;

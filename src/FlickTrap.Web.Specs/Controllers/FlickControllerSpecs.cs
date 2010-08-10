@@ -63,7 +63,7 @@ namespace FlickTrap.Web.Specs.Controllers
             It should_return_a_view_with_correct_flick_rental_release_date = () => _viewModel.RentalReleaseDate.ShouldEqual(new DateTime(2010, 5, 1));
             It should_return_a_view_with_correct_flick_revenue = () => _viewModel.Revenue.ShouldEqual(1000M);
             It should_return_a_view_with_correct_flick_theater_release_date = () => _viewModel.TheaterReleaseDate.ShouldEqual(new DateTime(2009, 11, 1));
-            It should_return_a_view_with_correct_flick_user_rating = () => _viewModel.UserRating.ShouldEqual(9.8M);
+            It should_return_a_view_with_correct_flick_stars = () => _viewModel.Stars.ShouldEqual("five");
         }
 
         [Subject(typeof (FlickController))]

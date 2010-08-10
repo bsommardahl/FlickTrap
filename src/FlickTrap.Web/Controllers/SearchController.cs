@@ -17,26 +17,19 @@ namespace FlickTrap.Web.Controllers
             _flickInfoService = flickInfoService;
         }
 
-        [HttpPost]
         public ActionResult Index(string searchText)
         {
             var flicks = _flickInfoService.Search(searchText);
 
             var viewModel = new SearchViewModel
                                 {
-                                    Flicks = flicks.Select( x => Mapper.Map<Flick, FlickListingViewModel>( x ) )
+                                    Flicks = flicks.Select( x => FlickListingViewModel.Map(x, null) ),
+                                    SearchText = searchText
                                 };
 
             return View(viewModel);
            
         }
 
-        [HttpGet]
-        public ActionResult Index()
-        {
-            var viewModel = new SearchViewModel();
-
-            return View(viewModel);
-        }
     }
 }
