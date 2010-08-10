@@ -140,6 +140,7 @@
     <Content Include="Views\Flick\NotFound.aspx" />
     <Content Include="Views\Home\Index.aspx" />
     <Content Include="Views\Search\Index.aspx" />
+    <Content Include="Views\Shared\AppDescription.ascx" />
     <Content Include="Views\Shared\FlickListingView.ascx" />
     <Content Include="Views\Shared\SearchBox.ascx" />
     <Content Include="Web.config" />

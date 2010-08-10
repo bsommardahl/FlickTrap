@@ -2,6 +2,7 @@
 <asp:Content runat="server" ID="Content" ContentPlaceHolderID="additional_styles"></asp:Content>
 <asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent">
     
+    <%=Html.Partial("AppDescription") %>
     <div class='searchArea span-24'>
         <%=Html.Partial("SearchBox", Model.SearchText) %>
     </div>
