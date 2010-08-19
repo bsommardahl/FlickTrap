@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using FlickTrap.Domain;
 
-namespace FlickTrap.Data
+namespace FlickTrap.Infrastructure
 {
-    public class FakeFlickRepository : IFlickRepository
+    public class FlickRepository : IFlickRepository
     {
         public IEnumerable<Flick> GetRecentlyReleased()
         {

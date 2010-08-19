@@ -6,7 +6,7 @@ using FlickTrap.Domain.Abstract;
 using FlickTrap.Domain.Exceptions;
 using TheMovieDB;
 
-namespace FlickTrap.Data
+namespace FlickTrap.Infrastructure
 {
     public class FlickInfoWebServiceFacade : IFlickInfoWebServiceFacade
     {

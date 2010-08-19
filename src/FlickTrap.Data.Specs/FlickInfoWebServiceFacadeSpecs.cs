@@ -1,9 +1,9 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 using FlickTrap.Domain;
 using Machine.Specifications;
 
-namespace FlickTrap.Data.Specs
+namespace FlickTrap.Infrastructure.Specs
 {
     namespace FlickInfoWebServiceFacadeSpecs
     {

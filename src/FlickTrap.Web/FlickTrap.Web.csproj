@@ -36,10 +36,34 @@
     <Reference Include="Accessibility">
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\..\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="AutoMapper">
       <HintPath>..\..\lib\AutoMapper.dll</HintPath>
     </Reference>
+    <Reference Include="Castle.Core">
+      <HintPath>..\..\lib\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.DynamicProxy2">
+      <HintPath>..\..\lib\Castle.DynamicProxy2.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentNHibernate">
+      <HintPath>..\..\lib\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\..\lib\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\lib\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="NHibernate">
+      <HintPath>..\..\lib\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.Castle">
+      <HintPath>..\..\lib\NHibernate.ByteCode.Castle.dll</HintPath>
+    </Reference>
     <Reference Include="StructureMap">
       <HintPath>..\..\lib\StructureMap.dll</HintPath>
     </Reference>
@@ -75,11 +99,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BootStrapper.cs" />
+    <Compile Include="ConfigureNHibernate.cs" />
+    <Compile Include="Controllers\ConfigController.cs" />
     <Compile Include="Controllers\FlickController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ImageController.cs" />
     <Compile Include="Controllers\SearchController.cs" />
     <Compile Include="DependencyRegistry.cs" />
+    <Compile Include="FluentNHibernateConfiguration.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -168,9 +195,9 @@
     <Folder Include="Helpers\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FlickTrap.Data\FlickTrap.Data.csproj">
+    <ProjectReference Include="..\FlickTrap.Data\FlickTrap.Infrastructure.csproj">
       <Project>{D802930C-C522-4350-880E-0F61517D1B30}</Project>
-      <Name>FlickTrap.Data</Name>
+      <Name>FlickTrap.Infrastructure</Name>
     </ProjectReference>
     <ProjectReference Include="..\FlickTrap.Domain\FlickTrap.Domain.csproj">
       <Project>{4D494354-BCD4-48DF-80C0-FE89581052F1}</Project>

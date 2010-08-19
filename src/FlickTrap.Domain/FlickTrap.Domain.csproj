@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EntityBase.cs" />
     <Compile Include="FlickInfoService.cs" />
     <Compile Include="Flick.cs" />
     <Compile Include="Exceptions\FlickNotFoundException.cs" />

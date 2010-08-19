@@ -1,33 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 
 namespace FlickTrap.Domain
 {
-    public class UserProfile
+    public class UserProfile : EntityBase
     {
-        public IEnumerable<Flick> Trapped { get; set; }
+        public virtual IEnumerable<Flick> Trapped { get; set; }
+        public virtual string Username { get; set; }
 
-        public string Username { get; set; }
-
-        public void AddTrappedFlick(Flick flickToTrap)
+        public virtual void AddTrappedFlick(Flick flickToTrap)
         {
-            if( Trapped == null )
+            if (Trapped == null)
                 Trapped = new List<Flick>();
 
-            var list = Trapped.ToList();
+            List<Flick> list = Trapped.ToList();
             list.Add(flickToTrap);
             Trapped = list;
         }
 
-        public void RemoveTrappedFlick(Flick flickToRemove)
+        public virtual void RemoveTrappedFlick(Flick flickToRemove)
         {
-            if( Trapped == null )
+            if (Trapped == null)
                 return;
 
-            var list = Trapped.ToList();
+            List<Flick> list = Trapped.ToList();
             list.Remove(flickToRemove);
-            Trapped = list;            
+            Trapped = list;
         }
     }
 }

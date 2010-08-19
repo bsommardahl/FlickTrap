@@ -2,18 +2,18 @@
 
 namespace FlickTrap.Domain
 {
-    public class Flick
+    public class Flick : EntityBase
     {
-        public string Name { get; set; }
-        public string Rating { get; set; }
-        public decimal UserRating { get; set; }
-        public string Description { get; set; }
-        public DateTime? TheaterReleaseDate { get; set; }
-        public DateTime? RentalReleaseDate { get; set; }
-        public string ThumbnailUrl { get; set; }
-        public decimal Revenue { get; set; }
-        public decimal Budget { get; set; }
-        public string ImdbId { get; set; }
-        public bool IsTrapped { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string Rating { get; set; }
+        public virtual decimal UserRating { get; set; }
+        public virtual string Description { get; set; }
+        public virtual DateTime? TheaterReleaseDate { get; set; }
+        public virtual DateTime? RentalReleaseDate { get; set; }
+        public virtual string ThumbnailUrl { get; set; }
+        public virtual decimal Revenue { get; set; }
+        public virtual decimal Budget { get; set; }
+        public virtual string ImdbId { get; set; }
+        public virtual bool IsTrapped { get; set; }
     }
 }
