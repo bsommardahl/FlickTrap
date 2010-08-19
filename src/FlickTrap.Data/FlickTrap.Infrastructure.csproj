@@ -74,7 +74,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FlickInfoWebServiceFacade.cs" />
+    <Compile Include="TmdbApiFacade.cs" />
     <Compile Include="FlickRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserProfileRepository.cs" />

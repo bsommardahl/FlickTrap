@@ -46,8 +46,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FlickInfoServiceSpecs.cs" />
+    <Compile Include="FlickInfoServiceSpecs\when_searching_for_a_flick_with_results.cs" />
+    <Compile Include="FlickInfoServiceSpecs\given_a_flick_info_service_context.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FlickInfoServiceSpecs\when_flick_is_requested_with_failure.cs" />
+    <Compile Include="FlickInfoServiceSpecs\when_requesting_recently_released_flicks.cs" />
+    <Compile Include="FlickInfoServiceSpecs\when_requesting_unreleased_flicks.cs" />
+    <Compile Include="FlickInfoServiceSpecs\when_searching_for_a_flick_with_blank_search_text.cs" />
+    <Compile Include="FlickInfoServiceSpecs\when_searching_for_a_flick_with_no_results.cs" />
+    <Compile Include="FlickInfoServiceSpecs\when_trapped_flick_is_requested_by_authenticated_user.cs" />
+    <Compile Include="FlickInfoServiceSpecs\when_trapping_an_invalid_flick.cs" />
+    <Compile Include="FlickInfoServiceSpecs\when_trapping_a_flick_that_is_already_trapped_for_this_user.cs" />
+    <Compile Include="FlickInfoServiceSpecs\when_trapping_a_flick_with_an_authenticated_user.cs" />
+    <Compile Include="FlickInfoServiceSpecs\when_trapping_a_flick_with_unauthenticated_user.cs" />
+    <Compile Include="FlickInfoServiceSpecs\when_untrapped_flick_is_requested_by_authenticated_user.cs" />
+    <Compile Include="FlickInfoServiceSpecs\when_untrapped_flick_is_requested_by_invalid_user.cs" />
+    <Compile Include="FlickInfoServiceSpecs\when_untrapping_a_flick_that_is_not_already_trapped.cs" />
+    <Compile Include="FlickInfoServiceSpecs\when_untrapping_a_flick_with_an_authenticated_user.cs" />
+    <Compile Include="FlickInfoServiceSpecs\when_untrapping_a_flick_with_an_unauthenticated_user.cs" />
+    <Compile Include="UserProfileServiceSpecs\when_creating_a_user_profile_with_success.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FlickTrap.Domain\FlickTrap.Domain.csproj">
@@ -55,6 +72,7 @@
       <Name>FlickTrap.Domain</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

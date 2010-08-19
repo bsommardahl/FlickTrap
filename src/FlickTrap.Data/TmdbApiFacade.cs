@@ -8,13 +8,14 @@ using TheMovieDB;
 
 namespace FlickTrap.Infrastructure
 {
-    public class FlickInfoWebServiceFacade : IFlickInfoWebServiceFacade
+    public class TmdbApiFacade : IFlickInfoWebServiceFacade
     {
-        TmdbAPI _api;
-        
-        public FlickInfoWebServiceFacade()
+        readonly TmdbAPI _tmdbApi;
+
+        public TmdbApiFacade(TmdbAPI tmdbApi)
         {
-            _api = new TmdbAPI( "20775617b505949e2d11b870e87cf1d6" );
+            _tmdbApi = tmdbApi;
+            //_api = new TmdbAPI( "20775617b505949e2d11b870e87cf1d6" );
         }
 
         public Flick DownloadFlickInfo(string imdbId)
@@ -22,7 +23,7 @@ namespace FlickTrap.Infrastructure
             if( imdbId == null )
                 return null;
 
-            var movie = _api.MovieSearchByImdb(imdbId);
+            var movie = _tmdbApi.MovieSearchByImdb( imdbId );
             if( movie == null || movie.Count() == 0 )
                 return null;
 
@@ -32,7 +33,7 @@ namespace FlickTrap.Infrastructure
 
         public IEnumerable<Flick> Search(string searchText)
         {
-            var movies = _api.MovieSearch(searchText);
+            var movies = _tmdbApi.MovieSearch( searchText );
             return movies.Select(x => MapFromMovie(x, x.ImdbId));
         }
 

@@ -37,6 +37,10 @@
     <Reference Include="Antlr3.Runtime">
       <HintPath>..\..\lib\Antlr3.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="AutoMapper, Version=1.1.0.188, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\AutoMapper.dll</HintPath>
+    </Reference>
     <Reference Include="Castle.Core">
       <HintPath>..\..\lib\Castle.Core.dll</HintPath>
     </Reference>
@@ -80,9 +84,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="when_creating_a_user_profile.cs" />
+    <Compile Include="Controllers\given_a_home_controller_context.cs" />
+    <Compile Include="Controllers\when_someone_visits_the_home_page.cs" />
     <Compile Include="when_bootstrapper_is_run.cs" />
     <Compile Include="Controllers\FlickControllerSpecs.cs" />
-    <Compile Include="Controllers\HomeControllerSpecs.cs" />
+    <Compile Include="Controllers\a_successful_home_page.cs" />
     <Compile Include="MvcFakes\FakeControllerContext.cs" />
     <Compile Include="MvcFakes\FakeHttpContext.cs" />
     <Compile Include="MvcFakes\FakeHttpRequest.cs" />

@@ -1,0 +1,17 @@
+build/
+reports/
+[Bb]in/
+[Oo]bj/
+TestResults/
+PrecompiledWeb/
+*.log
+*.gpState
+*.suo
+*.user
+*[Rr]e[sS]harper*
+*.cache
+*.bak
+deploy/
+_[Uu]pgrade[Rr]eport_[Ff]iles/
+[Uu]pgrade[Ll]og*
+paydirect.log.*
