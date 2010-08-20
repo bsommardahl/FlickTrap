@@ -1,10 +1,9 @@
-﻿using System;
 using System.Collections.Specialized;
 using System.Security.Principal;
 using System.Web;
 using System.Web.SessionState;
 
-namespace MvcFakes
+namespace FlickTrap.Web.Specs.MvcFakes
 {
 
 

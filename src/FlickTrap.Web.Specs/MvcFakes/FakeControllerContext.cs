@@ -1,11 +1,10 @@
-﻿using System;
 using System.Collections.Specialized;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 using System.Web.SessionState;
 
-namespace MvcFakes
+namespace FlickTrap.Web.Specs.MvcFakes
 {
 
     public class FakeControllerContext : ControllerContext

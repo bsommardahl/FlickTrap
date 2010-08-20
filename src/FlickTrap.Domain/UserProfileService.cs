@@ -19,17 +19,18 @@ namespace FlickTrap.Domain
 
         public UserProfile GetUserProfile(int userProfileId)
         {
-            throw new NotImplementedException();
+            return _userProfileRepository.GetUserProfile(userProfileId);
         }
 
         public UserProfile UpdateUserProfile(UserProfile userProfile)
         {
-            throw new NotImplementedException();
+            return _userProfileRepository.Save(userProfile);
         }
 
         public bool Validate(string username, string password)
         {
-            throw new NotImplementedException();
+            var userProfile = _userProfileRepository.GetUserProfile(username);
+            return userProfile.Password == password;
         }
     }
 }

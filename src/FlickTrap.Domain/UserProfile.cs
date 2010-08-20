@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace FlickTrap.Domain
@@ -9,6 +10,7 @@ namespace FlickTrap.Domain
         public virtual string LastName { get; set; }
         public virtual string FirstName { get; set; }
         public virtual IEnumerable<Flick> Trapped { get; set; }
+        public virtual string Password { get; set; }
 
         public virtual void AddTrappedFlick(Flick flickToTrap)
         {

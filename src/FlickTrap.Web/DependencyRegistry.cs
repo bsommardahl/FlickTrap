@@ -1,8 +1,8 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Web.Mvc;
-using FlickTrap.Infrastructure;
+using FlickTrap.Data;
 using FlickTrap.Domain;
 using FlickTrap.Domain.Abstract;
 using StructureMap.Configuration.DSL;

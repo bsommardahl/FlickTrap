@@ -1,10 +1,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using FlickTrap.Domain;
-using FlickTrap.Infrastructure.Specs.FlickInfoWebServiceFacadeSpecs;
 using Machine.Specifications;
 
-namespace FlickTrap.Infrastructure.Specs
+namespace FlickTrap.Data.Specs
 {
     [Subject(typeof (TmdbApiFacade))]
     public class when_searching_for_flicks_with_results : given_a_flick_info_web_service_facade

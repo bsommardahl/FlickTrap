@@ -1,3 +1,4 @@
+using System;
 using FlickTrap.Domain;
 
 namespace FlickTrap.Web

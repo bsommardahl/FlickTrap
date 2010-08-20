@@ -1,11 +1,10 @@
 using System.Web.Mvc;
 using FlickTrap.Domain;
-using FlickTrap.Web.Controllers;
 using Machine.Specifications;
 
-namespace FlickTrap.Web.Specs.Controllers.HomeControllerSpecs
+namespace FlickTrap.Web.Specs.HomeController
 {
-    [Subject(typeof (HomeController))]
+    [Subject(typeof (Controllers.HomeController))]
     public class when_someone_visits_the_home_page : given_a_home_controller_context
     {
         static UserProfile _userProfile;

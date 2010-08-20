@@ -1,13 +1,12 @@
 using System.Web.Mvc;
 using AutoMapper;
 using FlickTrap.Domain;
-using FlickTrap.Web.Controllers;
 using Machine.Specifications;
 using It = Moq.It;
 
-namespace FlickTrap.Web.Specs
+namespace FlickTrap.Web.Specs.UserProfileController
 {
-    [Subject(typeof (UserProfileController))]
+    [Subject(typeof (Controllers.UserProfileController))]
     public class when_editing_a_user_profile : given_a_user_profile_controller_context
     {
         protected static ActionResult _result;

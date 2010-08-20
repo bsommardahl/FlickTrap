@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using FlickTrap.Web;
 using FluentNHibernate.Cfg.Db;
 using NHibernate;
 using StructureMap;
 
-namespace FlickTrap.Infrastructure.Specs
+namespace FlickTrap.Data.Specs
 {
     public static class SessionFactorySingleton
     {
@@ -16,7 +12,7 @@ namespace FlickTrap.Infrastructure.Specs
 
         static SessionFactorySingleton()
         {
-            var persistenceConfigurer = SQLiteConfiguration.Standard.InMemory();
+            var persistenceConfigurer = SQLiteConfiguration.Standard.InMemory().ShowSql();
             FluentNHibernateConfiguration = new FluentNHibernateConfiguration( persistenceConfigurer );
 
             ObjectFactory.Configure( x =>

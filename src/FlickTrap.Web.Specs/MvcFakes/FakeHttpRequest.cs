@@ -1,8 +1,7 @@
-﻿using System;
 using System.Collections.Specialized;
 using System.Web;
 
-namespace MvcFakes
+namespace FlickTrap.Web.Specs.MvcFakes
 {
 
     public class FakeHttpRequest : HttpRequestBase

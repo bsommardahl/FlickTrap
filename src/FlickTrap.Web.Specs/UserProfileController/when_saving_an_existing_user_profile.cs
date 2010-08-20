@@ -1,13 +1,12 @@
 using System.Web.Mvc;
 using AutoMapper;
 using FlickTrap.Domain;
-using FlickTrap.Web.Controllers;
 using FlickTrap.Web.Models;
 using Machine.Specifications;
 
-namespace FlickTrap.Web.Specs
+namespace FlickTrap.Web.Specs.UserProfileController
 {
-    [Subject(typeof (UserProfileController))]
+    [Subject(typeof (Controllers.UserProfileController))]
     public class when_saving_an_existing_user_profile : given_a_user_profile_controller_context
     {
         protected static ActionResult _result;

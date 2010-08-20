@@ -2,16 +2,15 @@ using System.Collections.Generic;
 using System.Web.SessionState;
 using FlickTrap.Domain;
 using FlickTrap.Domain.Abstract;
-using FlickTrap.Web.Controllers;
+using FlickTrap.Web.Specs.MvcFakes;
 using Machine.Specifications;
 using Moq;
-using MvcFakes;
 
-namespace FlickTrap.Web.Specs.Controllers.HomeControllerSpecs
+namespace FlickTrap.Web.Specs.HomeController
 {
     public abstract class given_a_home_controller_context
     {
-        protected static HomeController _controller;
+        protected static Controllers.HomeController _controller;
         protected static Mock<IFlickInfoService> _flickInfoService;
         protected static List<Flick> _list_of_flicks;
 
@@ -21,7 +20,7 @@ namespace FlickTrap.Web.Specs.Controllers.HomeControllerSpecs
                     
                 _flickInfoService = new Mock<IFlickInfoService>();
 
-                _controller = new HomeController(_flickInfoService.Object);
+                _controller = new Controllers.HomeController(_flickInfoService.Object);
                 _controller.ControllerContext = new FakeControllerContext(_controller, new SessionStateItemCollection());
 
                 _list_of_unreleased_flicks = new List<Flick>

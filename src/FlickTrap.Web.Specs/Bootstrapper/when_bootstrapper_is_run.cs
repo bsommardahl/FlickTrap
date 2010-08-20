@@ -1,12 +1,11 @@
-﻿using System.Linq;
+using System.Linq;
 using System.Web.Mvc;
 using FlickTrap.Domain;
 using FlickTrap.Domain.Abstract;
-using FlickTrap.Web.Controllers;
 using Machine.Specifications;
 using StructureMap;
 
-namespace FlickTrap.Web.Specs
+namespace FlickTrap.Web.Specs.Bootstrapper
 {
     [Subject(typeof (BootStrapper))]
     public class when_bootstrapper_is_run
@@ -15,7 +14,7 @@ namespace FlickTrap.Web.Specs
 
         It should_map_controllers = () =>
                                     ObjectFactory.GetAllInstances<IController>()
-                                        .Where(x => x.GetType().Equals(typeof (HomeController)))
+                                        .Where(x => x.GetType().Equals(typeof (Controllers.HomeController)))
                                         .ShouldNotBeNull();
 
         It should_map_the_proper_controller_factory = () =>

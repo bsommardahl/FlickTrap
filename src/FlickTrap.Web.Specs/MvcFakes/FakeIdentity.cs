@@ -1,7 +1,7 @@
-﻿using System;
+using System;
 using System.Security.Principal;
 
-namespace MvcFakes
+namespace FlickTrap.Web.Specs.MvcFakes
 {
 
 

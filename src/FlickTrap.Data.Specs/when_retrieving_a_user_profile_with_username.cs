@@ -1,12 +1,12 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 using FlickTrap.Domain;
 using Machine.Specifications;
 
-namespace FlickTrap.Infrastructure.Specs
+namespace FlickTrap.Data.Specs
 {
     [Subject(typeof (UserProfileRepository))]
-    public class when_retrieving_a_user_profile
+    public class when_retrieving_a_user_profile_with_username
     {
         static UserProfileRepository _userProfileRepository;
         static UserProfile _result;

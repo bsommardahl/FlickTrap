@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{BA6EA879-69E5-452D-9793-6AB0037580FB}</ProjectGuid>
+    <ProjectGuid>{D802930C-C522-4350-880E-0F61517D1B30}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FlickTrap.Infrastructure.Specs</RootNamespace>
-    <AssemblyName>FlickTrap.Infrastructure.Specs</AssemblyName>
+    <RootNamespace>FlickTrap.Data</RootNamespace>
+    <AssemblyName>FlickTrap.Data</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -49,58 +49,40 @@
     <Reference Include="log4net">
       <HintPath>..\..\lib\log4net.dll</HintPath>
     </Reference>
-    <Reference Include="Machine.Specifications">
-      <HintPath>..\..\lib\Machine.Specifications.dll</HintPath>
-    </Reference>
-    <Reference Include="Moq">
-      <HintPath>..\..\lib\Moq.dll</HintPath>
-    </Reference>
     <Reference Include="NHibernate">
       <HintPath>..\..\lib\NHibernate.dll</HintPath>
     </Reference>
     <Reference Include="NHibernate.ByteCode.Castle">
       <HintPath>..\..\lib\NHibernate.ByteCode.Castle.dll</HintPath>
     </Reference>
-    <Reference Include="StructureMap">
-      <HintPath>..\..\lib\StructureMap.dll</HintPath>
+    <Reference Include="NHibernate.Linq">
+      <HintPath>..\..\lib\NHibernate.Linq.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Data.SQLite">
-      <HintPath>..\..\lib\System.Data.SQLite.dll</HintPath>
-    </Reference>
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="TheMovieDBLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="TheMovieDBLib">
       <HintPath>..\..\lib\TheMovieDBLib.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="when_downloading_flick_info_with_success.cs" />
-    <Compile Include="when_downloading_flick_into_with_failure.cs" />
-    <Compile Include="when_retrieving_a_user_profile.cs" />
-    <Compile Include="SessionFactorySingleton.cs" />
-    <Compile Include="when_searching_for_flicks_with_no_results.cs" />
+    <Compile Include="TmdbApiFacade.cs" />
+    <Compile Include="FlickRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="when_saving_a_user_profile.cs" />
-    <Compile Include="when_searching_for_flicks_with_results.cs" />
+    <Compile Include="UserProfileRepository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FlickTrap.Data\FlickTrap.Infrastructure.csproj">
-      <Project>{D802930C-C522-4350-880E-0F61517D1B30}</Project>
-      <Name>FlickTrap.Infrastructure</Name>
-    </ProjectReference>
     <ProjectReference Include="..\FlickTrap.Domain\FlickTrap.Domain.csproj">
       <Project>{4D494354-BCD4-48DF-80C0-FE89581052F1}</Project>
       <Name>FlickTrap.Domain</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\FlickTrap.Web\FlickTrap.Web.csproj">
-      <Project>{77765FFF-0191-498C-9868-A3CBBE760A6F}</Project>
-      <Name>FlickTrap.Web</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

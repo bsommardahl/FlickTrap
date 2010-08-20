@@ -15,10 +15,12 @@ namespace FlickTrap.Web
             Mapper.CreateMap<UserProfileCreateRequest, UserProfile>()
                 .ForMember(x => x.Id, opts => opts.Ignore())
                 .ForMember(x => x.Trapped, opts => opts.Ignore())
+                .ForMember(x=>x.Password, opts => opts.MapFrom(x=>x.Password1))
                 .WithProfile("UserProfileCreateRequest_to_UserProfile");
 
             Mapper.CreateMap<UserProfileUpdateRequest, UserProfile>()
                 .ForMember( x => x.Trapped, opts => opts.Ignore() )
+                .ForMember( x => x.Password, opts => opts.MapFrom( x => x.Password1 ) )
                 .WithProfile( "UserProfileUpdateRequest_to_UserProfile" );
 
             Mapper.CreateMap<UserProfile, UserProfileViewModel>()

@@ -138,6 +138,7 @@
     <Compile Include="Views\Shared\Main.Master.designer.cs">
       <DependentUpon>Main.Master</DependentUpon>
     </Compile>
+    <Compile Include="WebFormsAuthorizer.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\blueprint\ie.css" />
@@ -209,9 +210,9 @@
     <Folder Include="Helpers\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FlickTrap.Data\FlickTrap.Infrastructure.csproj">
+    <ProjectReference Include="..\FlickTrap.Data\FlickTrap.Data.csproj">
       <Project>{D802930C-C522-4350-880E-0F61517D1B30}</Project>
-      <Name>FlickTrap.Infrastructure</Name>
+      <Name>FlickTrap.Data</Name>
     </ProjectReference>
     <ProjectReference Include="..\FlickTrap.Domain\FlickTrap.Domain.csproj">
       <Project>{4D494354-BCD4-48DF-80C0-FE89581052F1}</Project>

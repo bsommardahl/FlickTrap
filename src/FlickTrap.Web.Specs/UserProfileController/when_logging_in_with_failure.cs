@@ -1,14 +1,13 @@
 using System.Web.Mvc;
-using FlickTrap.Web.Controllers;
 using FlickTrap.Web.Models;
 using Machine.Specifications;
 using Machine.Specifications.Mvc;
 using Moq;
 using It = Moq.It;
 
-namespace FlickTrap.Web.Specs
+namespace FlickTrap.Web.Specs.UserProfileController
 {
-    [Subject(typeof (UserProfileController))]
+    [Subject(typeof (Controllers.UserProfileController))]
     public class when_logging_in_with_failure : given_a_user_profile_controller_context
     {
         static ActionResult _result;

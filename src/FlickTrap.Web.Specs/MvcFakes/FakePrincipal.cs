@@ -1,8 +1,7 @@
-﻿using System;
 using System.Linq;
 using System.Security.Principal;
 
-namespace MvcFakes
+namespace FlickTrap.Web.Specs.MvcFakes
 {
 
     public class FakePrincipal : IPrincipal

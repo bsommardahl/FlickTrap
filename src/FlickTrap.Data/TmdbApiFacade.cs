@@ -1,12 +1,11 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using FlickTrap.Domain;
 using FlickTrap.Domain.Abstract;
-using FlickTrap.Domain.Exceptions;
 using TheMovieDB;
 
-namespace FlickTrap.Infrastructure
+namespace FlickTrap.Data
 {
     public class TmdbApiFacade : IFlickInfoWebServiceFacade
     {

@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
+using System;
 using System.Linq;
-using System.Web.SessionState;
 using FlickTrap.Domain;
 using FlickTrap.Domain.Abstract;
 using NHibernate;
 using NHibernate.Linq;
 
-namespace FlickTrap.Infrastructure
+namespace FlickTrap.Data
 {
     public class UserProfileRepository : IUserProfileRepository
     {
@@ -16,6 +14,11 @@ namespace FlickTrap.Infrastructure
         public UserProfileRepository(ISession session)
         {
             _session = session;
+        }
+
+        public UserProfile GetUserProfile(int userProfileId)
+        {
+            return _session.Get<UserProfile>(userProfileId);
         }
 
         public UserProfile GetUserProfile(string username)

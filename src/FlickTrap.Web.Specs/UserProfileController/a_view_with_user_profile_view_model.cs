@@ -2,7 +2,7 @@ using System.Web.Mvc;
 using FlickTrap.Web.Models;
 using Machine.Specifications;
 
-namespace FlickTrap.Web.Specs
+namespace FlickTrap.Web.Specs.UserProfileController
 {
     [Behaviors]
     public class a_view_with_user_profile_view_model

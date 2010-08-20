@@ -10,3 +10,17 @@ C:\Projects\FlickTrap\src\FlickTrap.Data.Specs\bin\Debug\FlickTrap.Domain.pdb
 C:\Projects\FlickTrap\src\FlickTrap.Data.Specs\obj\Debug\ResolveAssemblyReference.cache
 C:\Projects\FlickTrap\src\FlickTrap.Data.Specs\obj\Debug\FlickTrap.Data.Specs.dll
 C:\Projects\FlickTrap\src\FlickTrap.Data.Specs\obj\Debug\FlickTrap.Data.Specs.pdb
+C:\Projects\FlickTrap\src\FlickTrap.Data.Specs\bin\Debug\Antlr3.Runtime.dll
+C:\Projects\FlickTrap\src\FlickTrap.Data.Specs\bin\Debug\Castle.Core.dll
+C:\Projects\FlickTrap\src\FlickTrap.Data.Specs\bin\Debug\Castle.DynamicProxy2.dll
+C:\Projects\FlickTrap\src\FlickTrap.Data.Specs\bin\Debug\FlickTrap.Web.dll
+C:\Projects\FlickTrap\src\FlickTrap.Data.Specs\bin\Debug\FluentNHibernate.dll
+C:\Projects\FlickTrap\src\FlickTrap.Data.Specs\bin\Debug\Iesi.Collections.dll
+C:\Projects\FlickTrap\src\FlickTrap.Data.Specs\bin\Debug\log4net.dll
+C:\Projects\FlickTrap\src\FlickTrap.Data.Specs\bin\Debug\NHibernate.ByteCode.Castle.dll
+C:\Projects\FlickTrap\src\FlickTrap.Data.Specs\bin\Debug\NHibernate.dll
+C:\Projects\FlickTrap\src\FlickTrap.Data.Specs\bin\Debug\StructureMap.dll
+C:\Projects\FlickTrap\src\FlickTrap.Data.Specs\bin\Debug\System.Data.SQLite.dll
+C:\Projects\FlickTrap\src\FlickTrap.Data.Specs\bin\Debug\NHibernate.Linq.dll
+C:\Projects\FlickTrap\src\FlickTrap.Data.Specs\bin\Debug\AutoMapper.dll
+C:\Projects\FlickTrap\src\FlickTrap.Data.Specs\bin\Debug\FlickTrap.Web.pdb

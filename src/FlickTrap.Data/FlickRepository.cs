@@ -1,10 +1,7 @@
-﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using FlickTrap.Domain;
 
-namespace FlickTrap.Infrastructure
+namespace FlickTrap.Data
 {
     public class FlickRepository : IFlickRepository
     {

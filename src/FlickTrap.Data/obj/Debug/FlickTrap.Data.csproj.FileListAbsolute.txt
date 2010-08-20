@@ -6,3 +6,12 @@ C:\Projects\FlickTrap\src\FlickTrap.Data\obj\Debug\ResolveAssemblyReference.cach
 C:\Projects\FlickTrap\src\FlickTrap.Data\obj\Debug\FlickTrap.Data.dll
 C:\Projects\FlickTrap\src\FlickTrap.Data\obj\Debug\FlickTrap.Data.pdb
 C:\Projects\FlickTrap\src\FlickTrap.Data\bin\Debug\TheMovieDBLib.dll
+C:\Projects\FlickTrap\src\FlickTrap.Data\bin\Debug\Antlr3.Runtime.dll
+C:\Projects\FlickTrap\src\FlickTrap.Data\bin\Debug\Castle.Core.dll
+C:\Projects\FlickTrap\src\FlickTrap.Data\bin\Debug\Castle.DynamicProxy2.dll
+C:\Projects\FlickTrap\src\FlickTrap.Data\bin\Debug\FluentNHibernate.dll
+C:\Projects\FlickTrap\src\FlickTrap.Data\bin\Debug\Iesi.Collections.dll
+C:\Projects\FlickTrap\src\FlickTrap.Data\bin\Debug\log4net.dll
+C:\Projects\FlickTrap\src\FlickTrap.Data\bin\Debug\NHibernate.ByteCode.Castle.dll
+C:\Projects\FlickTrap\src\FlickTrap.Data\bin\Debug\NHibernate.dll
+C:\Projects\FlickTrap\src\FlickTrap.Data\bin\Debug\NHibernate.Linq.dll

@@ -1,13 +1,9 @@
-﻿using System;
 using System.Collections;
-using System.Collections.Generic;
 using System.Collections.Specialized;
-using System.Linq;
-using System.Text;
 using System.Web;
 using System.Web.SessionState;
 
-namespace MvcFakes
+namespace FlickTrap.Web.Specs.MvcFakes
 {
     public class FakeHttpSessionState : HttpSessionStateBase
     {

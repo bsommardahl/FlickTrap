@@ -1,7 +1,7 @@
 using FlickTrap.Domain;
 using Machine.Specifications;
 
-namespace FlickTrap.Infrastructure.Specs
+namespace FlickTrap.Data.Specs
 {
     [Subject(typeof (UserProfileRepository))]
     public class when_saving_a_user_profile

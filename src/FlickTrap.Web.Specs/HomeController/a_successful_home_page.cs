@@ -2,9 +2,8 @@
 using System.Web.Mvc;
 using FlickTrap.Web.Models;
 using Machine.Specifications;
-using It = Machine.Specifications.It;
 
-namespace FlickTrap.Web.Specs.Controllers
+namespace FlickTrap.Web.Specs.HomeController
 {
     namespace HomeControllerSpecs
     {

@@ -2,7 +2,7 @@ using FlickTrap.Domain;
 using Machine.Specifications;
 using TheMovieDB;
 
-namespace FlickTrap.Infrastructure.Specs.FlickInfoWebServiceFacadeSpecs
+namespace FlickTrap.Data.Specs
 {
     public abstract class given_a_flick_info_web_service_facade
     {
