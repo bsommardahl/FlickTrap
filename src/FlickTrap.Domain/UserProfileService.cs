@@ -16,5 +16,20 @@ namespace FlickTrap.Domain
         {
             return _userProfileRepository.Save(userProfile);
         }
+
+        public UserProfile GetUserProfile(int userProfileId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public UserProfile UpdateUserProfile(UserProfile userProfile)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool Validate(string username, string password)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -24,3 +24,6 @@ C:\Projects\FlickTrap\src\FlickTrap.Web.Specs\bin\Debug\FlickTrap.Infrastructure
 C:\Projects\FlickTrap\src\FlickTrap.Web.Specs\bin\Debug\FlickTrap.Infrastructure.pdb
 C:\Projects\FlickTrap\src\FlickTrap.Web.Specs\bin\Debug\FlickTrap.Web.Specs.dll.config
 C:\Projects\FlickTrap\src\FlickTrap.Web.Specs\bin\Debug\NHibernate.Linq.dll
+C:\Projects\FlickTrap\src\FlickTrap.Web.Specs\bin\Debug\Machine.Specifications.Mvc.dll
+C:\Projects\FlickTrap\src\FlickTrap.Web.Specs\bin\Debug\MvcContrib.TestHelper.dll
+C:\Projects\FlickTrap\src\FlickTrap.Web.Specs\bin\Debug\MvcContrib.dll

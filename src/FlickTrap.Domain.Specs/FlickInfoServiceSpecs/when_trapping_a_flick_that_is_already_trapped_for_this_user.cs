@@ -10,13 +10,10 @@ namespace FlickTrap.Domain.Specs.FlickInfoServiceSpecs
     {
         static Flick _result;
 
-        Establish additional_context = () =>
-            {
-                _mockUserProfileRepository.Setup(x => x.GetUserProfile("username")).Returns(new UserProfile
-                                                                                                {
-                                                                                                    Trapped = new List<Flick> {new Flick {ImdbId = "123"}}
-                                                                                                });
-            };
+        Establish additional_context = () => _mockUserProfileRepository.Setup(x => x.GetUserProfile("username")).Returns(new UserProfile
+                                                                                                                             {
+                                                                                                                                 Trapped = new List<Flick> {new Flick {ImdbId = "123"}}
+                                                                                                                             });
 
         Because of = () => _flickInfoService.Trap("username", "123");
 

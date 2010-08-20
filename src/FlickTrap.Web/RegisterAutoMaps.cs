@@ -17,6 +17,10 @@ namespace FlickTrap.Web
                 .ForMember(x => x.Trapped, opts => opts.Ignore())
                 .WithProfile("UserProfileCreateRequest_to_UserProfile");
 
+            Mapper.CreateMap<UserProfileUpdateRequest, UserProfile>()
+                .ForMember( x => x.Trapped, opts => opts.Ignore() )
+                .WithProfile( "UserProfileUpdateRequest_to_UserProfile" );
+
             Mapper.CreateMap<UserProfile, UserProfileViewModel>()
                 .ForMember(x => x.Name, opts => opts.ResolveUsing<AutoMapperNameResolver>())
                 .WithProfile("UserProfile_to_UserProfileViewModel");

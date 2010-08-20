@@ -116,12 +116,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="IAuthorizer.cs" />
     <Compile Include="IBootstrapperTask.cs" />
     <Compile Include="Models\FlickDetailsViewModel.cs" />
     <Compile Include="Models\HomeViewModel.cs" />
     <Compile Include="Models\FlickListingViewModel.cs" />
     <Compile Include="Models\SearchViewModel.cs" />
     <Compile Include="Models\UserProfileCreateRequest.cs" />
+    <Compile Include="Models\UserProfileLoginRequest.cs" />
+    <Compile Include="Models\UserProfileUpdateRequest.cs" />
     <Compile Include="Models\UserProfileViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegisterAutoMaps.cs" />
@@ -178,7 +181,9 @@
     <Content Include="Views\Shared\AppDescription.ascx" />
     <Content Include="Views\Shared\FlickListingView.ascx" />
     <Content Include="Views\Shared\SearchBox.ascx" />
-    <Content Include="Views\UserProfile\CreateUserProfile.aspx" />
+    <Content Include="Views\UserProfile\Create.aspx" />
+    <Content Include="Views\UserProfile\Edit.aspx" />
+    <Content Include="Views\UserProfile\Login.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

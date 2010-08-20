@@ -6,9 +6,8 @@ namespace FlickTrap.Domain
     public class UserProfile : EntityBase
     {
         public virtual string Username { get; set; }
-        public string LastName { get; set; }
-        public string FirstName { get; set; }
-
+        public virtual string LastName { get; set; }
+        public virtual string FirstName { get; set; }
         public virtual IEnumerable<Flick> Trapped { get; set; }
 
         public virtual void AddTrappedFlick(Flick flickToTrap)
