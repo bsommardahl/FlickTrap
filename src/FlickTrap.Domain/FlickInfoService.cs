@@ -32,7 +32,7 @@ namespace FlickTrap.Domain
             return _flickRepository.GetUnreleasedFlicks();
         }
 
-        public Flick GetFlick(string username, string imdbId)
+        public Flick GetFlick( string username, string remoteId )
         {
             //try to get flick from trapped flicks
             if( !string.IsNullOrEmpty( username ) )
@@ -42,15 +42,15 @@ namespace FlickTrap.Domain
                     throw new UserProfileNotFoundException();
 
                 if (userProfile.Trapped != null)
-                    return userProfile.Trapped.SingleOrDefault(x => x.ImdbId == imdbId);
+                    return userProfile.Trapped.SingleOrDefault( x => x.RemoteId == remoteId );
             }
 
             //try to get flick from web service
-            var downloadedFlick = _flickInfoWebServiceFacade.DownloadFlickInfo(imdbId);
+            var downloadedFlick = _flickInfoWebServiceFacade.DownloadFlickInfo( remoteId );
             return downloadedFlick;            
         }
 
-        public void Trap(string username, string imdbId)
+        public void Trap( string username, string remoteId )
         {
             //get user profile
             var userProfile = _userProfileRepository.GetUserProfile(username);
@@ -58,11 +58,11 @@ namespace FlickTrap.Domain
                 throw new UserProfileNotFoundException();
 
             //don't add if already present
-            if( userProfile.Trapped != null && userProfile.Trapped.Any( x => x.ImdbId == imdbId ) )
+            if( userProfile.Trapped != null && userProfile.Trapped.Any( x => x.RemoteId == remoteId ) )
                 return;
 
             //get flick from web service
-            var flickToTrap = _flickInfoWebServiceFacade.DownloadFlickInfo(imdbId);
+            var flickToTrap = _flickInfoWebServiceFacade.DownloadFlickInfo( remoteId );
             if( flickToTrap == null )
                 throw new FlickNotFoundException();
 
@@ -71,13 +71,13 @@ namespace FlickTrap.Domain
             _userProfileRepository.Save(userProfile);
         }
 
-        public void Untrap(string username, string imdbId)
+        public void Untrap( string username, string remoteId )
         {
             var userProfile = _userProfileRepository.GetUserProfile( username );
             if(userProfile==null)
                 throw new UserProfileNotFoundException();
 
-            var flickToRemove = userProfile.Trapped.SingleOrDefault(x => x.ImdbId == imdbId);
+            var flickToRemove = userProfile.Trapped.SingleOrDefault( x => x.RemoteId == remoteId );
             if(flickToRemove==null)
                 throw new FlickNotFoundException();
 

@@ -14,26 +14,23 @@ namespace FlickTrap.Web
     {
         public DependencyRegistry()
         {
+            var callingAssembly = Assembly.GetCallingAssembly();
+            var assemblies =
+                Assembly.GetCallingAssembly().GetReferencedAssemblies().Where(x => x.Name.StartsWith("FlickTrap"));
+
             Scan( x =>
             {
-                x.TheCallingAssembly();
+                x.Assembly(callingAssembly);
+                assemblies.ToList().ForEach(assembly => x.Assembly(assembly.Name));
                 x.AddAllTypesOf<IBootstrapperTask>();
                 x.WithDefaultConventions();
             } );
 
-            Scan(x =>
-                {
-                    x.TheCallingAssembly();
-                    x.IncludeNamespace("FlickTrap.Domain");
-                    x.WithDefaultConventions();
-                });
 
             For<IControllerFactory>().Use<StructureMapControllerFactory>();
-            For<IFlickInfoService>().Use<FlickInfoService>();
             For<IFlickInfoWebServiceFacade>().Use<TmdbApiFacade>();
-            For<IFlickRepository>().Use<FlickRepository>();
-            For<IUserProfileRepository>().Use<UserProfileRepository>();
-
+            For<IAuthorizer>().Use<WebFormsAuthorizer>();
+            
             const string tmdbApiKey = "20775617b505949e2d11b870e87cf1d6";
             For<TmdbAPI>().UseSpecial(x => x.ConstructedBy(() => new TmdbAPI(tmdbApiKey)));
             

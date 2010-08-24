@@ -181,6 +181,7 @@
     <Content Include="Views\Search\Index.aspx" />
     <Content Include="Views\Shared\AppDescription.ascx" />
     <Content Include="Views\Shared\FlickListingView.ascx" />
+    <Content Include="Views\Shared\LogOnUserControl.ascx" />
     <Content Include="Views\Shared\SearchBox.ascx" />
     <Content Include="Views\UserProfile\Create.aspx" />
     <Content Include="Views\UserProfile\Edit.aspx" />

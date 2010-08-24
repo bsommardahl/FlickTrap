@@ -1,5 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="FlickTrap.Web.Views.Shared.Main" %>
-
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -16,6 +15,8 @@
 <body>
     <div class='header'>
         <div class='container'>
+
+        <%=Html.Partial("LogOnUserControl") %>
 
             <div class='span-14'>
                 <ul>

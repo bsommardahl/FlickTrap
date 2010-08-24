@@ -13,9 +13,11 @@
             <div class='name'><%=Model.Name %></div>
             <div class='userRating rating <%=Model.Stars %>star'></div>
             <div class='description'><%=Model.Description %></div>
-           <%-- <div class='trapButton'>
+            <% if(Model.IsTrappable) { %>
+            <div class='trapButton'>
                 <a href='<%=ResolveUrl("~/Flick/" + (Model.IsTrapped ? "Untrap" : "Trap") + "/" + Model.ImdbId) %>' title="<%=Model.IsTrapped ? "Untrap Flick" : "Trap Flick" %>"><%=Model.IsTrapped ? "Untrap" : "Trap" %></a>
-            </div>--%>
+            </div>
+            <%} %>
         </div>
 
     </div>

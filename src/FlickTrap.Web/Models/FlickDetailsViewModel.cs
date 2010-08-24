@@ -18,21 +18,26 @@ namespace FlickTrap.Web.Models
         public string Stars { get; set; }
         public string ImdbId { get; set; }
         public string ThumbnailUrl { get; set; }
+        public bool IsTrappable { get; set; }
 
-        public static FlickDetailsViewModel Map( Flick flick, UserProfile userProfile )
+        public static FlickDetailsViewModel Map(Flick flick, UserProfile userProfile)
         {
-            var viewModel = Mapper.Map<Flick, FlickDetailsViewModel>( flick );
-            viewModel.Stars = GetStars( flick.UserRating );
+            FlickDetailsViewModel viewModel = Mapper.Map<Flick, FlickDetailsViewModel>(flick);
+            viewModel.Stars = GetStars(flick.UserRating);
             if( userProfile != null )
-                viewModel.IsTrapped = userProfile.Trapped.Any( x => x.ImdbId == flick.ImdbId );
+            {
+                viewModel.IsTrappable = true;
+                viewModel.IsTrapped = userProfile.Trapped.Any(x => x.RemoteId == flick.RemoteId);
+            }
+
             return viewModel;
         }
 
-        static string GetStars( decimal source )
+        private static string GetStars(decimal source)
         {
             var viewModel = new FlickDetailsViewModel();
-            var rating = Math.Round( source / 2 );
-            switch( Convert.ToInt16( rating ) )
+            decimal rating = Math.Round(source/2);
+            switch (Convert.ToInt16(rating))
             {
                 case 1:
                     return "one";

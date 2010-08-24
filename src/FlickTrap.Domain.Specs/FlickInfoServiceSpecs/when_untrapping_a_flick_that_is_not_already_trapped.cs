@@ -13,7 +13,7 @@ namespace FlickTrap.Domain.Specs.FlickInfoServiceSpecs
         Establish additional_context = () => _mockUserProfileRepository.Setup(x => x.GetUserProfile("username"))
                                                  .Returns(new UserProfile
                                                               {
-                                                                  Trapped = new List<Flick> {new Flick {ImdbId = "123"}}
+                                                                  Trapped = new List<Flick> { new Flick { RemoteId = "123" } }
                                                               });
 
         Because of = () => _exception = Catch.Exception(() => _flickInfoService.Untrap("username", "123-bad"));

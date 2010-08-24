@@ -26,7 +26,7 @@ namespace FlickTrap.Web.Specs.FlickController
                                        TheaterReleaseDate = new DateTime(2009, 11, 1),
                                        Revenue = 1000M,
                                        Budget = 500M,
-                                       ImdbId = "123"
+                                       RemoteId = "123"
                                    };
 
                 _mockFlickInfoService = new Mock<IFlickInfoService>();
