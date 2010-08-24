@@ -19,11 +19,6 @@ namespace FlickTrap.Web.Controllers
 
         public ActionResult Index()
         {
-            return RedirectToAction("Index", "Search", new
-                                                           {
-                                                               searchText = "Star Wars"
-                                                           });
-
             //var recentlyReleased = _flickInfoService.GetRecentlyReleasedFlicks();
             //var recentlyReleasedViewModel = recentlyReleased.Take(10).Select(x => FlickListingViewModel.Map(x, null));
 

@@ -17,6 +17,12 @@ namespace FlickTrap.Web.Controllers
             _authorizer = authorizer;
         }
 
+        [HttpGet]
+        public ActionResult Create()
+        {
+            return View( "Create", new UserProfileCreateRequest() );
+        }
+
         [HttpPost]
         public ActionResult Create(UserProfileCreateRequest userProfileCreateRequest)
         {
