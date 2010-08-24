@@ -69,6 +69,18 @@
     <Reference Include="MvcContrib.TestHelper">
       <HintPath>..\..\lib\MvcContrib.TestHelper.dll</HintPath>
     </Reference>
+    <Reference Include="MvcTurbine, Version=2.1.0.0, Culture=neutral, PublicKeyToken=0e426322531bc5b0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\MvcTurbine.dll</HintPath>
+    </Reference>
+    <Reference Include="MvcTurbine.StructureMap, Version=2.1.0.0, Culture=neutral, PublicKeyToken=0e426322531bc5b0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\MvcTurbine.StructureMap.dll</HintPath>
+    </Reference>
+    <Reference Include="MvcTurbine.Web, Version=2.1.0.0, Culture=neutral, PublicKeyToken=0e426322531bc5b0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\MvcTurbine.Web.dll</HintPath>
+    </Reference>
     <Reference Include="NHibernate">
       <HintPath>..\..\lib\NHibernate.dll</HintPath>
     </Reference>
@@ -104,7 +116,7 @@
     <Compile Include="UserProfileController\when_creating_a_user_profile.cs" />
     <Compile Include="HomeController\given_a_home_controller_context.cs" />
     <Compile Include="HomeController\when_someone_visits_the_home_page.cs" />
-    <Compile Include="Bootstrapper\when_bootstrapper_is_run.cs" />
+    <Compile Include="Bootstrapper\when_registering_dependencies.cs" />
     <Compile Include="FlickController\when_user_attempts_to_untrap_a_flick.cs" />
     <Compile Include="HomeController\a_successful_home_page.cs" />
     <Compile Include="MvcFakes\FakeControllerContext.cs" />

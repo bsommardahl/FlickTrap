@@ -5,14 +5,14 @@ using StructureMap;
 
 namespace FlickTrap.Web
 {
-    public class StructureMapControllerFactory : DefaultControllerFactory
-    {
-        protected override IController GetControllerInstance( RequestContext requestContext, Type controllerType )
-        {
-            if( controllerType == null )
-                return null;
+    //public class StructureMapControllerFactory : DefaultControllerFactory
+    //{
+    //    protected override IController GetControllerInstance( RequestContext requestContext, Type controllerType )
+    //    {
+    //        if( controllerType == null )
+    //            return null;
 
-            return ObjectFactory.GetInstance( controllerType ) as IController;
-        }
-    }
+    //        return ObjectFactory.GetInstance( controllerType ) as IController;
+    //    }
+    //}
 }

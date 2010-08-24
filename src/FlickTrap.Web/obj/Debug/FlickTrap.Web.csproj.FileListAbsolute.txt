@@ -19,3 +19,6 @@ C:\Projects\FlickTrap\src\FlickTrap.Web\bin\NHibernate.dll
 C:\Projects\FlickTrap\src\FlickTrap.Web\bin\NHibernate.Linq.dll
 C:\Projects\FlickTrap\src\FlickTrap.Web\bin\FlickTrap.Data.dll
 C:\Projects\FlickTrap\src\FlickTrap.Web\bin\FlickTrap.Data.pdb
+C:\Projects\FlickTrap\src\FlickTrap.Web\bin\MvcTurbine.dll
+C:\Projects\FlickTrap\src\FlickTrap.Web\bin\MvcTurbine.StructureMap.dll
+C:\Projects\FlickTrap\src\FlickTrap.Web\bin\MvcTurbine.Web.dll

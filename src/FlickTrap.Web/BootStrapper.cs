@@ -8,22 +8,19 @@ using StructureMap;
 
 namespace FlickTrap.Web
 {
-    public static class BootStrapper
+    public class BootStrapper
     {
-        static BootStrapper()
+        readonly IContainer _container;
+
+        public BootStrapper(IContainer container)
         {
-            ConfigureContainer();
+            _container = container;
         }
 
-        static void ConfigureContainer()
+        public void Run()
         {
-            ObjectFactory.Configure(x => x.AddRegistry(new DependencyRegistry()));
-        }
-
-        public static void Run()
-        {
-            var tasks = ObjectFactory.GetAllInstances<IBootstrapperTask>();
-            foreach(var task in tasks)
+            var tasks = _container.GetAllInstances<IBootstrapperTask>();
+            foreach( var task in tasks )
                 task.Execute();
         }
     }

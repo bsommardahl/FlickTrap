@@ -5,6 +5,7 @@
   <Module PersistentId="77765FFF-0191-498C-9868-A3CBBE760A6F" ModuleId="FlickTrap.Web" />
   <Module PersistentId="D802930C-C522-4350-880E-0F61517D1B30" ModuleId="FlickTrap.Data" />
   <Module PersistentId="BA6EA879-69E5-452D-9793-6AB0037580FB" ModuleId="FlickTrap.Data.Specs" />
-  <Module PersistentId="F5F159C7-0A63-4347-BE1C-850B64B65C6D" ModuleId="FlickTrap.Infrastructure" />
-  <Module PersistentId="CCD50C5A-B012-4A57-BC43-538C84D8ECA0" ModuleId="SetupDatabase" />
+  <Module PersistentId="2D84F0A2-91A3-48F4-9BF3-AE5EEFE2022D" ModuleId="MvcApplication1" />
+  <Module PersistentId="09CF9072-3CF8-452A-832F-5EC4273BB8D8" ModuleId="Mvc" />
+  <Module PersistentId="66B63470-CEE9-49A3-ADBC-BB33BDF2730B" ModuleId="MvcApplication" />
 </Modules>

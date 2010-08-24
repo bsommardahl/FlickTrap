@@ -58,6 +58,15 @@
       <HintPath>..\..\lib\log4net.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MvcTurbine">
+      <HintPath>..\..\lib\MvcTurbine.dll</HintPath>
+    </Reference>
+    <Reference Include="MvcTurbine.StructureMap">
+      <HintPath>..\..\lib\MvcTurbine.StructureMap.dll</HintPath>
+    </Reference>
+    <Reference Include="MvcTurbine.Web">
+      <HintPath>..\..\lib\MvcTurbine.Web.dll</HintPath>
+    </Reference>
     <Reference Include="NHibernate">
       <HintPath>..\..\lib\NHibernate.dll</HintPath>
     </Reference>
@@ -131,13 +140,6 @@
     <Compile Include="RegisterControllerFactory.cs" />
     <Compile Include="RegisterRoutes.cs" />
     <Compile Include="StructureMapControllerFactory.cs" />
-    <Compile Include="Views\Shared\Main.Master.cs">
-      <DependentUpon>Main.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Views\Shared\Main.Master.designer.cs">
-      <DependentUpon>Main.Master</DependentUpon>
-    </Compile>
     <Compile Include="WebFormsAuthorizer.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -181,6 +183,7 @@
     <Content Include="Views\Search\Index.aspx" />
     <Content Include="Views\Shared\AppDescription.ascx" />
     <Content Include="Views\Shared\FlickListingView.ascx" />
+    <Content Include="Views\Shared\LogOnUserControl.ascx" />
     <Content Include="Views\Shared\SearchBox.ascx" />
     <Content Include="Views\UserProfile\Create.aspx" />
     <Content Include="Views\UserProfile\Edit.aspx" />
@@ -237,7 +240,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>29315</DevelopmentServerPort>
+          <DevelopmentServerPort>49863</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>

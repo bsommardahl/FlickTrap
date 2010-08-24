@@ -24,3 +24,6 @@ C:\Projects\FlickTrap\src\FlickTrap.Data.Specs\bin\Debug\System.Data.SQLite.dll
 C:\Projects\FlickTrap\src\FlickTrap.Data.Specs\bin\Debug\NHibernate.Linq.dll
 C:\Projects\FlickTrap\src\FlickTrap.Data.Specs\bin\Debug\AutoMapper.dll
 C:\Projects\FlickTrap\src\FlickTrap.Data.Specs\bin\Debug\FlickTrap.Web.pdb
+C:\Projects\FlickTrap\src\FlickTrap.Data.Specs\bin\Debug\MvcTurbine.Web.dll
+C:\Projects\FlickTrap\src\FlickTrap.Data.Specs\bin\Debug\MvcTurbine.dll
+C:\Projects\FlickTrap\src\FlickTrap.Data.Specs\bin\Debug\MvcTurbine.StructureMap.dll

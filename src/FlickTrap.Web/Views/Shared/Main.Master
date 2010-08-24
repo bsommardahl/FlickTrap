@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="FlickTrap.Web.Views.Shared.Main" %>
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -27,6 +27,7 @@
             </div>
 
             <div class='title span-10 last'>
+                <% Html.RenderPartial("LogOnUserControl"); %>
                 <h1>FlickTrap</h1>
                 <h2>Beta</h2>
                 <h3>An app that helps you remember movies.</h3>

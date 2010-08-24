@@ -67,6 +67,7 @@
     <Compile Include="UserProfileServiceSpecs\given_a_user_profile_service_context.cs" />
     <Compile Include="UserProfileServiceSpecs\when_creating_a_user_profile_with_success.cs" />
     <Compile Include="UserProfileServiceSpecs\when_retrieving_a_user_profile.cs" />
+    <Compile Include="UserProfileServiceSpecs\when_updating_a_user_profile.cs" />
     <Compile Include="UserProfileServiceSpecs\when_validating_a_username_and_password.cs" />
   </ItemGroup>
   <ItemGroup>
