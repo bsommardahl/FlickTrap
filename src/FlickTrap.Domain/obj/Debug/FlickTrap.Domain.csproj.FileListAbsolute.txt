@@ -1,5 +1,0 @@
-C:\Projects\FlickTrap\src\FlickTrap.Domain\obj\Debug\ResolveAssemblyReference.cache
-C:\Projects\FlickTrap\src\FlickTrap.Domain\bin\Debug\FlickTrap.Domain.dll
-C:\Projects\FlickTrap\src\FlickTrap.Domain\bin\Debug\FlickTrap.Domain.pdb
-C:\Projects\FlickTrap\src\FlickTrap.Domain\obj\Debug\FlickTrap.Domain.dll
-C:\Projects\FlickTrap\src\FlickTrap.Domain\obj\Debug\FlickTrap.Domain.pdb

@@ -1,9 +1,21 @@
+using System.Web.Mvc;
 using FlickTrap.Domain;
 using Machine.Specifications;
+using Machine.Specifications.Mvc;
 using Moq;
+using It = Machine.Specifications.It;
 
 namespace FlickTrap.Web.Specs.UserProfileController
 {
+    public class when_viewing_login_page : given_a_user_profile_controller_context
+    {
+        private static ActionResult _result;
+
+        private Because of = () => _result = _userProfileController.Login();
+
+        private It should_return_a_view = () => _result.ShouldBeAView().And().ViewName.ShouldEqual("Login");
+    }
+    
     public abstract class given_a_user_profile_controller_context
     {
         protected static Mock<IAuthorizer> _mockAuthorizer;

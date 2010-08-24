@@ -57,6 +57,13 @@ namespace FlickTrap.Web.Controllers
             return RedirectToAction("Index", "Home");
         }
 
+        [HttpGet]
+        public ActionResult Login()
+        {
+            var viewModel = new UserProfileLoginRequest();
+            return View("Login", viewModel);
+        }
+
         public ActionResult Logoff()
         {
             _authorizer.DeAuth();

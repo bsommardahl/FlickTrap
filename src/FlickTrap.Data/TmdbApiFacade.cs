@@ -26,17 +26,17 @@ namespace FlickTrap.Data
             if( movie == null || movie.Count() == 0 )
                 return null;
 
-            return MapFromMovie(movie[0], imdbId);
+            return MapFromMovie(movie[0]);
             
         }
 
         public IEnumerable<Flick> Search(string searchText)
         {
             var movies = _tmdbApi.MovieSearch( searchText );
-            return movies.Select(x => MapFromMovie(x, x.ImdbId));
+            return movies.Select(x => MapFromMovie(x));
         }
 
-        static Flick MapFromMovie(TmdbMovie movie, string imdbId)
+        static Flick MapFromMovie( TmdbMovie movie )
         {
             var image = movie.Images == null 
                 ? null 
@@ -49,7 +49,7 @@ namespace FlickTrap.Data
                            Name = movie.Name,
                            Budget = movie.Budget == null ? 0 : Convert.ToDecimal(movie.Budget),
                            Description = movie.Overview,
-                           ImdbId = imdbId,
+                           RemoteId = movie.Id.ToString(),
                            Rating = movie.Certification,
                            RentalReleaseDate = movie.Released.HasValue ? (DateTime?) movie.Released.Value.AddMonths(6) : null,
                            TheaterReleaseDate = movie.Released,

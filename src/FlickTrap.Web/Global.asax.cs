@@ -1,24 +1,27 @@
-﻿using System.Web.Mvc;
-using MvcTurbine.ComponentModel;
-using MvcTurbine.StructureMap;
-using MvcTurbine.Web;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+using System.Web.Routing;
 using StructureMap;
 
 namespace FlickTrap.Web
 {
-    public class MvcApplication : TurbineApplication
+    // Note: For instructions on enabling IIS6 or IIS7 classic mode, 
+    // visit http://go.microsoft.com/?LinkId=9394801
+
+    public class MvcApplication : System.Web.HttpApplication
     {
-        public MvcApplication()
-        {
-            //configure container
-            var container = new Container(new DependencyRegistry());
+        
 
-            //BootStrapper.Run();
-            ServiceLocatorManager.SetLocatorProvider(() => new StructureMapServiceLocator(container));
-        }
-
-        public void Application_Start()
+        protected void Application_Start()
         {
+
+            new BootStrapper().Run();
+
+            AreaRegistration.RegisterAllAreas();
+
         }
     }
 }

@@ -13,7 +13,7 @@ namespace FlickTrap.Domain.Specs.FlickInfoServiceSpecs
             {
                 userProfile = new UserProfile
                                   {
-                                      Trapped = new List<Flick> {new Flick {ImdbId = "123", Name = "Avatar"}}
+                                      Trapped = new List<Flick> { new Flick { RemoteId = "123", Name = "Avatar" } }
                                   };
                 _mockUserProfileRepository.Setup(x => x.GetUserProfile("username")).Returns(userProfile);
             };

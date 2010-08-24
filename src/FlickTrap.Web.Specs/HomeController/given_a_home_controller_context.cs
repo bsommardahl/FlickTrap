@@ -25,7 +25,7 @@ namespace FlickTrap.Web.Specs.HomeController
 
                 _list_of_unreleased_flicks = new List<Flick>
                                                  {
-                                                     new Flick { Name = "Hitch", UserRating = 9.5M, Rating = "PG-13", ImdbId= "123", ThumbnailUrl = "http://hitch.com/poster.jpg" },
+                                                     new Flick { Name = "Hitch", UserRating = 9.5M, Rating = "PG-13", RemoteId= "123", ThumbnailUrl = "http://hitch.com/poster.jpg" },
                                                      new Flick(),
                                                      new Flick(),
                                                      new Flick(),
@@ -44,7 +44,7 @@ namespace FlickTrap.Web.Specs.HomeController
 
                 _list_of_recent_flicks = new List<Flick>
                                              {
-                                                 new Flick { Name = "Avatar", UserRating = 9.8M, Rating = "PG-13", ImdbId = "223", ThumbnailUrl = "http://avatar.com/poster.jpg" },
+                                                 new Flick { Name = "Avatar", UserRating = 9.8M, Rating = "PG-13", RemoteId = "223", ThumbnailUrl = "http://avatar.com/poster.jpg" },
                                                  new Flick(),
                                                  new Flick(),
                                                  new Flick(),

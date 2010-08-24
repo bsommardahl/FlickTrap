@@ -1,9 +1,0 @@
-C:\Projects\FlickTrap\src\FlickTrap.Domain.Specs\obj\Debug\ResolveAssemblyReference.cache
-C:\Projects\FlickTrap\src\FlickTrap.Domain.Specs\bin\Debug\FlickTrap.Domain.Specs.dll
-C:\Projects\FlickTrap\src\FlickTrap.Domain.Specs\bin\Debug\FlickTrap.Domain.Specs.pdb
-C:\Projects\FlickTrap\src\FlickTrap.Domain.Specs\bin\Debug\FlickTrap.Domain.dll
-C:\Projects\FlickTrap\src\FlickTrap.Domain.Specs\bin\Debug\Machine.Specifications.dll
-C:\Projects\FlickTrap\src\FlickTrap.Domain.Specs\bin\Debug\Moq.dll
-C:\Projects\FlickTrap\src\FlickTrap.Domain.Specs\bin\Debug\FlickTrap.Domain.pdb
-C:\Projects\FlickTrap\src\FlickTrap.Domain.Specs\obj\Debug\FlickTrap.Domain.Specs.dll
-C:\Projects\FlickTrap\src\FlickTrap.Domain.Specs\obj\Debug\FlickTrap.Domain.Specs.pdb

@@ -10,16 +10,14 @@ namespace FlickTrap.Web
 {
     public class BootStrapper
     {
-        readonly IContainer _container;
-
-        public BootStrapper(IContainer container)
+        public BootStrapper()
         {
-            _container = container;
+            ObjectFactory.Configure(x => x.AddRegistry<DependencyRegistry>());
         }
 
         public void Run()
         {
-            var tasks = _container.GetAllInstances<IBootstrapperTask>();
+            var tasks = ObjectFactory.GetAllInstances<IBootstrapperTask>();
             foreach( var task in tasks )
                 task.Execute();
         }

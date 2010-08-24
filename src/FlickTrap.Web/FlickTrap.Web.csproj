@@ -58,15 +58,6 @@
       <HintPath>..\..\lib\log4net.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="MvcTurbine">
-      <HintPath>..\..\lib\MvcTurbine.dll</HintPath>
-    </Reference>
-    <Reference Include="MvcTurbine.StructureMap">
-      <HintPath>..\..\lib\MvcTurbine.StructureMap.dll</HintPath>
-    </Reference>
-    <Reference Include="MvcTurbine.Web">
-      <HintPath>..\..\lib\MvcTurbine.Web.dll</HintPath>
-    </Reference>
     <Reference Include="NHibernate">
       <HintPath>..\..\lib\NHibernate.dll</HintPath>
     </Reference>

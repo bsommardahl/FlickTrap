@@ -9,67 +9,36 @@
   <RecentFiles>
     <RecentFiles>
       <File id="4D494354-BCD4-48DF-80C0-FE89581052F1/d:Abstract/f:IUserProfileRepository.cs" caret="257" fromTop="5" />
-      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:RegisterAutoMaps.cs" caret="306" fromTop="2" />
-      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/d:Models/f:UserProfileCreateRequest.cs" caret="316" fromTop="7" />
-      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/d:Models/f:UserProfileUpdateRequest.cs" caret="85" fromTop="1" />
-      <File id="BA6EA879-69E5-452D-9793-6AB0037580FB/f:when_searching_for_flicks_with_no_results.cs" caret="577" fromTop="13" />
-      <File id="BA6EA879-69E5-452D-9793-6AB0037580FB/f:SessionFactorySingleton.cs" caret="464" fromTop="13" />
-      <File id="BA6EA879-69E5-452D-9793-6AB0037580FB/f:when_retrieving_a_user_profile_with_username.cs" caret="230" fromTop="7" />
-      <File id="BA6EA879-69E5-452D-9793-6AB0037580FB/f:when_saving_a_user_profile.cs" caret="468" fromTop="5" />
-      <File id="440F72D8-B10E-4F08-A2E0-F0555ECEA3A2/d:UserProfileController/f:when_saving_an_existing_user_profile.cs" caret="1452" fromTop="12" />
       <File id="4D494354-BCD4-48DF-80C0-FE89581052F1/f:UserProfileService.cs" caret="99" fromTop="0" />
-      <File id="6A6B1CC0-ACE6-4DB2-B4A4-DD96BB7A9D11/d:UserProfileServiceSpecs/f:when_validating_a_username_and_password.cs" caret="0" fromTop="0" />
-      <File id="6A6B1CC0-ACE6-4DB2-B4A4-DD96BB7A9D11/d:UserProfileServiceSpecs/f:when_retrieving_a_user_profile.cs" caret="123" fromTop="3" />
-      <File id="6A6B1CC0-ACE6-4DB2-B4A4-DD96BB7A9D11/d:UserProfileServiceSpecs/f:when_creating_a_user_profile_with_success.cs" caret="197" fromTop="5" />
       <File id="D802930C-C522-4350-880E-0F61517D1B30/f:UserProfileRepository.cs" caret="0" fromTop="0" />
-      <File id="6A6B1CC0-ACE6-4DB2-B4A4-DD96BB7A9D11/d:UserProfileServiceSpecs/f:given_a_user_profile_service_context.cs" caret="637" fromTop="15" />
-      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:WebFormsAuthorizer.cs" caret="372" fromTop="9" />
-      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:IAuthorizer.cs" caret="187" fromTop="7" />
-      <File id="440F72D8-B10E-4F08-A2E0-F0555ECEA3A2/d:UserProfileController/f:when_logging_off.cs" caret="145" fromTop="4" />
-      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/d:Views/d:Shared/f:LogOnUserControl.ascx" caret="310" fromTop="9" />
-      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/d:Views/d:Shared/f:Main.Master" caret="1577" fromTop="15" />
-      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/d:Views/d:UserProfile/f:Login.aspx" caret="344" fromTop="5" />
-      <File id="BA6EA879-69E5-452D-9793-6AB0037580FB/f:when_retrieving_a_user_profile_with_id.cs" caret="1575" fromTop="12" />
-      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:StructureMapControllerFactory.cs" caret="513" fromTop="13" />
-      <File id="66B63470-CEE9-49A3-ADBC-BB33BDF2730B/f:Global.asax" caret="0" fromTop="0" />
-      <File id="09CF9072-3CF8-452A-832F-5EC4273BB8D8/f:DefaultMvcApplication.cs" caret="347" fromTop="11" />
-      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:DependencyRegistry.cs" caret="392" fromTop="4" />
-      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:Global.asax.cs" caret="371" fromTop="12" />
-      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:BootStrapper.cs" caret="410" fromTop="18" />
-      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:RegisterRoutes.cs" caret="295" fromTop="0" />
-      <File id="440F72D8-B10E-4F08-A2E0-F0555ECEA3A2/d:Bootstrapper/f:when_registering_dependencies.cs" caret="858" fromTop="17" />
+      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:Global.asax.cs" caret="453" fromTop="8" />
+      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/d:Controllers/f:ConfigController.cs" caret="582" fromTop="8" />
+      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:StructureMapControllerFactory.cs" caret="432" fromTop="8" />
+      <File id="440F72D8-B10E-4F08-A2E0-F0555ECEA3A2/d:Bootstrapper/f:when_registering_nhibernate_session_factory.cs" caret="435" fromTop="8" />
+      <File id="BA6EA879-69E5-452D-9793-6AB0037580FB/f:SessionFactorySingleton.cs" caret="615" fromTop="0" />
+      <File id="BA6EA879-69E5-452D-9793-6AB0037580FB/f:when_retrieving_a_user_profile_with_id.cs" caret="276" fromTop="9" />
+      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:ConfigureNHibernate.cs" caret="429" fromTop="10" />
+      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:DependencyRegistry.cs" caret="1176" fromTop="23" />
+      <File id="440F72D8-B10E-4F08-A2E0-F0555ECEA3A2/d:Bootstrapper/f:when_registering_dependencies.cs" caret="870" fromTop="11" />
+      <File id="440F72D8-B10E-4F08-A2E0-F0555ECEA3A2/d:FlickController/f:given_a_valid_flick_controller.cs" caret="697" fromTop="8" />
+      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:RegisterRoutes.cs" caret="315" fromTop="7" />
+      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:BootStrapper.cs" caret="496" fromTop="14" />
+      <File id="440F72D8-B10E-4F08-A2E0-F0555ECEA3A2/d:FlickController/f:when_user_attempts_to_trap_a_flick.cs" caret="279" fromTop="5" />
+      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/d:Views/d:Shared/f:Main.Master" caret="1418" fromTop="6" />
+      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/d:Views/d:UserProfile/f:Login.aspx" caret="359" fromTop="3" />
     </RecentFiles>
     <RecentEdits>
-      <File id="09CF9072-3CF8-452A-832F-5EC4273BB8D8/f:DefaultMvcApplication.cs" caret="32" fromTop="1" />
-      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:Global.asax.cs" caret="598" fromTop="22" />
-      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:DependencyRegistry.cs" caret="371" fromTop="3" />
-      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:DependencyRegistry.cs" caret="375" fromTop="27" />
-      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:DependencyRegistry.cs" caret="1391" fromTop="12" />
-      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:DependencyRegistry.cs" caret="375" fromTop="6" />
-      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:DependencyRegistry.cs" caret="375" fromTop="18" />
-      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:DependencyRegistry.cs" caret="375" fromTop="9" />
-      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:Global.asax.cs" caret="579" fromTop="22" />
-      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:Global.asax.cs" caret="579" fromTop="17" />
-      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:Global.asax.cs" caret="590" fromTop="18" />
-      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:DependencyRegistry.cs" caret="2107" fromTop="24" />
-      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:DependencyRegistry.cs" caret="2323" fromTop="24" />
-      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:BootStrapper.cs" caret="570" fromTop="16" />
-      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:DependencyRegistry.cs" caret="540" fromTop="14" />
-      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:DependencyRegistry.cs" caret="1806" fromTop="16" />
-      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:DependencyRegistry.cs" caret="1093" fromTop="9" />
-      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:DependencyRegistry.cs" caret="1547" fromTop="19" />
-      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:BootStrapper.cs" caret="321" fromTop="13" />
-      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:BootStrapper.cs" caret="400" fromTop="18" />
-      <File id="440F72D8-B10E-4F08-A2E0-F0555ECEA3A2/d:Bootstrapper/f:when_registering_dependencies.cs" caret="1751" fromTop="8" />
-      <File id="440F72D8-B10E-4F08-A2E0-F0555ECEA3A2/d:Bootstrapper/f:when_registering_dependencies.cs" caret="1751" fromTop="13" />
-      <File id="440F72D8-B10E-4F08-A2E0-F0555ECEA3A2/d:Bootstrapper/f:when_registering_dependencies.cs" caret="1751" fromTop="33" />
-      <File id="440F72D8-B10E-4F08-A2E0-F0555ECEA3A2/d:Bootstrapper/f:when_registering_dependencies.cs" caret="328" fromTop="6" />
-      <File id="440F72D8-B10E-4F08-A2E0-F0555ECEA3A2/d:Bootstrapper/f:when_registering_dependencies.cs" caret="1750" fromTop="13" />
-      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:Global.asax.cs" caret="345" fromTop="12" />
-      <File id="440F72D8-B10E-4F08-A2E0-F0555ECEA3A2/d:Bootstrapper/f:when_registering_dependencies.cs" caret="1750" fromTop="5" />
-      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:DependencyRegistry.cs" caret="736" fromTop="15" />
-      <File id="440F72D8-B10E-4F08-A2E0-F0555ECEA3A2/d:Bootstrapper/f:when_registering_dependencies.cs" caret="931" fromTop="7" />
-      <File id="440F72D8-B10E-4F08-A2E0-F0555ECEA3A2/d:Bootstrapper/f:when_registering_dependencies.cs" caret="816" fromTop="16" />
+      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:Global.asax.cs" caret="453" fromTop="8" />
+      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:BootStrapper.cs" caret="350" fromTop="8" />
+      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:BootStrapper.cs" caret="440" fromTop="13" />
+      <File id="440F72D8-B10E-4F08-A2E0-F0555ECEA3A2/d:Bootstrapper/f:when_registering_dependencies.cs" caret="653" fromTop="9" />
+      <File id="440F72D8-B10E-4F08-A2E0-F0555ECEA3A2/d:Bootstrapper/f:when_registering_dependencies.cs" caret="504" fromTop="12" />
+      <File id="440F72D8-B10E-4F08-A2E0-F0555ECEA3A2/d:Bootstrapper/f:when_registering_dependencies.cs" caret="897" fromTop="16" />
+      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:DependencyRegistry.cs" caret="655" fromTop="14" />
+      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:DependencyRegistry.cs" caret="389" fromTop="6" />
+      <File id="77765FFF-0191-498C-9868-A3CBBE760A6F/f:DependencyRegistry.cs" caret="757" fromTop="15" />
+      <File id="440F72D8-B10E-4F08-A2E0-F0555ECEA3A2/d:Bootstrapper/f:when_registering_dependencies.cs" caret="870" fromTop="11" />
+      <File id="440F72D8-B10E-4F08-A2E0-F0555ECEA3A2/d:FlickController/f:given_a_valid_flick_controller.cs" caret="542" fromTop="4" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -104,7 +73,7 @@
       <Item value="UserProfile`0" priority="26" />
       <Item value="_result" priority="35" />
       <Item value="UserProfile" priority="8" />
-      <Item value="new" priority="56" />
+      <Item value="new" priority="57" />
       <Item value="bool" priority="2" />
       <Item value="return" priority="49" />
       <Item value="false" priority="2" />
@@ -154,7 +123,7 @@
       <Item value="Configuration`0" priority="0" />
       <Item value="Mapper`0" priority="2" />
       <Item value="FlickDetailsViewModel`0" priority="1" />
-      <Item value="RegisterAutoMaps`0" priority="1" />
+      <Item value="RegisterAutoMaps`0" priority="2" />
       <Item value="when_requesting_a_flick" priority="0" />
       <Item value="unreleasedFlicks" priority="0" />
       <Item value="_AppDomain`0" priority="2" />
@@ -208,7 +177,7 @@
       <Item value="_mockFlickRepository" priority="2" />
       <Item value="_flickRepository" priority="2" />
       <Item value="IFlickRepository`0" priority="1" />
-      <Item value="FlickRepository`0" priority="1" />
+      <Item value="FlickRepository`0" priority="2" />
       <Item value="Count`1" priority="0" />
       <Item value="searchText" priority="2" />
       <Item value="movies" priority="0" />
@@ -229,7 +198,7 @@
       <Item value="SearchExpression`0" priority="0" />
       <Item value="Html" priority="5" />
       <Item value="routes" priority="1" />
-      <Item value="object" priority="2" />
+      <Item value="object" priority="3" />
       <Item value="newImage" priority="0" />
       <Item value="ResizeImage`0" priority="0" />
       <Item value="img" priority="1" />
@@ -270,7 +239,7 @@
       <Item value="SearchText" priority="1" />
       <Item value="RegisterFluentNHibernate`0" priority="0" />
       <Item value="_registerFluentNHibernate" priority="0" />
-      <Item value="ObjectFactory`0" priority="4" />
+      <Item value="ObjectFactory`0" priority="7" />
       <Item value="virtual" priority="0" />
       <Item value="EntityBase`0" priority="0" />
       <Item value="Web" priority="0" />
@@ -324,9 +293,10 @@
       <Item value="container" priority="1" />
       <Item value="when_bootstrapper_is_run`0" priority="0" />
       <Item value="_bootstrapper" priority="0" />
-      <Item value="DependencyRegistry`0" priority="0" />
+      <Item value="DependencyRegistry`0" priority="2" />
       <Item value="_container" priority="0" />
       <Item value="IControllerFactory`0" priority="0" />
+      <Item value="Assembly`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:FlickTrap.Domain.UserProfile">
       <Item value="Id" priority="4" />
@@ -514,7 +484,7 @@
       <Item value="IsTrapped" priority="2" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:FlickTrap.Web.RegisterAutoMaps">
-      <Item value="Execute`0" priority="0" />
+      <Item value="Execute`0" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:FlickTrap.Web.Controllers.SearchController">
       <Item value="Index`0" priority="0" />
@@ -585,7 +555,8 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:@StructureMap.ObjectFactory">
       <Item value="GetInstance`1" priority="2" />
-      <Item value="Container" priority="2" />
+      <Item value="Container" priority="3" />
+      <Item value="Configure`0" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:FlickTrap.Domain.IUserProfileService">
       <Item value="GetHashCode`0" priority="0" />
@@ -637,12 +608,13 @@
     <ItemStatistics item="Qualified:StructureMap.Graph.IAssemblyScanner">
       <Item value="AddAllTypesOf`0" priority="3" />
       <Item value="IncludeNamespaceContainingType`1" priority="0" />
-      <Item value="AssemblyContainingType`0" priority="1" />
+      <Item value="AssemblyContainingType`0" priority="2" />
       <Item value="LookForRegistries`0" priority="0" />
-      <Item value="Convention`1" priority="0" />
+      <Item value="Convention`1" priority="1" />
       <Item value="TheCallingAssembly`0" priority="2" />
       <Item value="WithDefaultConventions`0" priority="1" />
       <Item value="Assembly`0" priority="0" />
+      <Item value="AssembliesFromPath`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:StructureMap.IContext">
       <Item value="GetInstance`1" priority="0" />
@@ -659,6 +631,7 @@
     <ItemStatistics item="Qualified:StructureMap.ConfigurationExpression">
       <Item value="Scan`0" priority="0" />
       <Item value="For`0" priority="0" />
+      <Item value="AddRegistry`0" priority="1" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>

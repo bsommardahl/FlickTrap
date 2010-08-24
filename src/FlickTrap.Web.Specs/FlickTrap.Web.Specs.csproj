@@ -69,18 +69,6 @@
     <Reference Include="MvcContrib.TestHelper">
       <HintPath>..\..\lib\MvcContrib.TestHelper.dll</HintPath>
     </Reference>
-    <Reference Include="MvcTurbine, Version=2.1.0.0, Culture=neutral, PublicKeyToken=0e426322531bc5b0, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\lib\MvcTurbine.dll</HintPath>
-    </Reference>
-    <Reference Include="MvcTurbine.StructureMap, Version=2.1.0.0, Culture=neutral, PublicKeyToken=0e426322531bc5b0, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\lib\MvcTurbine.StructureMap.dll</HintPath>
-    </Reference>
-    <Reference Include="MvcTurbine.Web, Version=2.1.0.0, Culture=neutral, PublicKeyToken=0e426322531bc5b0, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\lib\MvcTurbine.Web.dll</HintPath>
-    </Reference>
     <Reference Include="NHibernate">
       <HintPath>..\..\lib\NHibernate.dll</HintPath>
     </Reference>

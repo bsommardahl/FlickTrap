@@ -20,7 +20,7 @@ namespace FlickTrap.Web.Models
             var viewModel = Mapper.Map<Flick, FlickListingViewModel>( flick );
             viewModel.Stars = GetStars( flick.UserRating );
             if(userProfile!=null)
-                viewModel.IsTrapped = userProfile.Trapped.Any(x => x.ImdbId == flick.ImdbId);
+                viewModel.IsTrapped = userProfile.Trapped.Any( x => x.RemoteId == flick.RemoteId );
             return viewModel;
         }
 
