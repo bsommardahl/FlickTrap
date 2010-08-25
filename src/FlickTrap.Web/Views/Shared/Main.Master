@@ -31,7 +31,7 @@
                 <h1>FlickTrap</h1>
                 <h2>Beta</h2>
                 <h3>An app that helps you remember movies.</h3>
-                <% Html.RenderPartial("LogOnUserControl"); %>
+                    <% Html.RenderPartial("LogOnUserControl"); %>
             </div>
 
         </div>
