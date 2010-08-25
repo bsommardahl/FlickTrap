@@ -10,14 +10,17 @@
     </div>
 </div>
 
-<%--<div class='span-12'>
-<h3>Recently Released</h3>
-    <%foreach(var flick in Model.RecentlyReleasedFlicks)
+<%if(Model.Trapped!=null) { %>
+<div class='span-12'>
+<h3>My Flicks</h3>
+    <%foreach(var flick in Model.Trapped)
       {
           Html.RenderPartial("FlickListingView", flick);
       } %>
 </div>
+<%} %>
 
+<%--
 <div class='span-12 last'>
     <h3>Soon to Released</h3>
     <%foreach(var flick in Model.UnreleasedFlicks)

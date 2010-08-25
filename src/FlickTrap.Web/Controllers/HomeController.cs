@@ -10,26 +10,24 @@ namespace FlickTrap.Web.Controllers
 {
     public class HomeController : Controller
     {
-        readonly IFlickInfoService _flickInfoService;
-
-        public HomeController(IFlickInfoService flickInfoService)
+        readonly IUserProfileService _userProfileService;
+        
+        public HomeController(IUserProfileService userProfileService)
         {
-            _flickInfoService = flickInfoService;
+            _userProfileService = userProfileService;
         }
 
         public ActionResult Index()
         {
-            //var recentlyReleased = _flickInfoService.GetRecentlyReleasedFlicks();
-            //var recentlyReleasedViewModel = recentlyReleased.Take(10).Select(x => FlickListingViewModel.Map(x, null));
-
-            //var unreleased = _flickInfoService.GetUnreleasedFlicks();
-            //var unreleasedViewModel = unreleased.Take( 5 ).Select( x => FlickListingViewModel.Map( x, null ) );
-                                                                 
             var viewModel = new HomeViewModel
-                                {
-                                    //RecentlyReleasedFlicks = recentlyReleasedViewModel,
-                                    //UnreleasedFlicks = unreleasedViewModel
-                                };
+            {
+            };
+
+            
+            var username = User.Identity.Name;
+            var userProfile = _userProfileService.GetUserProfile(username);
+            if( userProfile != null )
+                viewModel.Trapped = userProfile.Trapped.Select(x => Mapper.Map<Flick, FlickListingViewModel>(x));
 
             return View(viewModel);
         }

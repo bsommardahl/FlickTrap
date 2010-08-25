@@ -19,6 +19,9 @@ namespace FlickTrap.Web.Controllers
 
         public ActionResult Index(string searchText)
         {
+            if( searchText == null )
+                searchText = string.Empty;
+
             var flicks = _flickInfoService.Search(searchText);
 
             var viewModel = new SearchViewModel

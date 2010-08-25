@@ -3,7 +3,7 @@ using Machine.Specifications;
 namespace FlickTrap.Domain.Specs.UserProfileServiceSpecs
 {
     [Subject(typeof (UserProfileService))]
-    public class when_retrieving_a_user_profile : given_a_user_profile_service_context
+    public class when_retrieving_a_user_profile_with_id : given_a_user_profile_service_context
     {
         Establish context = () => _mockUserProfileRepository.Setup(x => x.GetUserProfile(Moq.It.IsAny<int>())).Returns(new UserProfile
                                                                                                                               {

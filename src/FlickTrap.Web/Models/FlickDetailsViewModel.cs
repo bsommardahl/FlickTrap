@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 using AutoMapper;
 using FlickTrap.Domain;
@@ -16,7 +16,7 @@ namespace FlickTrap.Web.Models
         public DateTime? TheaterReleaseDate { get; set; }
         public bool IsTrapped { get; set; }
         public string Stars { get; set; }
-        public string ImdbId { get; set; }
+        public string RemoteId { get; set; }
         public string ThumbnailUrl { get; set; }
         public bool IsTrappable { get; set; }
 

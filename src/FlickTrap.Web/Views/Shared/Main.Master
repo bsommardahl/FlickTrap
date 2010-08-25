@@ -16,21 +16,22 @@
 <body>
     <div class='header'>
         <div class='container'>
-
-            <div class='span-14'>
+                
+            <div class='span-16'>
                 <ul>
                     <li><h1><a href='<%=ResolveUrl("~/") %>'>Home</a></h1></li>
                     <li><h1><a href='<%=ResolveUrl("~/Search") %>'>Search</a></h1></li>
+                    <li><h1><a href='<%=ResolveUrl("~/Mobile") %>'>iPhone</a></h1></li>
                     <li><h1><a href='http://awkwardcoder.com/'>Blog</a></h1></li>
                     <li><h1><a href='http://github.com/bsommardahl/FlickTrap'>Source</a></h1></li>
                 </ul>
             </div>
 
-            <div class='title span-10 last'>
-                <% Html.RenderPartial("LogOnUserControl"); %>
+            <div class='title span-8 last'>
                 <h1>FlickTrap</h1>
                 <h2>Beta</h2>
                 <h3>An app that helps you remember movies.</h3>
+                <% Html.RenderPartial("LogOnUserControl"); %>
             </div>
 
         </div>

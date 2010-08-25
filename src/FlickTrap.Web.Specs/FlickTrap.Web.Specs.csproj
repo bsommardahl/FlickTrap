@@ -93,6 +93,7 @@
   <ItemGroup>
     <Compile Include="a_view_result_with_a_view_model.cs" />
     <Compile Include="FlickControllerSpecs\a_valid_flick_details_view.cs" />
+    <Compile Include="FlickControllerSpecs\when_authenticated_user_requests_to_view_a_trapped_flick.cs" />
     <Compile Include="UserProfileControllerSpecs\a_view_with_user_profile_view_model.cs" />
     <Compile Include="SearchControllerSpecs\given_a_search_controller_context.cs" />
     <Compile Include="FlickControllerSpecs\given_a_valid_flick_controller.cs" />

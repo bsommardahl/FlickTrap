@@ -29,21 +29,21 @@ namespace FlickTrap.Web.Controllers
             viewModel.IsTrappable = !string.IsNullOrEmpty(username);
             viewModel.IsTrapped = flick.Id > 0;
     
-            return View( viewModel );
+            return View("Details", viewModel );
         }
 
-        public ActionResult Trap(string imdbId)
+        public ActionResult Trap(string id)
         {
             var username = User.Identity.Name;
-            _flickInfoService.Trap(username, imdbId);
-            return Details(imdbId);
+            _flickInfoService.Trap(username, id);
+            return Details(id);
         }
 
-        public ActionResult Untrap(string imdbId)
+        public ActionResult Untrap(string id)
         {
             var username = User.Identity.Name;
-            _flickInfoService.Untrap( username, imdbId );
-            return Details( imdbId );
+            _flickInfoService.Untrap( username, id );
+            return Details( id );
         }
     }
 }

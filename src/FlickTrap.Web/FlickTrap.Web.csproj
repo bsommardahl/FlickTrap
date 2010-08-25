@@ -105,6 +105,7 @@
     <Compile Include="AutoMapperNameResolver.cs" />
     <Compile Include="BootStrapper.cs" />
     <Compile Include="ConfigureNHibernate.cs" />
+    <Compile Include="Controllers\MobileController.cs" />
     <Compile Include="Controllers\UserProfileController.cs" />
     <Compile Include="Controllers\ConfigController.cs" />
     <Compile Include="Controllers\FlickController.cs" />
@@ -164,6 +165,13 @@
     <Content Include="Content\blueprint\src\reset.css" />
     <Content Include="Content\blueprint\src\typography.css" />
     <Content Include="Content\images\Flying-Film-Reel.jpg" />
+    <Content Include="Content\images\iphone\flicktrap_splash2.png" />
+    <Content Include="Content\images\iphone\IMG_0556.PNG" />
+    <Content Include="Content\images\iphone\IMG_0557.PNG" />
+    <Content Include="Content\images\iphone\IMG_0558.PNG" />
+    <Content Include="Content\images\iphone\IMG_0559.PNG" />
+    <Content Include="Content\images\iphone\IMG_0560.PNG" />
+    <Content Include="Content\images\iphone\IMG_0561.PNG" />
     <Content Include="Content\rating.css" />
     <Content Include="Content\images\star-matrix1.gif" />
     <Content Include="Global.asax" />
@@ -171,6 +179,7 @@
     <Content Include="Views\Flick\Details.aspx" />
     <Content Include="Views\Flick\NotFound.aspx" />
     <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Mobile\Index.aspx" />
     <Content Include="Views\Search\Index.aspx" />
     <Content Include="Views\Shared\AppDescription.ascx" />
     <Content Include="Views\Shared\FlickListingView.ascx" />

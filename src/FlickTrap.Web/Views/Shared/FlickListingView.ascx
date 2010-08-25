@@ -13,7 +13,7 @@
         <div class='release'><%=Model.TheaterReleaseDate.Year.ToString() %></div>
         <div class='userRating rating <%=Model.Stars %>star'></div>
         <%--<div class='trapButton'>
-            <a href='<%=ResolveUrl("~/Flick/" + (Model.IsTrapped ? "Untrap" : "Trap") + "/" + Model.ImdbId) %>' title="<%=Model.IsTrapped ? "Untrap Flick" : "Trap Flick" %>"><%=Model.IsTrapped ? "Untrap" : "Trap" %></a>
+            <a href='<%=ResolveUrl("~/Flick/" + (Model.IsTrapped ? "Untrap" : "Trap") + "/" + Model.RemoteId) %>' title="<%=Model.IsTrapped ? "Untrap Flick" : "Trap Flick" %>"><%=Model.IsTrapped ? "Untrap" : "Trap" %></a>
         </div>--%>
     </div>
 </div>

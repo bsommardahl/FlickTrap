@@ -32,5 +32,10 @@ namespace FlickTrap.Domain
             var userProfile = _userProfileRepository.GetUserProfile(username);
             return userProfile.Password == password;
         }
+
+        public UserProfile GetUserProfile(string userName)
+        {
+            return _userProfileRepository.GetUserProfile(userName);
+        }
     }
 }
