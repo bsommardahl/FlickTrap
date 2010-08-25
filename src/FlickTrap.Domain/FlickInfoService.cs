@@ -34,20 +34,26 @@ namespace FlickTrap.Domain
 
         public Flick GetFlick( string username, string remoteId )
         {
-            //try to get flick from trapped flicks
+            UserProfile userProfile = null;
+            Flick flick = null;
+
+            //get user profile
             if( !string.IsNullOrEmpty( username ) )
             {
-                var userProfile = _userProfileRepository.GetUserProfile(username);
-                if(userProfile==null)
+                userProfile = _userProfileRepository.GetUserProfile(username);
+                if (userProfile == null)
                     throw new UserProfileNotFoundException();
-
-                if (userProfile.Trapped != null)
-                    return userProfile.Trapped.SingleOrDefault( x => x.RemoteId == remoteId );
             }
-
-            //try to get flick from web service
-            var downloadedFlick = _flickInfoWebServiceFacade.DownloadFlickInfo( remoteId );
-            return downloadedFlick;            
+            
+            //attempt to get flick from userProfile
+            if (userProfile !=null && userProfile.Trapped != null)
+                flick = userProfile.Trapped.SingleOrDefault( x => x.RemoteId == remoteId );
+            
+            //if no flick yet, attempt to get from service
+            if(flick==null)
+                flick = _flickInfoWebServiceFacade.DownloadFlickInfo( remoteId );
+            
+            return flick;            
         }
 
         public void Trap( string username, string remoteId )
@@ -88,7 +94,7 @@ namespace FlickTrap.Domain
 
         public IEnumerable<Flick> Search(string searchText)
         {
-            if( string.IsNullOrEmpty( searchText.Trim() ) )
+            if( string.IsNullOrWhiteSpace( searchText ) )
                 return new List<Flick>();
 
             var flicks = _flickInfoWebServiceFacade.Search(searchText);

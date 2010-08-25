@@ -1,11 +1,9 @@
 using System.Linq;
 using System.Web.Mvc;
-using FlickTrap.Domain;
-using FlickTrap.Domain.Abstract;
 using Machine.Specifications;
 using StructureMap;
 
-namespace FlickTrap.Web.Specs.Bootstrapper
+namespace FlickTrap.Web.Specs.BootstrapperSpecs
 {
     [Subject(typeof (DependencyRegistry))]
     public class when_registering_dependencies

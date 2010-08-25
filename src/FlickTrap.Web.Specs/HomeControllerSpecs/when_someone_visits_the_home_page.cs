@@ -2,7 +2,7 @@ using System.Web.Mvc;
 using FlickTrap.Domain;
 using Machine.Specifications;
 
-namespace FlickTrap.Web.Specs.HomeController
+namespace FlickTrap.Web.Specs.HomeControllerSpecs
 {
     [Subject(typeof (Controllers.HomeController))]
     public class when_someone_visits_the_home_page : given_a_home_controller_context

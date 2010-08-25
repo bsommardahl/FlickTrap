@@ -2,7 +2,7 @@ using System.Web.Mvc;
 using FlickTrap.Web.Models;
 using Machine.Specifications;
 
-namespace FlickTrap.Web.Specs.FlickController
+namespace FlickTrap.Web.Specs.FlickControllerSpecs
 {
     [Subject(typeof (Controllers.FlickController))]
     public class when_user_attempts_to_trap_a_flick : given_a_valid_flick_controller

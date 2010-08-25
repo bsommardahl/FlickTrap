@@ -5,7 +5,7 @@ using Machine.Specifications;
 using Moq;
 using It = Machine.Specifications.It;
 
-namespace FlickTrap.Web.Specs.FlickController
+namespace FlickTrap.Web.Specs.FlickControllerSpecs
 {
     [Subject(typeof (Controllers.FlickController))]
     public class when_user_requests_flick_with_invalid_id

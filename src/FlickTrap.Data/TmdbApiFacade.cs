@@ -17,16 +17,16 @@ namespace FlickTrap.Data
             //_api = new TmdbAPI( "20775617b505949e2d11b870e87cf1d6" );
         }
 
-        public Flick DownloadFlickInfo(string imdbId)
+        public Flick DownloadFlickInfo(string remoteId)
         {
-            if( imdbId == null )
+            if( remoteId == null )
                 return null;
 
-            var movie = _tmdbApi.MovieSearchByImdb( imdbId );
-            if( movie == null || movie.Count() == 0 )
+            var movie = _tmdbApi.GetMovieInfo( Convert.ToInt32(remoteId) );
+            if( movie == null )
                 return null;
 
-            return MapFromMovie(movie[0]);
+            return MapFromMovie(movie);
             
         }
 

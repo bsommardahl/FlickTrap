@@ -5,7 +5,7 @@ using Machine.Specifications.Mvc;
 using Moq;
 using It = Machine.Specifications.It;
 
-namespace FlickTrap.Web.Specs.UserProfileController
+namespace FlickTrap.Web.Specs.UserProfileControllerSpecs
 {
     public class when_viewing_login_page : given_a_user_profile_controller_context
     {

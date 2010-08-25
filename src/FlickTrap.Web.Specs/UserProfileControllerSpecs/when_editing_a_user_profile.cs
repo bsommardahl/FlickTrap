@@ -4,7 +4,7 @@ using FlickTrap.Domain;
 using Machine.Specifications;
 using It = Moq.It;
 
-namespace FlickTrap.Web.Specs.UserProfileController
+namespace FlickTrap.Web.Specs.UserProfileControllerSpecs
 {
     [Subject(typeof (Controllers.UserProfileController))]
     public class when_editing_a_user_profile : given_a_user_profile_controller_context

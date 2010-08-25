@@ -6,7 +6,7 @@
     
     <div class='details span-4'>
         <div class='name'>
-            <a href='<%=ResolveUrl("~/Flick/Details/" + Model.ImdbId) %>' title='<%=Model.Name + " Details" %>'>
+            <a href='<%=ResolveUrl("~/Flick/Details/" + Model.RemoteId) %>' title='<%=Model.Name + " Details" %>'>
                 <%=Model.Name %>
             </a>
         </div>

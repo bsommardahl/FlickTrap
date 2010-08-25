@@ -3,7 +3,7 @@ using System.Web.Mvc;
 using FlickTrap.Web.Models;
 using Machine.Specifications;
 
-namespace FlickTrap.Web.Specs.SearchController
+namespace FlickTrap.Web.Specs.SearchControllerSpecs
 {
     namespace SearchControllerSpecs
     {

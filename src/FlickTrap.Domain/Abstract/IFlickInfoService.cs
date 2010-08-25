@@ -6,9 +6,9 @@ namespace FlickTrap.Domain.Abstract
     {
         IEnumerable<Flick> GetRecentlyReleasedFlicks();
         IEnumerable<Flick> GetUnreleasedFlicks();
-        Flick GetFlick(string username, string imdbId);
-        void Trap(string username, string imdbId);
-        void Untrap(string username, string imdbId);
+        Flick GetFlick(string username, string remoteId);
+        void Trap(string username, string remoteId);
+        void Untrap(string username, string remoteId);
         IEnumerable<Flick> Search(string searchText);
     }
 }

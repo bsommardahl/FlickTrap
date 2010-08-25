@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Web.Mvc;
+using AutoMapper;
 using FlickTrap.Domain;
 using FlickTrap.Domain.Abstract;
 using FlickTrap.Web.Models;
@@ -15,17 +16,19 @@ namespace FlickTrap.Web.Controllers
             _flickInfoService = flickInfoService;
         }
 
-        public ActionResult Details(string imdbId)
+        public ActionResult Details(string id)
         {
             var username = User.Identity.Name;
- 
-            var flick = _flickInfoService.GetFlick(username, imdbId);
+
+            var flick = _flickInfoService.GetFlick(username, id);
 
             if( flick == null )
                 return View("NotFound");
 
-            var viewModel = FlickDetailsViewModel.Map(flick, null);
-
+            var viewModel = Mapper.Map<Flick, FlickDetailsViewModel>(flick);
+            viewModel.IsTrappable = !string.IsNullOrEmpty(username);
+            viewModel.IsTrapped = flick.Id > 0;
+    
             return View( viewModel );
         }
 

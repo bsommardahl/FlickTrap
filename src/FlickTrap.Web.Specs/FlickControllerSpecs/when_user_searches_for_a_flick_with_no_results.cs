@@ -1,12 +1,13 @@
 using System.Linq;
 using System.Web.Mvc;
+using FlickTrap.Web.Controllers;
 using FlickTrap.Web.Models;
-using FlickTrap.Web.Specs.SearchController;
+using FlickTrap.Web.Specs.SearchControllerSpecs;
 using Machine.Specifications;
 
-namespace FlickTrap.Web.Specs.FlickController
+namespace FlickTrap.Web.Specs.FlickControllerSpecs
 {
-    [Subject(typeof (Controllers.SearchController))]
+    [Subject(typeof (SearchController))]
     public class when_user_searches_for_a_flick_with_no_results : given_a_search_controller_context
     {
         static ActionResult _result;

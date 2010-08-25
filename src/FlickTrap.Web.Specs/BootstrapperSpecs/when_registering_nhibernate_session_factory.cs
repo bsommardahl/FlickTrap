@@ -2,7 +2,7 @@ using Machine.Specifications;
 using NHibernate;
 using StructureMap;
 
-namespace FlickTrap.Web.Specs.Bootstrapper
+namespace FlickTrap.Web.Specs.BootstrapperSpecs
 {
     [Subject(typeof (ConfigureNHibernate))]
     public class when_registering_nhibernate_session_factory

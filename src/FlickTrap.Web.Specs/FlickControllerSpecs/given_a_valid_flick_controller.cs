@@ -5,7 +5,7 @@ using FlickTrap.Web.Specs.MvcFakes;
 using Machine.Specifications;
 using Moq;
 
-namespace FlickTrap.Web.Specs.FlickController
+namespace FlickTrap.Web.Specs.FlickControllerSpecs
 {
     public abstract class given_a_valid_flick_controller
     {
@@ -32,8 +32,7 @@ namespace FlickTrap.Web.Specs.FlickController
                                    };
 
                 _mockFlickInfoService = new Mock<IFlickInfoService>();
-                _mockFlickInfoService.Setup(x => x.GetFlick("username", "123")).Returns(_valid_flick);
-
+                
                 _controller = new Controllers.FlickController(_mockFlickInfoService.Object);
                 _controller.ControllerContext = new FakeControllerContext(_controller, "username");
             };

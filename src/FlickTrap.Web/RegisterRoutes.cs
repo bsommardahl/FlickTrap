@@ -16,18 +16,6 @@ namespace FlickTrap.Web
             routes.IgnoreRoute( "{resource}.axd/{*pathInfo}" );
 
             routes.MapRoute(
-                "FlickDetails",
-                "Flick/Details/{imdbid}",
-                new
-                    {
-                        controller = "Flick",
-                        action = "Details"
-                    }
-                );
-            
-            //routes.MapRoute("Image", "Image/{width}/{path}", new { controller = "Image", action = "Index" });
-
-            routes.MapRoute(
                 "Default", // Route name
                 "{controller}/{action}/{id}", // URL with parameters
                 new

@@ -2,7 +2,7 @@ using System.Web.Mvc;
 using Machine.Specifications;
 using Machine.Specifications.Mvc;
 
-namespace FlickTrap.Web.Specs.UserProfileController
+namespace FlickTrap.Web.Specs.UserProfileControllerSpecs
 {
     [Subject(typeof (Controllers.UserProfileController))]
     public class when_logging_off : given_a_user_profile_controller_context

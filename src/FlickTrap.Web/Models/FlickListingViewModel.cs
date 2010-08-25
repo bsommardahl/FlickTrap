@@ -11,7 +11,7 @@ namespace FlickTrap.Web.Models
         public string Rating { get; set; }
         public string Stars { get; set; }
         public string ThumbnailUrl { get; set; }
-        public string ImdbId { get; set; }
+        public string RemoteId { get; set; }
         public DateTime TheaterReleaseDate { get; set; }
         public bool IsTrapped { get; set; }
 

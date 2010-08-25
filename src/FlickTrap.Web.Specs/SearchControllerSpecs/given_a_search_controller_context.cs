@@ -2,7 +2,7 @@ using FlickTrap.Domain.Abstract;
 using Machine.Specifications;
 using Moq;
 
-namespace FlickTrap.Web.Specs.SearchController
+namespace FlickTrap.Web.Specs.SearchControllerSpecs
 {
     public abstract class given_a_search_controller_context
     {

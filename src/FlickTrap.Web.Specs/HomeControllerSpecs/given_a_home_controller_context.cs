@@ -6,7 +6,7 @@ using FlickTrap.Web.Specs.MvcFakes;
 using Machine.Specifications;
 using Moq;
 
-namespace FlickTrap.Web.Specs.HomeController
+namespace FlickTrap.Web.Specs.HomeControllerSpecs
 {
     public abstract class given_a_home_controller_context
     {

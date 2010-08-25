@@ -1,9 +1,9 @@
-﻿using System.Linq;
+using System.Linq;
 using System.Web.Mvc;
 using FlickTrap.Web.Models;
 using Machine.Specifications;
 
-namespace FlickTrap.Web.Specs.HomeController
+namespace FlickTrap.Web.Specs.HomeControllerSpecs
 {
     namespace HomeControllerSpecs
     {
@@ -26,7 +26,7 @@ namespace FlickTrap.Web.Specs.HomeController
                     firstUnreleasedFlick.Rating.ShouldEqual( "PG-13" );
                     firstUnreleasedFlick.Stars.ShouldEqual("five");
                     firstUnreleasedFlick.ThumbnailUrl.ShouldEqual("http://hitch.com/poster.jpg");
-                    firstUnreleasedFlick.ImdbId.ShouldEqual("123");                    
+                    firstUnreleasedFlick.RemoteId.ShouldEqual("123");                    
                 };
 
             It should_return_correct_first_recent_movie = () =>
@@ -37,7 +37,7 @@ namespace FlickTrap.Web.Specs.HomeController
                     firstRecentFlick.Rating.ShouldEqual( "PG-13" );
                     firstRecentFlick.Stars.ShouldEqual("five");
                     firstRecentFlick.ThumbnailUrl.ShouldEqual( "http://avatar.com/poster.jpg" );
-                    firstRecentFlick.ImdbId.ShouldEqual("223");
+                    firstRecentFlick.RemoteId.ShouldEqual("223");
                 };
 
         }

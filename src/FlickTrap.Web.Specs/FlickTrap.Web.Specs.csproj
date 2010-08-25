@@ -92,21 +92,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="a_view_result_with_a_view_model.cs" />
-    <Compile Include="UserProfileController\a_view_with_user_profile_view_model.cs" />
-    <Compile Include="SearchController\given_a_search_controller_context.cs" />
-    <Compile Include="FlickController\given_a_valid_flick_controller.cs" />
-    <Compile Include="FlickController\when_user_attempts_to_trap_a_flick.cs" />
-    <Compile Include="FlickController\when_user_requests_flick_with_invalid_id.cs" />
-    <Compile Include="FlickController\when_user_requests_to_view_a_flick.cs" />
-    <Compile Include="FlickController\when_user_searches_for_a_flick_with_no_results.cs" />
-    <Compile Include="FlickController\when_user_searches_for_a_flick_with_results.cs" />
-    <Compile Include="UserProfileController\given_a_user_profile_controller_context.cs" />
-    <Compile Include="UserProfileController\when_creating_a_user_profile.cs" />
-    <Compile Include="HomeController\given_a_home_controller_context.cs" />
-    <Compile Include="HomeController\when_someone_visits_the_home_page.cs" />
-    <Compile Include="Bootstrapper\when_registering_dependencies.cs" />
-    <Compile Include="FlickController\when_user_attempts_to_untrap_a_flick.cs" />
-    <Compile Include="HomeController\a_successful_home_page.cs" />
+    <Compile Include="FlickControllerSpecs\a_valid_flick_details_view.cs" />
+    <Compile Include="UserProfileControllerSpecs\a_view_with_user_profile_view_model.cs" />
+    <Compile Include="SearchControllerSpecs\given_a_search_controller_context.cs" />
+    <Compile Include="FlickControllerSpecs\given_a_valid_flick_controller.cs" />
+    <Compile Include="FlickControllerSpecs\when_user_attempts_to_trap_a_flick.cs" />
+    <Compile Include="FlickControllerSpecs\when_user_requests_flick_with_invalid_id.cs" />
+    <Compile Include="FlickControllerSpecs\when_unauthenticated_user_requests_to_view_a_flick.cs" />
+    <Compile Include="FlickControllerSpecs\when_user_searches_for_a_flick_with_no_results.cs" />
+    <Compile Include="FlickControllerSpecs\when_user_searches_for_a_flick_with_results.cs" />
+    <Compile Include="UserProfileControllerSpecs\given_a_user_profile_controller_context.cs" />
+    <Compile Include="UserProfileControllerSpecs\when_creating_a_user_profile.cs" />
+    <Compile Include="HomeControllerSpecs\given_a_home_controller_context.cs" />
+    <Compile Include="HomeControllerSpecs\when_someone_visits_the_home_page.cs" />
+    <Compile Include="BootstrapperSpecs\when_registering_dependencies.cs" />
+    <Compile Include="FlickControllerSpecs\when_user_attempts_to_untrap_a_flick.cs" />
+    <Compile Include="HomeControllerSpecs\a_successful_home_page.cs" />
     <Compile Include="MvcFakes\FakeControllerContext.cs" />
     <Compile Include="MvcFakes\FakeHttpContext.cs" />
     <Compile Include="MvcFakes\FakeHttpRequest.cs" />
@@ -114,13 +115,13 @@
     <Compile Include="MvcFakes\FakeIdentity.cs" />
     <Compile Include="MvcFakes\FakePrincipal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SearchController\when_user_visits_search_page_without_search_text.cs" />
-    <Compile Include="UserProfileController\when_editing_a_user_profile.cs" />
-    <Compile Include="UserProfileController\when_logging_in_with_failure.cs" />
-    <Compile Include="UserProfileController\when_logging_in_with_success.cs" />
-    <Compile Include="UserProfileController\when_logging_off.cs" />
-    <Compile Include="Bootstrapper\when_registering_nhibernate_session_factory.cs" />
-    <Compile Include="UserProfileController\when_saving_an_existing_user_profile.cs" />
+    <Compile Include="SearchControllerSpecs\when_user_visits_search_page_without_search_text.cs" />
+    <Compile Include="UserProfileControllerSpecs\when_editing_a_user_profile.cs" />
+    <Compile Include="UserProfileControllerSpecs\when_logging_in_with_failure.cs" />
+    <Compile Include="UserProfileControllerSpecs\when_logging_in_with_success.cs" />
+    <Compile Include="UserProfileControllerSpecs\when_logging_off.cs" />
+    <Compile Include="BootstrapperSpecs\when_registering_nhibernate_session_factory.cs" />
+    <Compile Include="UserProfileControllerSpecs\when_saving_an_existing_user_profile.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FlickTrap.Domain\FlickTrap.Domain.csproj">
