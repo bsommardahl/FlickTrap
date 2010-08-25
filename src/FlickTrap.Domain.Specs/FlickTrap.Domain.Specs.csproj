@@ -46,10 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FlickInfoServiceSpecs\when_authenticated_user_requests_trapped_flick.cs" />
     <Compile Include="FlickInfoServiceSpecs\when_searching_for_a_flick_with_results.cs" />
     <Compile Include="FlickInfoServiceSpecs\given_a_flick_info_service_context.cs" />
+    <Compile Include="FlickInfoServiceSpecs\when_unauthenticated_user_requests_a_flick.cs" />
+    <Compile Include="FlickInfoServiceSpecs\when_unauthenticated_user_requests_flick_with_failure.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="FlickInfoServiceSpecs\when_flick_is_requested_with_failure.cs" />
+    <Compile Include="FlickInfoServiceSpecs\when_authenticated_user_requests_untrapped_flick.cs" />
     <Compile Include="FlickInfoServiceSpecs\when_requesting_recently_released_flicks.cs" />
     <Compile Include="FlickInfoServiceSpecs\when_requesting_unreleased_flicks.cs" />
     <Compile Include="FlickInfoServiceSpecs\when_searching_for_a_flick_with_blank_search_text.cs" />

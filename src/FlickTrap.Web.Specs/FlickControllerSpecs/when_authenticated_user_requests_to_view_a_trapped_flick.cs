@@ -1,6 +1,7 @@
 using System.Web.Mvc;
 using FlickTrap.Web.Controllers;
 using FlickTrap.Web.Models;
+using FlickTrap.Web.Specs.MvcFakes;
 using Machine.Specifications;
 
 namespace FlickTrap.Web.Specs.FlickControllerSpecs
@@ -13,8 +14,8 @@ namespace FlickTrap.Web.Specs.FlickControllerSpecs
 
         Establish context = () =>
             {
-                _controller.ControllerContext = new MvcFakes.FakeControllerContext( _controller, "username" );
-
+                _controller.ControllerContext = new FakeControllerContext( _controller, "username" );
+                
                 _mockFlickInfoService.Setup(x => x.GetFlick("username", "123")).Returns(_valid_flick);
             };
 

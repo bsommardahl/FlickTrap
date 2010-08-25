@@ -1,9 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <publishData>
-  <publishProfile publishUrl="C:\Projects\FlickTrap\web" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+  <publishProfile publishUrl="C:\Projects\FlickTrap\web" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="False">
     <file relUrl="Views/Shared/Main.Master" publishTime="08/09/2010 22:01:59" />
     <file relUrl="Content/blueprint/src/reset.css" publishTime="08/09/2010 17:20:09" />
-    <file relUrl="Content/blueprint/src/ie.css" publishTime="08/09/2010 17:20:09" />
     <file relUrl="Scripts/MicrosoftAjax.js" publishTime="08/07/2010 19:58:57" />
     <file relUrl="Content/blueprint/plugins/buttons/icons/tick.png" publishTime="08/09/2010 17:20:09" />
     <file relUrl="Content/blueprint/plugins/link-icons/icons/email.png" publishTime="08/09/2010 17:20:09" />
@@ -54,17 +53,106 @@
     <file relUrl="Scripts/MicrosoftMvcValidation.js" publishTime="08/07/2010 19:58:57" />
     <file relUrl="bin/FlickTrap.Domain.dll" publishTime="08/08/2010 20:07:58" />
     <file relUrl="Content/blueprint/plugins/link-icons/icons/external.png" publishTime="08/09/2010 17:20:09" />
-    <file relUrl="Scripts/jquery-1.4.1-vsdoc.js" publishTime="08/07/2010 19:58:57" />
     <file relUrl="Content/blueprint/plugins/fancy-type/readme.txt" publishTime="08/09/2010 17:20:09" />
-    <file relUrl="Views/Home/Index.aspx" publishTime="08/09/2010 22:02:28" />
     <file relUrl="Content/blueprint/plugins/link-icons/screen.css" publishTime="08/09/2010 17:20:09" />
+    <file relUrl="Views/Home/Index.aspx" publishTime="08/09/2010 22:02:28" />
+    <file relUrl="Content/blueprint/src/ie.css" publishTime="08/09/2010 17:20:09" />
     <file relUrl="Scripts/MicrosoftAjax.debug.js" publishTime="08/07/2010 19:58:57" />
+    <file relUrl="Content/blueprint/plugins/rtl/readme.txt" publishTime="08/09/2010 17:20:09" />
     <file relUrl="Scripts/MicrosoftMvcAjax.debug.js" publishTime="08/07/2010 19:58:57" />
     <file relUrl="bin/AutoMapper.dll" publishTime="06/24/2010 15:20:28" />
     <file relUrl="Scripts/jquery.validate.js" publishTime="08/07/2010 19:58:57" />
     <file relUrl="Views/Shared/FlickListingView.ascx" publishTime="08/09/2010 20:45:20" />
     <file relUrl="bin/TheMovieDBLib.dll" publishTime="08/08/2010 18:30:01" />
     <file relUrl="Content/blueprint/print.css" publishTime="08/09/2010 17:20:09" />
-    <file relUrl="Content/blueprint/plugins/rtl/readme.txt" publishTime="08/09/2010 17:20:09" />
+    <file relUrl="Scripts/jquery-1.4.1-vsdoc.js" publishTime="08/07/2010 19:58:57" />
+  </publishProfile>
+  <publishProfile publishUrl="\\server\c$\websites\localuser\byron\flicktrap.com" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile2" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="Views/Shared/Main.Master" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="bin/NHibernate.dll" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Content/blueprint/src/reset.css" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Views/UserProfile/Login.aspx" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Content/blueprint/src/ie.css" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Scripts/MicrosoftAjax.js" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Content/images/iphone/IMG_0556.PNG" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Content/blueprint/plugins/buttons/icons/tick.png" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Content/blueprint/plugins/link-icons/icons/email.png" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Content/blueprint/plugins/buttons/readme.txt" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Scripts/MicrosoftMvcAjax.js" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Web.config" publishTime="08/24/2010 20:57:44" />
+    <file relUrl="Views/Shared/SearchBox.ascx" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Views/Mobile/Index.aspx" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="bin/Castle.Core.dll" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Content/blueprint/plugins/buttons/screen.css" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="bin/FlickTrap.Web.pdb" publishTime="08/24/2010 20:56:06" />
+    <file relUrl="Content/images/iphone/IMG_0558.PNG" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Global.asax" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Scripts/MicrosoftMvcAjax.debug.js" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Content/blueprint/ie.css" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Scripts/MicrosoftMvcValidation.debug.js" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Views/Search/Index.aspx" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="bin/FlickTrap.Data.pdb" publishTime="08/24/2010 20:56:05" />
+    <file relUrl="Views/Flick/NotFound.aspx" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Content/blueprint/screen.css" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="bin/log4net.dll" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="bin/FlickTrap.Domain.pdb" publishTime="08/24/2010 20:56:05" />
+    <file relUrl="Content/images/iphone/IMG_0557.PNG" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Scripts/jquery-1.4.1.min.js" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Views/Shared/LogOnUserControl.ascx" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Content/images/iphone/IMG_0560.PNG" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="bin/Castle.DynamicProxy2.dll" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Content/blueprint/plugins/link-icons/icons/pdf.png" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Scripts/jquery-1.4.1.js" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Views/Shared/AppDescription.ascx" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="bin/Iesi.Collections.dll" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="bin/NHibernate.Linq.dll" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Content/blueprint/src/grid.png" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Content/blueprint/plugins/link-icons/icons/im.png" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Content/blueprint/src/print.css" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Content/images/Flying-Film-Reel.jpg" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Content/blueprint/plugins/rtl/screen.css" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Content/blueprint/plugins/link-icons/icons/xls.png" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Content/blueprint/src/typography.css" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Scripts/jquery-1.4.1-vsdoc.js" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="bin/FluentNHibernate.dll" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Content/blueprint/plugins/link-icons/icons/visited.png" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Content/blueprint/src/grid.css" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Content/images/iphone/IMG_0561.PNG" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Views/Home/Index.aspx" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Content/blueprint/src/forms.css" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Content/blueprint/plugins/fancy-type/screen.css" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Content/blueprint/plugins/buttons/icons/cross.png" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="bin/FlickTrap.Data.dll" publishTime="08/24/2010 20:56:05" />
+    <file relUrl="Content/images/iphone/IMG_0559.PNG" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Scripts/jquery.validate.min.js" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Content/blueprint/plugins/buttons/icons/key.png" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Content/blueprint/plugins/link-icons/icons/feed.png" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Content/blueprint/plugins/link-icons/readme.txt" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Views/Flick/Details.aspx" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Scripts/jquery.validate-vsdoc.js" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="bin/StructureMap.dll" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Content/images/star-matrix1.gif" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Content/rating.css" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Content/blueprint/plugins/link-icons/icons/doc.png" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Views/Web.config" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="bin/FlickTrap.Web.dll" publishTime="08/24/2010 20:56:06" />
+    <file relUrl="Content/Site.css" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Views/UserProfile/Create.aspx" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Content/images/iphone/flicktrap_splash2.png" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="bin/FlickTrap.Domain.dll" publishTime="08/24/2010 20:56:05" />
+    <file relUrl="Content/blueprint/plugins/link-icons/icons/external.png" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Content/blueprint/plugins/fancy-type/readme.txt" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="bin/NHibernate.ByteCode.Castle.dll" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Content/blueprint/plugins/link-icons/screen.css" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Scripts/MicrosoftAjax.debug.js" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="bin/Antlr3.Runtime.dll" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="bin/AutoMapper.dll" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Scripts/jquery.validate.js" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Views/Shared/FlickListingView.ascx" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="bin/TheMovieDBLib.dll" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Content/blueprint/print.css" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Scripts/MicrosoftMvcValidation.js" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Content/blueprint/plugins/rtl/readme.txt" publishTime="08/24/2010 20:46:55" />
+    <file relUrl="Views/UserProfile/Edit.aspx" publishTime="08/24/2010 20:46:55" />
   </publishProfile>
 </publishData>

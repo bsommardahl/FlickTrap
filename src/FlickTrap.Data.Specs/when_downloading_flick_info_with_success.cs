@@ -8,9 +8,9 @@ namespace FlickTrap.Data.Specs
     {
         static Flick _result;
 
-        Because of = () => _result = _tmdbApiFacade.DownloadFlickInfo("tt0066921");
+        Because of = () => _result = _tmdbApiFacade.DownloadFlickInfo("111");
 
         It should_return_a_flick = () => _result.ShouldNotBeNull();
-        It should_return_a_flick_with_the_correct_name = () => _result.Name.ShouldEqual("A Clockwork Orange");
+        It should_return_a_flick_with_the_correct_name = () => _result.Name.ShouldEqual("Scarface");
     }
 }

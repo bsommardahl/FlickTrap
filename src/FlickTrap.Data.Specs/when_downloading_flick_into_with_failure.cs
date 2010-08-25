@@ -21,7 +21,7 @@ namespace FlickTrap.Data.Specs
     {
         static Flick _result;
 
-        Because of = () => _result = _tmdbApiFacade.DownloadFlickInfo( "invalid_id" );
+        Because of = () => _result = _tmdbApiFacade.DownloadFlickInfo( "-123" );
 
         It should_return_null = () => _result.ShouldBeNull();
     }

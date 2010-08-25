@@ -1,5 +1,4 @@
-﻿using System;
-using AutoMapper;
+﻿using AutoMapper;
 using FlickTrap.Domain;
 using FlickTrap.Web.Models;
 
@@ -10,7 +9,9 @@ namespace FlickTrap.Web
         public void Execute()
         {
             Mapper.CreateMap<Flick, FlickListingViewModel>();
-            Mapper.CreateMap<Flick, FlickDetailsViewModel>();
+
+            Mapper.CreateMap<Flick, FlickDetailsViewModel>()
+                .ForMember(x=>x.Stars, opts=>opts.ResolveUsing<FlickStarsResolver>());
 
             Mapper.CreateMap<UserProfileCreateRequest, UserProfile>()
                 .ForMember(x => x.Id, opts => opts.Ignore())

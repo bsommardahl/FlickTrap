@@ -19,6 +19,7 @@ namespace FlickTrap.Web.Specs.FlickControllerSpecs
 
                 _valid_flick = new Flick
                                    {
+                                       Id = 1,
                                        Name = "Avatar",
                                        Description = "Avatar Description",
                                        UserRating = 9.8M,
@@ -34,7 +35,7 @@ namespace FlickTrap.Web.Specs.FlickControllerSpecs
                 _mockFlickInfoService = new Mock<IFlickInfoService>();
                 
                 _controller = new Controllers.FlickController(_mockFlickInfoService.Object);
-                _controller.ControllerContext = new FakeControllerContext(_controller, "username");
+                
             };
     }
 }

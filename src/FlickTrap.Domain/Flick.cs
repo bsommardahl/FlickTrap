@@ -14,6 +14,5 @@ namespace FlickTrap.Domain
         public virtual decimal Revenue { get; set; }
         public virtual decimal Budget { get; set; }
         public virtual string RemoteId { get; set; }
-        public virtual bool IsTrapped { get; set; }
     }
 }
