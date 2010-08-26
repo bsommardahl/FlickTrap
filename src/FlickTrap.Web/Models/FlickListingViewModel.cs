@@ -14,13 +14,12 @@ namespace FlickTrap.Web.Models
         public string RemoteId { get; set; }
         public DateTime TheaterReleaseDate { get; set; }
         public bool IsTrapped { get; set; }
+        public bool IsTrappable { get; set; }
 
-        public static FlickListingViewModel Map( Flick flick, UserProfile userProfile )
+        public static FlickListingViewModel MapFromFlick(Flick flick, string userName)
         {
-            var viewModel = Mapper.Map<Flick, FlickListingViewModel>( flick );
-            viewModel.Stars = GetStars( flick.UserRating );
-            if(userProfile!=null)
-                viewModel.IsTrapped = userProfile.Trapped.Any( x => x.RemoteId == flick.RemoteId );
+            var viewModel = Mapper.Map<Flick, FlickListingViewModel>(flick);
+            viewModel.IsTrappable = !string.IsNullOrEmpty(userName);
             return viewModel;
         }
 

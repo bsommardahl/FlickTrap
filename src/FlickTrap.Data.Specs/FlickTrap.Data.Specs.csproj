@@ -80,6 +80,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="given_a_flick_info_web_service_facade.cs" />
     <Compile Include="when_downloading_flick_info_with_success.cs" />
     <Compile Include="when_downloading_flick_into_with_failure.cs" />
     <Compile Include="when_retrieving_a_user_profile_with_username.cs" />

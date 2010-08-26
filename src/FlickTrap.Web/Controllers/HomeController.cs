@@ -27,11 +27,13 @@ namespace FlickTrap.Web.Controllers
             var username = User.Identity.Name;
             var userProfile = _userProfileService.GetUserProfile(username);
             if( userProfile != null )
-                viewModel.Trapped = userProfile.Trapped.Select(x => Mapper.Map<Flick, FlickListingViewModel>(x));
+                viewModel.Trapped =
+                    userProfile.Trapped.Select(x => FlickListingViewModel.MapFromFlick(x, User.Identity.Name));
 
             return View(viewModel);
         }
 
         
+
     }
 }

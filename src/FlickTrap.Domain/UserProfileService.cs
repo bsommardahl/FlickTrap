@@ -30,7 +30,7 @@ namespace FlickTrap.Domain
         public bool Validate(string username, string password)
         {
             var userProfile = _userProfileRepository.GetUserProfile(username);
-            return userProfile.Password == password;
+            return userProfile == null ? false : userProfile.Password == password;
         }
 
         public UserProfile GetUserProfile(string userName)

@@ -26,7 +26,7 @@ namespace FlickTrap.Web.Controllers
 
             var viewModel = new SearchViewModel
                                 {
-                                    Flicks = flicks.Select( x => FlickListingViewModel.Map(x, null) ),
+                                    Flicks = flicks.Select( x => FlickListingViewModel.MapFromFlick(x, null) ),
                                     SearchText = searchText
                                 };
 

@@ -35,7 +35,7 @@ namespace FlickTrap.Web.Specs.HomeControllerSpecs
                                  {
                                      Trapped = new List<Flick>
                                                    {
-                                                       new Flick(),
+                                                       new Flick{ Id=1},
                                                        new Flick(),
                                                        new Flick(),
                                                        new Flick(),
@@ -48,11 +48,21 @@ namespace FlickTrap.Web.Specs.HomeControllerSpecs
 
         It should_return_a_result = 
             () => _result.ShouldNotBeNull();
+        
         It should_return_a_view = 
             () => _result.ShouldBeAView();
+        
         It should_return_a_result_with_a_view_model = 
             () => _result.ShouldBeAView().And().ViewData.Model.ShouldNotBeNull();
+        
         It should_return_a_view_with_five_trapped_flicks = 
             () => _result.Model<HomeViewModel>().Trapped.Count().ShouldEqual(5);
+
+        private It should_return_first_trapped_flick_that_is_trappable =
+            () => _result.Model<HomeViewModel>().Trapped.First().IsTrappable.ShouldBeTrue();
+
+        private It should_return_first_trapped_flick_that_is_trapped =
+                    () => _result.Model<HomeViewModel>().Trapped.First().IsTrapped.ShouldBeTrue();
+
     }
 }

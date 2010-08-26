@@ -5,7 +5,7 @@
 <h3>Login</h3>
 <% using(Html.BeginForm()) { %>
     <%=Html.EditorForModel() %>
-    <input type='submit' value='Login' />
+    <input type='submit' value='Login' /> <%=Html.ActionLink("Register", "Create") %>
 <% } %>
 </asp:Content>
 <asp:Content runat="server" ID="AdditionalScripts" ContentPlaceHolderID="additional_scripts"></asp:Content>

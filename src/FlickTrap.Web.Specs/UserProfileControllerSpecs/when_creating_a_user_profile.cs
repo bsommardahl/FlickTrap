@@ -19,6 +19,7 @@ namespace FlickTrap.Web.Specs.UserProfileControllerSpecs
                                        Username = "username",
                                        FirstName = "first",
                                        LastName = "last",
+                                       EmailAddress = "someone@someone.com"
                                    });
 
         Because the_user_attempts_to_create_an_account =

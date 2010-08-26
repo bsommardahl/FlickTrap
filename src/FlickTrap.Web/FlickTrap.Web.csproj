@@ -113,6 +113,7 @@
     <Compile Include="Controllers\ImageController.cs" />
     <Compile Include="Controllers\SearchController.cs" />
     <Compile Include="DependencyRegistry.cs" />
+    <Compile Include="FlickListingTrappedResolver.cs" />
     <Compile Include="FlickStarsResolver.cs" />
     <Compile Include="FluentNHibernateConfiguration.cs" />
     <Compile Include="Global.asax.cs">
