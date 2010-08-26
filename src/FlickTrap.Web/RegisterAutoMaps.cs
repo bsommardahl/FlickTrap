@@ -10,10 +10,12 @@ namespace FlickTrap.Web
         public void Execute()
         {
             Mapper.CreateMap<Flick, FlickListingViewModel>()
+                .ForMember(x=>x.Stars, opts=>opts.ResolveUsing<FlickStarsResolver>())
                 .ForMember(x => x.IsTrapped, opts => opts.ResolveUsing<FlickListingTrappedResolver>());
 
             Mapper.CreateMap<Flick, FlickDetailsViewModel>()
-                .ForMember(x=>x.Stars, opts=>opts.ResolveUsing<FlickStarsResolver>());
+                .ForMember(x=>x.Stars, opts=>opts.ResolveUsing<FlickStarsResolver>())
+                .ForMember( x => x.IsTrapped, opts => opts.ResolveUsing<FlickListingTrappedResolver>() );
 
             Mapper.CreateMap<UserProfileCreateRequest, UserProfile>()
                 .ForMember(x => x.Id, opts => opts.Ignore())

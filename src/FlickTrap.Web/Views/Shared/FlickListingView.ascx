@@ -12,11 +12,11 @@
         </div>
         <div class='release'><%=Model.TheaterReleaseDate.Year.ToString() %></div>
         <div class='userRating rating <%=Model.Stars %>star'></div>
+       
         <% if(Model.IsTrappable) { %>
-        <div class='trapButton'>
-            <a href='<%=ResolveUrl("~/Flick/" + (Model.IsTrapped ? "Untrap" : "Trap") + "/" + Model.RemoteId) %>' title="<%=Model.IsTrapped ? "Untrap Flick" : "Trap Flick" %>"><%=Model.IsTrapped ? "Untrap" : "Trap" %></a>
-        </div>
+        <button class='trap_button <%=Model.IsTrapped ? "remove_from_flicks" : "add_to_flicks" %>' value='<%=ResolveUrl("~/Flick/ToggleTrapping/" + Model.RemoteId + "?isTrapped=" + Model.IsTrapped) %>'>
+            Toggle Trapping     
+        </button>
         <%} %>
-
     </div>
 </div>

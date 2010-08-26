@@ -1,3 +1,4 @@
+using System;
 using FlickTrap.Domain;
 using FluentNHibernate.Automapping;
 using FluentNHibernate.Cfg;
@@ -32,6 +33,8 @@ namespace FlickTrap.Web
                                        .IgnoreBase<EntityBase>()
                                        .Where(t => t.BaseType != null && t.BaseType.Equals(typeof (EntityBase)))
                                        .Override<UserProfile>(x => x.HasMany(y => y.Trapped).Cascade.SaveUpdate())
+                                       .UseOverridesFromAssemblyOf<FlickOverride>()
+
                               ));
         }
 

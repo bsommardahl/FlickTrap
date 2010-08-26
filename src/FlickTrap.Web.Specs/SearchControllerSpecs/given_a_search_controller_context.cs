@@ -16,6 +16,7 @@ namespace FlickTrap.Web.Specs.SearchControllerSpecs
                 _mockFlickInfoService = new Mock<IFlickInfoService>();
 
                 _controller = new Controllers.SearchController(_mockFlickInfoService.Object);
+                _controller.ControllerContext = new MvcFakes.FakeControllerContext(_controller, "username");
             };
     }
 }

@@ -25,13 +25,15 @@ namespace FlickTrap.Web.Specs.FlickControllerSpecs
 
                                                    };
 
-        private Because of = () => _result = _controller.Trap("123");
+        private Because of = () => _result = _controller.ToggleTrapping("123", false);
 
-        It should_return_a_view = () => _result.ShouldBeAView();
-        It should_return_the_correct_view = () => _result.ShouldBeAView().And().ViewName.ShouldEqual("Details");
-        It should_return_trapped_flick = () => _result.Model<FlickDetailsViewModel>().IsTrapped.ShouldBeTrue();
+        private It should_return_a_view = () => _result.ShouldBeOfType(typeof (JsonResult));
+
+        private It should_return_a_json_trapped_result =
+            () => ((JsonResult) _result).Data.ShouldBeOfType(typeof (ToggleTrappingJsonResult));
+
+        It should_return_trapped_flick = () => ((ToggleTrappingJsonResult)((JsonResult)_result).Data).IsTrapped.ShouldBeTrue();
+
         It should_trap_the_flick = () => _mockFlickInfoService.Verify(x => x.Trap("username", "123"));
-
-        private Behaves_like<a_valid_flick_details_view> a_valid_flick_details_view; 
     }
 }

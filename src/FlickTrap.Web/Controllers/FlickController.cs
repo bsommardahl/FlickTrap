@@ -25,25 +25,25 @@ namespace FlickTrap.Web.Controllers
             if( flick == null )
                 return View("NotFound");
 
-            var viewModel = Mapper.Map<Flick, FlickDetailsViewModel>(flick);
-            viewModel.IsTrappable = !string.IsNullOrEmpty(username);
-            viewModel.IsTrapped = flick.Id > 0;
+            var viewModel = FlickDetailsViewModel.MapFromFlick(flick, username);
     
             return View("Details", viewModel );
         }
 
-        public ActionResult Trap(string id)
+        [HttpGet]
+        public ActionResult ToggleTrapping(string id, bool isTrapped)
         {
             var username = User.Identity.Name;
-            _flickInfoService.Trap(username, id);
-            return Details(id);
-        }
 
-        public ActionResult Untrap(string id)
-        {
-            var username = User.Identity.Name;
-            _flickInfoService.Untrap( username, id );
-            return Details( id );
+            if(isTrapped)
+                _flickInfoService.Untrap(username, id);
+            else
+                _flickInfoService.Trap(username, id);
+
+            return Json(new ToggleTrappingJsonResult
+                            {
+                                IsTrapped = !isTrapped
+                            }, JsonRequestBehavior.AllowGet);
         }
     }
 }

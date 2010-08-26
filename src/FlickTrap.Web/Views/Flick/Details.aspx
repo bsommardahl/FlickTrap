@@ -14,9 +14,7 @@
             <div class='userRating rating <%=Model.Stars %>star'></div>
             <div class='description'><%=Model.Description %></div>
             <% if(Model.IsTrappable) { %>
-            <div class='trapButton'>
-                <a href='<%=ResolveUrl("~/Flick/" + (Model.IsTrapped ? "Untrap" : "Trap") + "/" + Model.RemoteId) %>' title="<%=Model.IsTrapped ? "Untrap Flick" : "Trap Flick" %>"><%=Model.IsTrapped ? "Untrap" : "Trap" %></a>
-            </div>
+            <a href='<%=ResolveUrl("~/Flick/ToggleTrapping/" + Model.RemoteId + "?isTrapped=" + Model.IsTrapped) %>' class='trap_button'><%=Model.IsTrapped ? "Remove from My Flicks" : "Add to My Flicks" %></a>
             <%} %>
         </div>
 

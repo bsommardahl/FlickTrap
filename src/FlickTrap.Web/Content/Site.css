@@ -31,3 +31,6 @@ body { background-color: #EEEEEE; }
  .flickDetails .trapButton { margin-top: 10px; }      
  
  .subBox { padding: 10px; background-color: White; border: #CCCCCC solid 1px; }    
+ 
+ .remove_from_flicks { background-color: Red; }
+ .add_to_flicks { background-color: Green; }

@@ -19,6 +19,8 @@ namespace FlickTrap.Web.Controllers
 
         public ActionResult Index(string searchText)
         {
+            var userName = User.Identity.Name;
+
             if( searchText == null )
                 searchText = string.Empty;
 
@@ -26,7 +28,7 @@ namespace FlickTrap.Web.Controllers
 
             var viewModel = new SearchViewModel
                                 {
-                                    Flicks = flicks.Select( x => FlickListingViewModel.MapFromFlick(x, null) ),
+                                    Flicks = flicks.Select( x => FlickListingViewModel.MapFromFlick(x, userName) ),
                                     SearchText = searchText
                                 };
 

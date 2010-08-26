@@ -114,6 +114,7 @@
     <Compile Include="Controllers\SearchController.cs" />
     <Compile Include="DependencyRegistry.cs" />
     <Compile Include="FlickListingTrappedResolver.cs" />
+    <Compile Include="FlickOverride.cs" />
     <Compile Include="FlickStarsResolver.cs" />
     <Compile Include="FluentNHibernateConfiguration.cs" />
     <Compile Include="Global.asax.cs">
@@ -125,6 +126,7 @@
     <Compile Include="Models\HomeViewModel.cs" />
     <Compile Include="Models\FlickListingViewModel.cs" />
     <Compile Include="Models\SearchViewModel.cs" />
+    <Compile Include="Models\ToggleTrappingJsonResult.cs" />
     <Compile Include="Models\UserProfileCreateRequest.cs" />
     <Compile Include="Models\UserProfileLoginRequest.cs" />
     <Compile Include="Models\UserProfileUpdateRequest.cs" />
@@ -178,6 +180,7 @@
     <Content Include="Content\images\star-matrix1.gif" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Scripts\FlickTrap\Trapping.js" />
     <Content Include="Views\Flick\Details.aspx" />
     <Content Include="Views\Flick\NotFound.aspx" />
     <Content Include="Views\Home\Index.aspx" />

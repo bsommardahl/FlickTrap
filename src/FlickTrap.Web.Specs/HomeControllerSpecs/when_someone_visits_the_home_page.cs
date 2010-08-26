@@ -35,7 +35,7 @@ namespace FlickTrap.Web.Specs.HomeControllerSpecs
                                  {
                                      Trapped = new List<Flick>
                                                    {
-                                                       new Flick{ Id=1},
+                                                       new Flick{ Id=1, UserRating = 7.8M},
                                                        new Flick(),
                                                        new Flick(),
                                                        new Flick(),
@@ -63,6 +63,9 @@ namespace FlickTrap.Web.Specs.HomeControllerSpecs
 
         private It should_return_first_trapped_flick_that_is_trapped =
                     () => _result.Model<HomeViewModel>().Trapped.First().IsTrapped.ShouldBeTrue();
+
+        private It should_return_first_trapped_flick_with_four_stars =
+                    () => _result.Model<HomeViewModel>().Trapped.First().Stars.ShouldEqual("four");
 
     }
 }

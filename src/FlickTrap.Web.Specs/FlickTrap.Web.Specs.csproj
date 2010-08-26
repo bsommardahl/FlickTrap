@@ -94,13 +94,13 @@
     <Compile Include="a_view_result_with_a_view_model.cs" />
     <Compile Include="FlickControllerSpecs\a_valid_flick_details_view.cs" />
     <Compile Include="FlickControllerSpecs\when_authenticated_user_requests_to_view_a_trapped_flick.cs" />
+    <Compile Include="SearchControllerSpecs\when_user_searches_for_a_flick_with_no_results.cs" />
     <Compile Include="UserProfileControllerSpecs\a_view_with_user_profile_view_model.cs" />
     <Compile Include="SearchControllerSpecs\given_a_search_controller_context.cs" />
     <Compile Include="FlickControllerSpecs\given_a_valid_flick_controller.cs" />
     <Compile Include="FlickControllerSpecs\when_user_attempts_to_trap_a_flick.cs" />
     <Compile Include="FlickControllerSpecs\when_user_requests_flick_with_invalid_id.cs" />
     <Compile Include="FlickControllerSpecs\when_unauthenticated_user_requests_to_view_a_flick.cs" />
-    <Compile Include="FlickControllerSpecs\when_user_searches_for_a_flick_with_no_results.cs" />
     <Compile Include="FlickControllerSpecs\when_user_searches_for_a_flick_with_results.cs" />
     <Compile Include="UserProfileControllerSpecs\given_a_user_profile_controller_context.cs" />
     <Compile Include="UserProfileControllerSpecs\when_creating_a_user_profile.cs" />

@@ -47,14 +47,14 @@ namespace FlickTrap.Data
             return new Flick
                        {
                            Name = movie.Name,
-                           Budget = movie.Budget == null ? 0 : Convert.ToDecimal(movie.Budget),
+                           Budget = string.IsNullOrEmpty(movie.Budget) ? 0 : Convert.ToDecimal(movie.Budget),
                            Description = movie.Overview,
                            RemoteId = movie.Id.ToString(),
                            Rating = movie.Certification,
                            RentalReleaseDate = movie.Released.HasValue ? (DateTime?) movie.Released.Value.AddMonths(6) : null,
                            TheaterReleaseDate = movie.Released,
-                           Revenue = movie.Revenue == null ? 0 : Convert.ToDecimal(movie.Revenue),
-                           ThumbnailUrl = image == null ? "" : image.Url
+                           Revenue = string.IsNullOrEmpty(movie.Revenue) ? 0 : Convert.ToDecimal(movie.Revenue),
+                           ThumbnailUrl = image == null  ? "" : image.Url
                         };
         }
     
